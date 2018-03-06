@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem; }
+
+header {
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.06rem;
+  background: #fff;
+  z-index: 3; }
+  header h1 {
+    font-size: 0.2rem;
+    font-weight: 200;
+    width: 3rem;
+    overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  header p .iconfont {
+    font-size: 0.2rem;
+    color: #E0509E; }
+  header p:nth-of-type(2) img {
+    width: 0.25rem;
+    margin-right: 0.05rem; }
+
+.tu {
+  width: 100%;
+  margin-bottom: -0.04rem;
+  position: relative; }
+  .tu .guize {
+    position: absolute;
+    top: 0.7rem;
+    right: 0;
+    height: 0.78rem;
+    width: 0.3rem;
+    padding: 0.09rem;
+    font-size: 0.12rem;
+    background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/rule10.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    line-height: 0.14rem; }
+  .tu img {
+    width: 100%; }
+
+.huodongguize {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none; }
+  .huodongguize .main {
+    width: 90%;
+    padding: 0.1rem;
+    background: #fff; }
+    .huodongguize .main h3 {
+      text-align: center;
+      height: 0.2rem;
+      line-height: 0.2rem;
+      font-weight: 400; }
+    .huodongguize .main p {
+      font-size: 0.1rem;
+      padding-top: 0.1rem; }
+    .huodongguize .main button {
+      display: block;
+      width: 1.56rem;
+      height: 0.36rem;
+      border-radius: 0.18rem;
+      background: #FEC202;
+      font-size: 0.22rem;
+      font-weight: 500;
+      color: #fff;
+      border: none;
+      outline: none;
+      margin: auto;
+      margin-top: 0.15rem; }
+
+.chufadi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.08rem;
+  height: 0.36rem;
+  align-items: center;
+  background: #72C9F6;
+  font-size: 0.16rem; }
+  .chufadi .iconfont {
+    font-size: 0.12rem; }
+  .chufadi p:nth-of-type(1) {
+    color: #fff; }
+  .chufadi p:nth-of-type(2) {
+    color: #fff; }
+
+.diqu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.1rem 0.1rem;
+  flex-wrap: wrap;
+  display: none; }
+  .diqu li {
+    width: 0.8rem;
+    height: 0.28rem;
+    border: 1px solid #cdcddc;
+    text-align: center;
+    line-height: 0.28rem;
+    font-size: 0.16rem;
+    color: #999;
+    margin-top: 0.1rem; }
+  .diqu li.bgColor {
+    background: #72C9F6;
+    color: #fff;
+    border: 1px solid #72C9F6; }
+
+.content {
+  width: 100%;
+  padding: 0 0.12rem 0.45rem;
+  background: #D7F2FF; }
+  .content .biaoti {
+    width: 2rem;
+    height: 0.56rem;
+    background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/title1.png") center no-repeat;
+    background-size: 100% 40%;
+    text-align: center;
+    margin: auto; }
+    .content .biaoti h2 {
+      font-size: 0.26rem;
+      color: #2195CB;
+      height: 0.56rem;
+      line-height: 0.56rem; }
+  .content ul {
+    width: 100%; }
+    .content ul li {
+      width: 100%;
+      position: relative;
+      background: #fff;
+      padding-bottom: 0.07rem;
+      margin-top: 0.12rem;
+      transform: scale(1.1); }
+      .content ul li img {
+        width: 100%;
+        height: 1.92rem; }
+      .content ul li > p:nth-of-type(1) {
+        color: #999;
+        font-size: 0.13rem;
+        text-indent: 0.15rem; }
+      .content ul li div {
+        padding: 0.1rem 0.15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 0.21rem; }
+        .content ul li div a {
+          display: block;
+          width: 0.78rem;
+          height: 0.21rem;
+          border-radius: 0.05rem;
+          background: red;
+          color: #fff;
+          padding: 0;
+          text-align: center;
+          line-height: 0.21rem; }
+        .content ul li div p {
+          display: flex;
+          font-size: 0.16rem;
+          align-items: flex-end;
+          color: #de2500; }
+          .content ul li div p span:nth-of-type(2) {
+            font-size: 0.12rem;
+            padding-left: 0.05rem; }
+  .content .chakan {
+    width: 100%;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    color: #fff;
+    background: #8FD5F7;
+    text-align: center;
+    font-size: 0.14rem;
+    border-radius: 0 0 0.06rem 0.06rem;
+    margin-top: 0.12rem; }
+
+.zhiding {
+  width: 0.6rem;
+  position: fixed;
+  bottom: 0.6rem;
+  right: 0.12rem;
+  z-index: 33;
+  background: rgba(0, 0, 0, 0.8);
+  height: 0.3rem;
+  line-height: 0.3rem;
+  color: #fff;
+  border-radius: 0.04rem;
+  text-align: center;
+  font-size: 0.12rem;
+  display: none; }
+
+/*# sourceMappingURL=tttjmp.css.map */

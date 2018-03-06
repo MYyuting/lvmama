@@ -1,0 +1,163 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-size: 0.14rem;
+}
+a:hover{
+    text-decoration: none;
+}
+
+//导航
+nav{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.4rem;
+    padding: 0.1rem 0.1rem;
+    display: flex;
+    align-items: center;
+    img{
+        width: 0.2rem;
+        height: 0.2rem;
+    }
+}
+//头像
+.tx{
+    box-sizing: border-box;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    img{
+        width: 1.44rem;
+        height: 1.08rem;
+    }
+}
+//验证
+.yzm{
+    box-sizing: border-box;
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    a{
+        color: #111;
+        font-size: 0.16rem;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .bgColor{
+        font-weight: 800;
+        em{
+            margin-left: 0.4rem;
+            width: 0.2rem;
+            display: block;
+            border-bottom: 2px solid red;
+        }
+    }
+}
+.content{
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.2rem;
+    padding: 8px 25px 0;
+    ul{
+        width: 100%;
+        height: 2rem;
+        li{
+            line-height: 0.5rem;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 0 0.06rem;
+//          i{
+//              display: block;
+//              font-size: 0.1rem;
+//              color: red;
+//          }
+            input{
+                border: none;
+                outline: none;
+            }
+        }
+        li:nth-of-type(3){
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+                width: 70%;
+            }
+            span{
+                width: 20%;
+                line-height: 0.3rem;
+                border: 1px solid #000;
+                font-weight: 800;
+                color: orchid;
+            }
+        }
+        li:nth-of-type(2){
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+                width: 80%;
+            }
+            span{
+                width: 20%;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                
+            }
+        }
+        .pp{
+            float: right;
+            margin-top: 0.1rem;
+            color: #ccc;
+        }
+    }
+    button{
+        width: 100%;
+        height: 0.45rem;
+        margin-bottom: 0.2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        outline: none;
+        font-size: 0.16rem;
+        border: none;
+        a{
+            color: #000000;
+        }
+    }
+    .btn1{
+        background: #fd3c71;
+        box-shadow: 0 2px 6px 0 rgba(253,60,113,.4);
+        a{
+            color: #fff;
+        }
+    }
+}
+//第三方登录
+.dsf{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0.5rem;
+    h2{
+        text-align: center;
+        font-size: 0.13rem;
+        color: #ccc;
+    }
+    ul{
+        width: 100%;
+        height: 0.4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

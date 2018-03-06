@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>国内玩乐</title>
+		<script src="../chajian/js/jquery-3.1.1.min.js"></script>
+		<script src="../chajian/js/swiper.min.js"></script>
+		<script src="../chajian/js/iscroll.js"></script>
+		<script src="../chajian/angular/angular-1.0.1.min.js"></script>
+		<script src="../chajian/angular/angular-ui-router.js"></script>
+		<link rel="stylesheet" href="../chajian/js/swiper.min.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/guoneiwanle.css" />
+		<link rel="stylesheet" href="" />
+	</head>
+	<body ng-app="myApp">
+		<header>
+			<p class="fanhui" style="color: #DC3991"><i class="iconfont icon-back"></i></p>
+			<h1>国内玩乐</h1>
+			<p></p>
+		</header>
+		<div class="ss">
+			<a href="#">
+				
+			<input type="text" placeholder="输入目的地/关键词/主题"/>
+			<span><i class="iconfont icon-search"></i></span>
+			</a>
+		</div>
+		<!--轮播图-->
+		<div class="swiper-container banner">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><a href="#"><img src="https://pics.lvjs.com.cn/pics/super/2017/05/1496221004_14489.jpg" alt="" /></a></li>
+				<li class="swiper-slide"><a href="#"><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511349527_37900.jpg" alt="" /></a></li>
+				<li class="swiper-slide"><a href="#"><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1510555877_55351.jpg" alt="" /></a></li>
+				<li class="swiper-slide"><a href="#"><img src="https://pics.lvjs.com.cn/pics/super/2017/09/1505285432_90331.jpg" alt="" /></a></li>
+				<li class="swiper-slide"><a href="#"><img src="https://pics.lvjs.com.cn/pics/super/2017/05/1494472132_60755.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<ul class="daohang">
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260055_19717.png" alt="" />
+				<p>一日游</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260130_77207.png" alt="" />
+				<p>直通车</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260082_77139.png" alt="" />
+				<p>演出票</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260107_75387.png" alt="" />
+				<p>户外体验</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260119_88426.png" alt="" />
+				<p>休闲娱乐</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260119_72527.png" alt="" />
+				<p>美食</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260132_52319.png" alt="" />
+				<p>旅拍</p>
+			</li>
+			<li>
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511260156_15922.png" alt="" />
+				<p>交通接驳</p>
+			</li>
+		</ul>
+		<div class="tese">特色专题</div>
+		<div class="gg">
+			<a href="#">
+				<img src="https://pics.lvjs.com.cn/pics/super/2017/05/1494231601_13509.jpg"/>
+			</a>
+		</div>
+		<!--路由-->
+		<div class="luyou">
+			<a ui-sref="tuijian" class="bor">推荐玩乐</a>
+			<a ui-sref="yanchu">精彩演出</a>
+		</div>
+		<div ui-view></div>
+			
+		<div class="dibu">已经加载显示全部内容</div>	
+				
+		
+		
+		
+		<script type="text/javascript">
+			
+			var App = angular.module("myApp",["ui.router"]);
+			
+			App.config(["$stateProvider","$urlRouterProvider",function($stateProvider,$urlRouterProvider){
+				
+				$urlRouterProvider.otherwise("/tuijian")
+				$stateProvider
+					.state("tuijian",{
+						url:"/tuijian",
+						templateUrl:"../temp/tuijian.html"
+					})
+					.state("yanchu",{
+						url:"/yanchu",
+						templateUrl:"../temp/yanchu.html"
+					})
+					
+			}])
+			$(".luyou").on("click","a",function(){
+				$(this).addClass("bor").siblings().removeClass('bor')
+			})
+			
+			
+			
+
+			var sw = new Swiper(".banner",{
+				autoplay:2000
+			})
+		</script>
+		<script src="../../gonyong.js"></script>
+	</body>
+</html>

@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.14rem;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div{
+    width: 0.8rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header > div img:nth-child(1){
+    margin: 12px;
+}
+header > p{
+    font-size: 0.19rem;
+}
+main{
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search{
+    width: 3.53rem;
+    height: 0.28rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #ECECEC;
+}
+.Search > div:nth-child(1){
+    width: 0.58rem;
+    height:100%;
+    border-right: solid 1px #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search > div:nth-child(1) > p{
+    color: #D5127B;
+    margin-right: 0.04rem;
+}
+.Search > div:nth-child(2){
+    position: relative;
+    width: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search > div:nth-child(2) > input{
+    width: 100%;
+    height: 100%;
+    border: solid 0px;
+}
+.Search > div:nth-child(2) > img{
+    position: absolute;
+    left: -0.08rem;
+}
+.Search > div:nth-child(2) > input::-webkit-input-placeholder{
+    color: #DDDDDD;
+    text-indent: 12px;
+}
+.Banner{
+    width:100%;
+    height: 1.52rem;
+    border-bottom:  solid 0.1rem #EFEFF7 ;
+}
+.Banner img{
+    width:100%;
+    height:100%;
+}
+.HotIndependentTravel,
+.HotIndependentTravel_2{
+    width: 100%;
+    /*height: 1.8rem;*/
+    padding:0.15rem 0rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: solid 0.1rem #EFEFF7;
+}
+.HotIndependentTravel > div:nth-child(1) ul,
+.HotIndependentTravel_2 > div:nth-child(1) ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.1rem;
+}
+.HotIndependentTravel > div:nth-child(1) li:first-child,
+.HotIndependentTravel > div:nth-child(1) li:last-child,
+.HotIndependentTravel_2 > div:nth-child(1) li:first-child,
+.HotIndependentTravel_2 > div:nth-child(1) li:last-child{
+    width: 0.54rem;
+    height:1px;
+    background: #ECECEC;
+}
+.HotIndependentTravel > div:nth-child(1) li:nth-child(2),
+.HotIndependentTravel > div:nth-child(1) li:nth-child(4),
+.HotIndependentTravel_2 > div:nth-child(1) li:nth-child(2),
+.HotIndependentTravel_2 > div:nth-child(1) li:nth-child(4){
+    width:0.04rem;
+    height: 0.04rem;
+    border-radius: 0.04rem;
+    background: #ECECEC;
+    margin: 0 0.08rem;
+}
+.HotIndependentTravel > div:nth-child(2),
+.HotIndependentTravel_2 > div:nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.HotIndependentTravel > div:nth-child(2) div{
+    width: 22%;
+    height:0.4rem;
+    margin-top: 0.1rem;
+    border-radius: 0.2rem;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HotIndependentTravel > div:nth-child(2) div p{
+    line-height: 0.4rem;
+}
+.HotIndependentTravel > div:nth-child(2) div:last-child{
+    color: #DF4D9C;
+}
+.HotIndependentTravel_2 > div:nth-child(2) div{
+    width: 22%;
+    height:0.8rem;
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.HotIndependentTravel_2 > div:nth-child(2) div img{
+    width:0.46rem;
+    height:0.46rem;
+    margin-bottom: 0.06rem;
+}
+.SpecialProducts{
+    border-top: solid 0.1rem #EFEFF7;
+}
+.SpecialProducts > div:nth-child(1){
+    width: 100%;
+    height: 0.4rem;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.SpecialProducts > div:nth-child(1) > div{
+    width: 0.03rem;
+    height: 0.15rem;
+    background: #D30775;
+    margin-right: 0.06rem;
+}
+.SpecialProducts > div:nth-child(2){
+    width: 100%;
+    height: 1.9rem;
+    border-bottom: 0.1rem solid #EFEFF7;
+    overflow: hidden;
+}
+.SpecialProducts > div:nth-child(2) ul{
+    width: 8.04rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.SpecialProducts > div:nth-child(2) li{
+    width: 1.24rem;
+    height: 1.74rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left:0.1rem;
+}
+.SpecialProducts > div:nth-child(2) li img{
+    height: 1.1rem;
+    width: 100%;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(2){
+    width: 100%;
+    height:0.36rem;
+    box-sizing: border-box;
+    padding: 0 0.04rem;
+    /**/
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(2) span{
+    line-height: 0.12rem;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(2) span:nth-child(2){
+    margin: 0 0.04rem;
+    color: #AAAAAA;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(3) span:nth-child(1){
+    font-size:0.12rem;
+    color: #D82586;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(3) > span:nth-child(2){
+    font-size:0.18rem;
+    line-height: 0.18rem;
+    color: #D82586;
+}
+.SpecialProducts > div:nth-child(2) li > div:nth-child(3) p{
+    color: #666666;
+    font-size:0.12rem;
+}
+/*HotProducts*/
+.HotProducts{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.HotProducts > div:nth-child(1){
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.HotProducts > div:nth-child(1) div{
+    width:0.03rem;
+    height: 0.15rem;
+    background: #D82586;
+    margin-right:0.06rem;
+}
+.recommend{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.recommend > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 0.05rem;
+}
+.recommend > div > div:nth-child(1) {
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 1.5rem;
+}
+.recommend > div > div >img{
+    width: 100%;
+    height:100%;
+    transform:scale(0.8);
+    opacity: 0;
+    transition:all 0.6s;
+}
+.recommend > div > p:nth-child(2){
+    position: absolute;
+    left: 0.1rem;
+    top: 1.2rem;
+    color: white;
+}
+.recommend > div > div:nth-child(3){
+    width:0.8rem;
+    height: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    right:0;
+    bottom: 0.08rem;
+}
+.recommend > div > div:nth-child(3) > span,
+.recommend > div > div:nth-child(3) > p{
+    color: white;
+}
+.recommend > div > div:nth-child(3) > span:nth-child(1),
+.recommend > div > div:nth-child(3) > p{
+    font-size: 0.12rem;
+}
+.recommend > div > div:nth-child(3) > span:nth-child(2){
+    font-size: 0.16rem;
+}
+.recommend > div > div:nth-child(4){
+    width:100%;
+    display: flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.04rem;
+    box-sizing: border-box;
+}
+.recommend > div > div:nth-child(4) > p{
+    color: #333333;
+    line-height: 0.16rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    width:100%;
+    display: inline-block;
+    margin: 0.02rem 0;
+}
+.recommend > div > div:nth-child(4) > span{
+    width:100%;
+    display: inline-block;
+    color: #666666;
+    line-height: 0.14rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin: 0.02rem 0;
+}
+.recommend > div > div:nth-child(4) > div{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.02rem 0.01rem;
+    font-size: 0.01rem;
+}
+.recommend > div > div:nth-child(4) > div > div{
+    margin-right: 0.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.recommend > div > p:nth-child(5){
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    display: inline-block;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    font-size: 10px;
+    line-height: 10px;
+    padding: 0.04rem;
+}
+

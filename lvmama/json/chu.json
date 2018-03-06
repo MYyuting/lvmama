@@ -1,0 +1,127 @@
+{
+	"nav": [
+		{
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492762862_64616.png",
+			"ps": "跟团游"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492762889_21439.png",
+			"ps": "自由行"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481279_12002.png",
+			"ps": "游轮"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492762919_57999.png",
+			"ps": "主题游"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492762939_91853.png",
+			"ps": "签证"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492766236_73394.png",
+			"ps": "WIFi"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1493196855_10480.png",
+			"ps": "亲子游"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/04/1492777807_80435.png",
+			"ps": "当地玩乐"
+		}
+	],
+	"guo":{
+		"remen":[
+			{"cyt":"泰国"},{"cyt":"日本"},{"cyt":"欧洲"},{"cyt":"巴厘岛"},{"cyt":"迪拜"},{"cyt":"美国"},{"cyt":"香港"},{"cyt":"埃及"}
+		],
+		"Donan":[
+			{"cyt":"泰国"},{"cyt":"新加坡"},{"cyt":"越南"},{"cyt":"马来西亚"},{"cyt":"柬埔寨"},{"cyt":"斯里兰卡"},{"cyt":"曼卡"},{"cyt":"巴厘岛"}
+		],
+		"Japhn":[
+			{"cyt":"日本"},{"cyt":"本洲"},{"cyt":"九州"},{"cyt":"北海道"},{"cyt":"东京"},{"cyt":"冲绳"},{"cyt":"大阪"},{"cyt":"小樽"}
+		],
+		"Errou":[
+			{"cyt":"英国"},{"cyt":"法国"},{"cyt":"意大利"},{"cyt":"希腊"},{"cyt":"瑞士"},{"cyt":"俄罗斯"},{"cyt":"捷克"},{"cyt":"德国"}
+		],
+		"Dao":[
+			{"cyt":"巴厘岛"},{"cyt":"长滩岛"},{"cyt":"苏梅岛"},{"cyt":"普吉岛"},{"cyt":"毛里求斯"},{"cyt":"马尔代夫"},{"cyt":"塞班岛"},{"cyt":"塞舌耳"}
+		],
+		"Fei":[
+			{"cyt":"南非"},{"cyt":"埃及"},{"cyt":"阿联酋"},{"cyt":"迪拜"},{"cyt":"土耳其"},{"cyt":"肯尼亚"},{"cyt":"摩洛哥"},{"cyt":"坦桑尼亚"}
+		],
+		"Gang":[
+			{"cyt":"香港"},{"cyt":"澳门"},{"cyt":"台湾"}
+		],
+		"Amiren":[
+			{"cyt":"美国"},{"cyt":"加拿大"},{"cyt":"巴西"},{"cyt":"墨西哥"},{"cyt":"关岛"},{"cyt":"夏威夷"},{"cyt":"古巴"},{"cyt":"阿根廷"}		
+		]
+		
+	},
+	"lvyou": [
+		{
+			"img1": "https://pics.lvjs.com.cn/pics/super/2017/11/1510904761_77106.jpg",
+			"img2": "https://pics.lvjs.com.cn/pics/super/2016/09/1472726707_14478.jpg",
+			"img3": "https://pics.lvjs.com.cn/pics/super/2017/11/1511142170_23514.jpg",
+			"img4": "https://pics.lvjs.com.cn/pics/super/2017/07/1499917348_13135.jpg"
+		}
+	],
+	"jinTab":{
+	  "geng":[
+	  	{
+	  		"img":"http://pic.lvmama.com/pics//uploads/pc/place2/2017-10-18/4c922b93-c9cd-46ea-8f09-d3218ee14f52_480_320.jpg",
+	  		"span":"跟团游 | 北京出发",
+	  		"span2":"6499",
+	  		"pin":"100%好评",
+	  		"ps":"英国7晚9日一国深度游([联运点免费联运]往返直飞、西敏寺大教堂、国会大厦、大英博物馆、牛津大学城、翁莎故居、温德米尔湖区、爱丁堡、约克大教堂、剑桥、温莎古堡、不含签证费★★★★)"
+	  	},
+	  	{
+	  		"img":"http://pic.lvmama.com/pics//uploads/pc/place2/2017-10-18/4c922b93-c9cd-46ea-8f09-d3218ee14f52_480_320.jpg",
+	  		"span":"跟团游 | 北京出发",
+	  		"span2":"4499",
+	  		"pin":"98.8%好评",
+	  		"ps":"日本大阪、京都、名古屋、箱根、富士山、东京5晚6日经典游(一晚日式温泉，游古都赏世遗，日式美食、东京全天自由活动【天天特卖】★★★★)"
+	  	},
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2017-04-14/658f431d-a3e5-40fb-a5dd-41c7162f4e8e.jpg",
+	  		"span":"跟团游 | 北京出发",
+	  		"span2":"3130",
+	  		"pin":"95.5%好评",
+	  		"ps":"越南、芽庄5日或6日7日半自助游(全程三钻，北京直飞，出海一日游，占婆塔，大教堂，五指岩，至少一天自由活动，A行程4晚6天，B行程3晚5天，C行程5晚7天★★★)"
+	  	},
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2014-12-05/d0005143-186d-4a3c-ba60-a5b46c921142.jpg",
+	  		"span":"跟团游 | 北京出发",
+	  		"span2":"3465",
+	  		"pin":"100%好评",
+	  		"ps":"【春节出游】泰国、曼谷芭提雅沙美岛5晚7日游(曼谷升级2晚国五，1晚沙美岛度假酒店，2晚芭堤雅当五，沙美岛半天自由，夜游湄南河，米其林餐厅★★★★★)"
+	  	}
+	  ],
+	  "zihu":[
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2017-03-10/2f94f11a-f5af-4231-8431-e955c9b3186b.jpg",
+	  		"span":"自由行 | 北京出发",
+	  		"span2":"2199",
+	  		"pin":"100%好评",
+	  		"ps":"日本大阪5晚6日自由行([单机票]北京直飞大阪，随心安排行程，不含签证，全程酒店住宿自理)"
+	  	},
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2017-11-07/df88d4f5-9e87-43fb-8a50-7b677cec8575.jpg",
+	  		"span":"自由行 | 北京出发",
+	  		"span2":"45570",
+	  		"pin":"100%好评",
+	  		"ps":"【春节出游】泰国、普吉岛5晚7日自由行(北京直飞，最佳西方芭东海滩酒店5晚连住，全程自由行★★★★)"
+	  	},
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2017-06-20/9871ca7e-99e4-49d6-8903-723a04d932d7.jpg",
+	  		"span":"自由行 | 北京出发",
+	  		"span2":"2309",
+	  		"pin":"100%好评",
+	  		"ps":"兰卡威5晚7日自由行(定制团，北京飞兰卡威，南航)"
+	  	},
+	  	{
+	  		"img":"https://pics.lvjs.com.cn/pics//uploads/pc/place2/2017-09-07/4cbec82b-288f-4335-a5fb-9ecd40c63d36.jpg",
+	  		"span":"跟团游 | 北京出发",
+	  		"span2":"3669",
+	  		"pin":"100%好评",
+	  		"ps":"日本东京4晚6日自由行([含机票和住宿]北京直飞东京，穷游日本，海淘乐翻天，海航直飞，东京特色民宿4晚连住  可选订接送机服务，可选购日本个人旅游签证 )"
+	  	}
+	  ]	
+	}
+
+}

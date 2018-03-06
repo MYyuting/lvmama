@@ -1,0 +1,91 @@
+<!--第一条分割线！！（后面还有好多的）-->
+<div class="inland">
+    <!--目的地-->
+    <div class="bourn">
+        <div>
+            <span>目的地</span>
+            <div>
+                <p>上海</p>
+                <img src="Images/B_right.png" alt="">
+            </div>
+        </div>
+        <div>
+            <img src="Images/MyLocation.png" alt="">
+            <span>我的位置</span>
+        </div>
+    </div>
+    <!--日期-->
+    <div class="date">
+        <span>日期</span>
+        <div>
+            <div>
+                <div>
+                    <p>12月12日</p>
+                    <span>明天</span>
+                    <span>入住</span>
+                </div>
+                <div>
+                    <p>12月13日</p>
+                    <span>后天</span>
+                    <span>离开</span>
+                </div>
+            </div>
+            <span>共1晚</span>
+        </div>
+        <img src="Images/B_right.png" alt="">
+    </div>
+    <!--关键字-->
+    <div class="keyWord">
+        <span>关键字/位置/品牌/酒店名</span>
+        <img src="Images/B_right.png" alt="">
+    </div>
+    <!--价格-->
+    <div class="price">
+        <span>选择价格/星级</span>
+        <img src="Images/B_right.png" alt="">
+    </div>
+    <!--button查询-->
+    <div class="Search">
+        <div>
+            <button>查询</button>
+            <img src="Images/Search.png" alt="">
+        </div>
+        <div>
+            <img src="Images/Loaction.png" alt="">
+        </div>
+    </div>
+</div>
+<!--收藏/订单-->
+<div class="Menu">
+    <div>
+        <div>
+            <img src="Images/past.png" alt="">
+            <span>历史/收藏</span>
+        </div>
+        <div>
+            <img src="Images/orrder.png" alt="">
+            <span>酒店订单</span>
+        </div>
+    </div>
+    <div>
+        <div><img src="Images/nav1.png" alt=""></div>
+        <div><img src="Images/nav2.png" alt=""></div>
+    </div>
+</div>
+<!--排行-->
+<div class="RankingList">
+    <div>
+        <div>
+            <img src="Images/ranking.png" alt="">
+            <p>销量排行</p>
+            <span>每周更新</span>
+        </div>
+        <div>
+            <span>查看排行</span>
+            <img src="Images/R_right.png" alt="">
+        </div>
+    </div>
+    <div>
+        <img  ng-repeat="item in obj.ranking" ng-src="Images/{{item.img}}">
+    </div>
+</div>

@@ -1,0 +1,386 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 625%;
+}
+body {
+    font-size: 0.14rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+p,h1{
+    margin: 0;
+}
+//头部
+header{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    h1{
+        font-size: 0.19rem;
+        font-weight: 400;
+    }
+    p{
+        width: 0.7rem;
+        display: flex;
+        align-items: center;
+        .iconfont{
+            font-size: 0.25rem;
+            color: #E362A8;
+            margin-left: 5px;
+        }
+        span:nth-of-type(2){
+            margin-left: 0.1rem;
+            img{
+                width: 0.22rem;
+            }
+        }
+        span{
+            img{
+                //              height: 0.25rem;
+                width: 0.24rem;
+            }
+        }
+    }
+}
+//导航
+nav {
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    background: #eceff6;
+    div {
+        width: 3.52rem;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        p {
+            color: #bc2074;
+            margin: 0 0 0 0.1rem;
+            i {
+                margin-left: 0;
+            }
+        }
+        i {
+            margin: 0.02rem 0.1rem 0 0.2rem;
+        }
+    }
+}
+
+//  轮播
+.banner {
+    width: 100%;
+    height: 1.6rem;
+    img {
+        width: 100%;
+        height: 1.6rem;
+    }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 3px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+//全部航线
+.qbhx{
+    width: 100%;
+    padding: 0px 10px 0.05rem;
+    .qbhx_one{
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: relative;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #ddd;
+            border-radius:50%;
+            margin: 0 0.1rem;
+        }
+        .le::before{
+            content: ""; 
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            border-left: 60px solid #ddd;
+            border-right: 0px solid transparent;
+            border-top: 2px solid #ddd;
+        }
+        .ri::after{
+            content: ""; 
+            position: absolute;
+            left: 10px;
+            top: 1px; 
+            border-left: 0px solid transparent;
+            border-right: 60px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 24.25%;
+            position: relative;
+            border-radius: 0.04rem;
+            margin-bottom: 0.05rem;
+            img{
+                width: 100%;
+                border-radius: 0.04rem;
+            }
+            span{
+                display: block;
+                width: 80%;
+                height: 0.2rem;
+                background: rgba(0,0,0,0.3);
+                font-size: 0.12rem;
+                color: #fff;
+                position: absolute;
+                top: 39%;
+                left: 10%;
+                text-align: center;
+                line-height: 0.2rem;
+            }
+        }
+    }
+}
+//特惠专区
+.thzq{
+    width: 100%;
+    height: 1rem;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.06rem;
+    a{
+        width: 49%;
+        img{
+            width: 100%;
+            height: 0.8rem;
+        }
+    }
+}
+//邮轮公司
+.ylgs{
+    width: 100%;
+    padding: 0px 10px 0;
+    border-bottom: 0.1rem solid #F5F5F5;
+    .qbhx_one{
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: relative;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #ddd;
+            border-radius:50%;
+            margin: 0 0.1rem;
+        }
+        .le::before{
+            content: ""; 
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            border-left: 60px solid #ddd;
+            border-right: 0px solid transparent;
+            border-top: 2px solid #ddd;
+        }
+        .ri::after{
+            content: ""; 
+            position: absolute;
+            left: 10px;
+            top: 1px; 
+            border-left: 0px solid transparent;
+            border-right: 60px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            width: 32%;
+            margin-bottom: 0.1rem;
+            border: 1px solid #ccc;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            span{
+                position: absolute;
+                width: 100%;
+                height: 0.23rem;
+                background: #56c6fa;
+                color: #fff;
+                bottom: 0;
+                text-align: center;
+                line-height: 0.23rem;
+            }
+        }
+    }
+}
+//推荐航线
+.tjhx{
+    width: 100%;
+    .qbhx_one{
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: relative;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background: #ddd;
+            border-radius:50%;
+            margin: 0 0.1rem;
+        }
+        .le::before{
+            content: ""; 
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            border-left: 60px solid #ddd;
+            border-right: 0px solid transparent;
+            border-top: 2px solid #ddd;
+        }
+        .ri::after{
+            content: ""; 
+            position: absolute;
+            left: 10px;
+            top: 1px; 
+            border-left: 0px solid transparent;
+            border-right: 60px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+    }
+    ul{
+        li{
+            width: 100%;
+            height: 1.1rem;
+            padding: 0.1rem;
+            border-bottom: 1px solid #e3e3e3;
+            img{
+                width: 1.05rem;
+                height: 0.9rem;
+                float: left;
+                margin-right: 0.1rem;
+                border-radius: 0.05rem;
+            }
+            h3,p{
+                margin: 0;
+                padding: 0;
+            }
+            h3{
+                font-size: 0.18rem;
+                color: #111111;
+                line-height: 30px;
+            }
+            p{
+                color: #aeaeae;
+            }
+            p:last-child{
+                display: flex;
+                justify-content: space-between;
+                i{
+                    color: #c20053;
+                }
+                b{
+                    color: #c20053;
+                    font-size: 0.18rem;
+                }
+            }
+            
+        }
+    }
+    .qbhx_two{
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            position: relative;
+            display: block;
+            width: 5px;
+            height: 5px;
+//          background: #ddd;
+//          border-radius:50%;
+            margin: 0 0.1rem;
+        }
+        .le::before{
+            content: ""; 
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            border-left: 60px solid #ddd;
+            border-right: 0px solid transparent;
+            border-top: 2px solid #ddd;
+        }
+        .ri::after{
+            content: ""; 
+            position: absolute;
+            left: 10px;
+            top: 1px; 
+            border-left: 0px solid transparent;
+            border-right: 60px solid #ddd;
+            border-top: 2px solid #ddd;
+        }
+    }
+}
+#ding{
+    width: 3.75rem;
+    height: 3.75rem;
+    position: fixed;
+    z-index: 1000;
+    background: #D30775;
+    color: white;    
+    bottom: 10rem;
+    right: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.75rem;
+    display: none;
+    >span{
+        font-size: 1rem;
+        margin-top: 1rem;   
+    }
+}

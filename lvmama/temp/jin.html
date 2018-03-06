@@ -1,0 +1,98 @@
+<div id="boxs">
+	<div>
+		<ul>
+			<li onclick="taba('ye1')">全部</li>
+			<li onclick="taba('ye2')">鼓浪屿</li>
+			<li onclick="taba('ye3')">古北冰镇</li>
+			<li onclick="taba('ye4')">哈尔滨</li>
+			<li onclick="taba('ye5')">环岛路</li>
+			<li>雪乡</li>
+			<li>厦门</li>
+			<li>南普陀市</li>
+			<li>古北水镇天然温泉</li>
+			<li>曾厝垵</li>
+		</ul>
+	</div>
+	<div id="yes">
+		<div id="ye1">
+			<div ng-repeat="obj in qub">
+				<div>
+					<img ng-src={{obj.imgs}} alt="" />
+					<span>{{obj.ps}}</span>
+					<span>￥<a href="">{{obj.price}}</a>起</span>
+				</div>
+				<div>
+					<p>{{obj.lis1}}</p>
+					<p>{{obj.lis2}}</p>
+				</div>
+			</div>
+		</div>
+		<div id="ye2">
+			<div ng-repeat="obj in qus">
+				<div>
+					<img ng-src={{obj.imgs}} alt="" />
+					<span>{{obj.ps}}</span>
+					<span>￥<a href="">{{obj.price}}</a>起</span>
+				</div>
+				<div>
+					<p>{{obj.lis1}}</p>
+					<p>{{obj.lis2}}</p>
+				</div>
+			</div>
+		</div>
+		<div id="ye3">
+			<div ng-repeat="obj in qunb">
+				<div>
+					<img ng-src={{obj.imgs}} alt="" />
+					<span>{{obj.ps}}</span>
+					<span>￥<a href="">{{obj.price}}</a>起</span>
+				</div>
+				<div>
+					<p>{{obj.lis1}}</p>
+					<p>{{obj.lis2}}</p>
+				</div>
+			</div>
+		</div>
+		<div id="ye4">
+			<div ng-repeat="obj in qunh">
+				<div>
+					<img ng-src={{obj.imgs}} alt="" />
+					<span>{{obj.ps}}</span>
+					<span>￥<a href="">{{obj.price}}</a>起</span>
+				</div>
+				<div>
+					<p>{{obj.lis1}}</p>
+					<p>{{obj.lis2}}</p>
+				</div>
+			</div>
+		</div>
+		<div id="ye5">
+			<div ng-repeat="obj in qundao">
+				<div>
+					<img ng-src={{obj.imgs}} alt="" />
+					<span>{{obj.ps}}</span>
+					<span>￥<a href="">{{obj.price}}</a>起</span>
+				</div>
+				<div>
+					<p>{{obj.lis1}}</p>
+					<p>{{obj.lis2}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	function taba(pid) {
+		var tabs = ["ye1", "ye2", "ye3", "ye4", "ye5"];
+		for(var i = 0; i < tabs.length; i++) {
+			if(tabs[i] == pid) {
+				document.getElementById(tabs[i]).style.display = "block";
+
+			} else {
+				document.getElementById(tabs[i]).style.display = "none";
+			}
+		}
+	}
+</script>

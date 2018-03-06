@@ -1,0 +1,57 @@
+.gengduo .tou {
+  height: 0.45rem;
+  background: #f5f5f5;
+  position: relative;
+  padding: 7px 12px; }
+  .gengduo .tou p {
+    text-align: center;
+    font-size: 0.21rem;
+    line-height: 32px; }
+  .gengduo .tou span {
+    position: absolute;
+    font-size: 25px;
+    color: #DB3A91;
+    line-height: 32px;
+    top: 5px; }
+  .gengduo .tou .fanhui {
+    width: 0.27rem;
+    height: 0.45rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5; }
+.gengduo .path {
+  border-bottom: 8px solid #eee; }
+  .gengduo .path .til {
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.16rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-color: #D30775; }
+    .gengduo .path .til span {
+      color: #aaa; }
+  .gengduo .path .img_bt {
+    display: flex;
+    flex-wrap: wrap; }
+    .gengduo .path .img_bt > li {
+      width: 33.33%;
+      border-top: 1px solid #eee;
+      border-left: 1px solid #eee; }
+      .gengduo .path .img_bt > li img {
+        width: 100%; }
+.gengduo .pa1 .til {
+  border-color: #ff740c; }
+.gengduo .pa2 .til {
+  border-color: #7AC72F; }
+.gengduo .pa3 .til {
+  border-color: #5698dc; }
+.gengduo .pa4 .til {
+  border-color: #d30775; }
+.gengduo .pa5 .til {
+  border-color: #ff740c; }
+
+/*# sourceMappingURL=genduo.css.map */

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>主页面</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.js"></script>
+    <script src="libs/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="libs/swiper.min.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/iscroll-probe.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route1.4.5.js"></script>
+    <link rel="stylesheet" href="css/gonyon.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+</head>
+<body ng-controller="myctr">
+<div id="box">
+    <!-- 头部-->
+    <header>
+        <div class="tou">
+            <div>
+                <span>北京</span>
+                <i class="iconfont icon-down"></i>
+            </div>
+            <div class="ss">
+                <i class="iconfont icon-search"></i>
+                <input type="text" value="" placeholder="目的地/景点/酒店/游轮"/>
+            </div>
+            <div>
+                <a href="index5.html">
+                    <span class="iconfont icon-user"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播-->
+
+    <div class="swiper-container s-ban">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511767683_81210.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511488481_95709.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512615605_85990.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <span class="swiper-gg"></span>
+    </div>
+
+    <!--列表分类-->
+
+
+    <div class="s-lei">
+        <!-- 11111-->
+        <ul class="lei_1">
+            <li>
+                <a href="wuxiaofai/html/menpiao.html" data-text="门票"></a>
+            </li>
+            <li>
+                <div>
+                    <a href="wuxiaofai/html/jingwaimenpiao.html">境外门票</a>
+                </div>
+                <div>
+                    <a href="wuxiaofai/html/wangpaijingqu.html">王牌景区</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="wuxiaofai/html/jingwaiwanle.html">境外玩乐</a>
+                </div>
+                <div>
+                    <a href="wuxiaofai/html/guoneiwanle.html">国内玩乐</a>
+                </div>
+            </li>
+        </ul>
+        <!-- 22222222-->
+
+        <ul class="lei_2">
+            <li>
+                <a href="jiudian.html"></a>
+            </li>
+            <li><a href="jiu+jing.html">酒+景</a></li>
+            <li><a href="ji+jing.html">机+景</a></li>
+        </ul>
+        <!-- 3333333333333-->
+        <ul class="lei_1 lei_3">
+            <li>
+                <a href="index2.html"></a>
+            </li>
+            <li>
+                <div>
+                    <a href="guone.html">国内游</a>
+                </div>
+                <div>
+                    <a href="chujin.html">出境游</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="zhoubian.html">周边游</a>
+                </div>
+                <div>
+                    <a href="youlun.html">游轮</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="">跟团游</a>
+                </div>
+                <div>
+                    <a href="">驴悦亲子</a>
+                </div>
+                <div>
+                    <a href="">开心驴行</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- 444444444-->
+        <ul class="lei_2 lei_4">
+            <li>
+                <a href="huochep.html">
+                    <i class="iconfont icon-construction-site"></i>
+                    <span>火车票</span>
+                </a>
+            </li>
+            <li><a href="airplane/airplane.html">国内机票</a></li>
+            <li><a href="IFT/IFT.html">国际机票</a></li>
+        </ul>
+        <!-- 55555555-->
+        <ul class="lei_lie">
+            <li>
+                <a href="">
+                    <span><i></i></span>
+                    <p>特价机票</p>
+                </a>
+            </li>
+            <li>
+                <a href="dingzhiyou.html">
+                    <span><i></i></span>
+                    <p>定制游</p>
+                </a>
+            </li>
+            <li>
+                <a href="lvyou/tiantiantejia_zhc.html">
+                    <span><i></i></span>
+                    <p>天天特价</p>
+                </a>
+            </li>
+            <li>
+                <a href="zijiayou.html">
+                    <span><i></i></span>
+                    <p>自驾游</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span><i></i></span>
+                    <p>签证</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span><i></i></span>
+                    <p>攻略</p>
+                </a>
+            </li>
+            <li>
+                <a href="liping/lipinka.html">
+                    <span><i></i></span>
+                    <p>礼品卡</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span><i></i></span>
+                    <p>特价机票</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span><i></i></span>
+                    <p>签到</p>
+                </a>
+            </li>
+            <li>
+                <a href="genduo.html">
+                    <span><i></i></span>
+                    <p>更多</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- tupian 图片链接-->
+
+    <div class="gangtu">
+        <div>
+            <a href="">
+                <img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512374727_59435.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- 活动推荐-->
+    <div class="huo">
+        <div class="til">
+            <span class="til_l"></span>
+            <strong>活动推荐</strong>
+            <span class="til_r"></span>
+        </div>
+
+        <ul class="huo_con">
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/07/1499743955_98384.png" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512117341_20453.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512524730_78015.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512638785_41961.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/11/1512012391_91358.jpg" alt=""/>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/07/1500607454_84252.jpg" alt=""/>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <!-- 抢购-->
+    <div class="qianggou">
+        <div class="til">
+            <span>限时抢购</span>
+            <span><a href="">更多> &nbsp;&nbsp;</a></span>
+        </div>
+
+        <div class="qg_con">
+            <div>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="qg_img">
+                        <div class="bj"></div>
+                        <div>仅剩12份</div>
+                    </div>
+                    <div class="qg_info">
+                        <p>越南、芽庄5晚6日半自助游(芽庄国王塔大酒店或其它同等酒店，越捷航空天津直飞芽庄，赠送京津往返大巴，特色泥浆浴，出海一日游【出境特卖】★★★★)</p>
+
+                        <div>
+                            <span></span>
+                            <span>￥2035<i>起</i></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="gd">
+                    <div>
+                        <span>《</span>
+                        <span>查看更多</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 裂图table-->
+    <div class="table">
+         <nav>
+             <a href="#nav1" class="active"><span>景点门票</span></a>
+             <a href="#nav2"><span>周边游</span></a>
+             <a href="#nav3"><span>国内游</span></a>
+             <a href="#nav4"><span>出境游</span></a>
+         </nav>
+    </div>
+    <div ng-view></div>
+</div>
+
+
+<!--底部-->
+    <footer><ul></ul></footer>
+<!--客服电话-->
+    <div class="kefu">
+        <span class="iconfont icon-tel"></span>
+    </div>
+<!--客服模板-->
+    <div class="kufumo">
+        <div>
+            <img src="imgs/kufu.png" alt=""/>
+            <a href="">在线客服</a>
+            <a href="">电话咨询</a>
+        </div>
+    </div>
+
+
+<!--返回顶部-->
+    <div id="top" style="display: none">
+        <span class="iconfont icon-top"></span>
+        <p>顶部</p>
+    </div>
+
+</body>
+<script src="foot.js"></script>
+<script>
+
+//    <!-- 路由-->
+
+    var app =  angular.module("myApp",["ngRoute"]);
+
+    app.config(["$routeProvider",function($routeProvider){
+        $routeProvider
+                .when("/nav1",{
+                    templateUrl:'temp/nav1.html'
+                })
+                .when("/nav2",{
+                    templateUrl:'temp/nav2.html'
+                })
+                .when("/nav3",{
+                    templateUrl:'temp/nav3.html'
+                })
+                .when("/nav4",{
+                    templateUrl:'temp/nav4.html'
+                })
+                .otherwise("/nav1")
+    }]);
+
+    app.controller("myctr",["$scope","$http",function($scope,$http){
+
+}]);
+
+
+
+// 图片加载过度
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();  //即页面向上滚动的距离
+        console.log(scrollTop);
+        if(scrollTop>=1220){
+            $(".table").addClass("xfu")
+        }else{
+            $(".table").removeClass("xfu")
+        }
+        var windowHeight = $(window).height(); // 浏览器自身的高度
+        $(".fen_con1 img").each(function(){
+            var offsetTop = $(this).offset().top;
+            if (offsetTop < (scrollTop + windowHeight) && offsetTop >= scrollTop) { //在2个临界状态之间的就为出现在视野中的
+                $(this).css({transition:"3s",opacity:1,transform:"scale(1)"});
+            }
+        });
+          //目标标签img相对于document顶部的位置
+        return false;
+    });
+
+//var that;
+     //运动
+function checkShow(){
+    $(".fen_con1 img").each(function(){
+//        img样式
+            $(this).css({transition:"3s",opacity:1,transform:"scale(1)"});
+    });
+}
+
+$(".kefu").click(function(evt){
+
+    $(".kufumo").show();
+    return false;
+})
+
+
+$(".kufumo").click(function(evt){
+    evt.stopPropagation();
+    $(this).hide()
+})
+</script>
+<script src="index.js"></script>
+</html>

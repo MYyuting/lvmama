@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.gengduo{
+
+  //头部
+  .tou{
+    height: 0.45rem;
+    background: #f5f5f5;
+    position: relative;
+    padding: 7px 12px;
+    p{
+      text-align: center;
+      font-size: 0.21rem;
+      line-height: 32px;
+    }
+    span{
+      position: absolute;
+      font-size: 25px;
+      color: #DB3A91;
+      line-height: 32px;
+      top: 5px;
+    }
+    .fanhui{
+      width: 0.27rem;
+      height: 0.45rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+  }
+
+//  内容
+
+  .path{
+    border-bottom: 8px solid #eee;
+    .til{
+      height: 0.45rem;
+      line-height: 0.45rem;
+      font-size: 0.16rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      border-left-width: 5px;
+      border-left-style: solid;
+      border-color: #D30775;
+      span{
+        color: #aaa;
+      }
+    }
+
+    .img_bt{
+      display: flex;
+      flex-wrap: wrap;
+      >li{
+        width: 33.33%;
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .pa1{
+    .til{
+      border-color: #ff740c;
+    }
+  }
+  .pa2{
+    .til{
+      border-color: #7AC72F;
+    }
+  }
+  .pa3{
+    .til{
+      border-color: #5698dc;
+    }
+  }
+  .pa4{
+    .til{
+      border-color: #d30775;
+    }
+  }
+  .pa5{
+    .til{
+      border-color: #ff740c;
+    }
+  }
+}

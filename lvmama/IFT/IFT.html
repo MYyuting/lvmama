@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Title</title>
+    <script src="anguler/angular.min.js"></script>
+    <script src="swiper/swiper.min.js"></script>
+    <script src="../libs/jquery-3.1.1.js"></script>
+    <script src="rem.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <link rel="stylesheet" href="IFT.css">
+</head>
+<body ng-controller="myCtrl">
+    <header>
+        <div class="fanhui"><span class="glyphicon glyphicon-menu-left"></span></div>
+    </header>
+    <!--banner-->
+    <div class="swiper-container Banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in obj.banner">
+                <img ng-src="{{item.img}}" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!---->
+    <div class="TAB">
+
+
+
+
+        <div class="Tab_Head">
+            <div><p>单程</p></div>
+            <div><p>往返</p></div>
+            <div><p>多程</p></div>
+            <span class="xian"></span>
+        </div>
+        <div class="Tab_test">
+            <div style="display: block">
+                <div>
+                    <div><p>上海</p></div>
+                    <div>
+                        <img src="img/2017-12-14_200826.png" alt="">
+                    </div>
+                    <div><span>到达城市</span></div>
+                </div>
+                <div>
+                    <div>
+                        <p>12月14日</p>
+                        <span>周四</span>
+                    </div>
+                </div>
+                <div>
+                    <div><p>经济/超级经济舱</p></div>
+                    <div><span>1</span><p>成人</p> <span>0</span><p>儿童</p></div>
+                </div>
+                <div>
+                    <div>搜索</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div><p>上海</p></div>
+                    <div>
+                        <img src="img/2017-12-14_200826.png" alt="">
+                    </div>
+                    <div><span>到达城市</span></div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p>12月14日</p>
+                            <span>周四</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span>返回日期</span>
+                    </div>
+                </div>
+                <div>
+                    <div><p>经济/超级经济舱</p></div>
+                    <div><span>1</span><p>成人</p> <span>0</span><p>儿童</p></div>
+                </div>
+                <div>
+                    <div>搜索</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        1
+                    </div>
+                    <div>
+                        <div>
+                            <div><span>出发城市</span></div>
+                            <div>
+                                <img src="img/2017-12-14_200826.png" alt="">
+                            </div>
+                            <div><span>到达城市</span></div>
+                        </div>
+                        <div>
+                            <span>出发日期</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        <div>
+                            <div><span>出发城市</span></div>
+                            <div>
+                                <img src="img/2017-12-14_200826.png" alt="">
+                            </div>
+                            <div><span>到达城市</span></div>
+                        </div>
+                        <div>
+                            <span>出发日期</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/2017-12-14_205703.png" alt="">
+                    <span>添加航程</span>
+                </div>
+                <div>
+                    <span>经济/超级经济舱</span>
+                </div>
+                <div>
+                    <div>搜索</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tu">
+            <img src="img/tu.png" alt="">
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/f1.png" alt="">
+                        <p>反馈意见</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/f1.png" alt="">
+                        <p>全球签证</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/f1.png" alt="">
+                        <p>机票订单</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+<script src="../gonyong.js"></script>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl",["$timeout","$scope","$http",function ($timeout,$scope,$http){
+        var url = "IFT.json";
+        $http.get(url).success( function(response) {
+            $scope.obj = response;
+            console.log($scope.obj);
+            $timeout(function (){
+                var banner = new Swiper(".Banner",{
+                    loop:true,
+                    autoplay:500,
+                    pagination: '.swiper-pagination'
+                });
+            },200)
+
+        })
+    }])
+
+    $(".Tab_Head").on("click","div",function () {
+//        console.log($(this).index());
+        var index = $(this).index();
+        $(".Tab_test>div").eq(index).show().siblings().hide();
+    })
+
+    $(".Tab_Head div ").click(function () {
+        console.log($(this).index());
+        if($(this).index()==0){
+            $(".xian").css({
+                left:"12.5%",transition: "all .3s"
+            })
+        }else if($(this).index()==1){
+            $(".xian").css({
+                left:"44.7%",transition: "all .3s"
+            })
+        }else {
+            $(".xian").css({
+                left:"78.7%",transition: "all .3s"
+            })
+        }
+    })
+
+</script>
+</html>

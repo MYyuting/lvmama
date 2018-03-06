@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="swiper/swiper.min.js"></script>
+    <script src="iscroll/iscroll.js"></script>
+    <script src="rem.js"></script>
+    <script src="../libs/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="anguler/angular.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <link rel="stylesheet" href="airplane.css">
+</head>
+<body ng-controller="myCtrl">
+    <header>
+        <div>
+            <div class="fanhui"><span class="glyphicon glyphicon-menu-left"></span></div>
+        </div>
+        <div>
+            <div><a href="../index.html"><span class="glyphicon glyphicon-home"></span></a></div>
+        </div>
+    </header>
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in obj.banner">
+                <img ng-src="{{item.img}}" alt="">
+            </div>
+        </div>
+    </div>
+<!--不知到写什么好  b（￣▽￣）d　-->
+<div class="detalls">
+    <div>
+        <div>
+            <img src="img/L_03.png" alt="">
+            <img src="img/L_04.png" alt="">
+        </div>
+        <div>
+            <img src="img/R_01.png" alt="">
+            <img src="img/R_02.png" alt="">
+        </div>
+    </div>
+    <div>
+        <div><p>北京</p></div>
+        <div>
+            <div class="Big"><img src="img/2017-12-14_114011.png" alt=""></div>
+            <div class="Small"><img src="img/2017-12-14_114019.png" alt=""></div>
+        </div>
+        <div><p>上海</p></div>
+    </div>
+    <div>
+        <div>
+            <p>12-15</p>
+            <span>周五</span>
+        </div>
+        <div>
+            <p>12-17</p>
+            <span>周五</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img src="Img/2017-12-13_200858.png" alt="">
+            <span>搜索</span>
+        </div>
+    </div>
+</div>
+    <div class="advertisement">
+        <div>
+            <img src="img/2017-12-14_114039.png" alt="">
+            <p>国内特价</p>
+            <div>
+                <span>199元起</span>
+            </div>
+        </div>
+        <div>
+            <p>特价机票，有你想要</p>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+    </div>
+    <div class="FW">
+        <img src="img/2017-12-14_114144.png" alt="">
+    </div>
+    <div class="guarantee">
+        <div>
+            <img src="img/2017-12-14_155313.png" alt="">
+        </div>
+    </div>
+<footer>
+
+
+    <img src="img/2017-12-14_114212.png" alt="">
+</footer>
+</body>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl",["$scope","$http","$timeout",function ($scope,$http,$timeout){
+        var url="airplane.json";
+        $http.get(url).success( function(response) {
+            $scope.obj = response;
+            console.log($scope.obj);
+            $timeout(function (){
+                var banner = new Swiper(".banner",{
+                    loop:true,
+                    autoplay:500,
+                    pagination: '.swiper-pagination'
+                });
+                var banner1 = new Swiper(".isc",{
+                    loop:true,
+                    autoplay:500,
+                    direction:"vertical"
+                });
+            },200)
+        });
+        var num = 0;
+
+        var LR = true;
+        $(".detalls > div:nth-child(2) > div:nth-child(2)").click(function (){
+            var deg = (num+=180)+"deg";
+            $(".detalls > div:nth-child(2) > div:nth-child(2) > .Big > img").css({
+                transition:"all 0.4s",
+                transform:"rotate("+ deg +")"
+            });
+            if (LR == true){
+                LR = false;
+                $(".detalls > div:nth-child(2) > div:nth-child(1) p").css({
+                    transition:"all 0.4s",left:"316px"
+                });
+                $(".detalls > div:nth-child(2) > div:nth-child(3) p").css({
+                    transition:"all 0.4s",right:"316px"
+                })
+            }else{
+                LR = true;
+                transition:"all 0.4s";
+                $(".detalls > div:nth-child(2) > div:nth-child(1) p").css({
+                    transition:"all 0.4s",left:"22px"
+                });
+                $(".detalls > div:nth-child(2) > div:nth-child(3) p").css({
+                    transition:"all 0.4s",right:"22px"
+                })
+            }
+        });
+
+        $(".detalls > div:nth-child(1) > div:nth-child(1) > img:nth-child(2)").click(function (){
+            $(".detalls > div:nth-child(1)>div:nth-child(2)").css("zIndex","5");
+            $(".detalls > div:nth-child(1)>div:nth-child(1)").css("zIndex","0");
+            $(".detalls > div:nth-child(3) > div:nth-child(2)").css({
+                transition:"all 0.4s",
+                right: "20px",
+                opacity: "1"
+            })
+        });
+        $(".detalls > div:nth-child(1) > div:nth-child(2) > img:nth-child(1)").click(function (){
+            $(".detalls > div:nth-child(1)>div:nth-child(2)").css("zIndex","0");
+            $(".detalls > div:nth-child(1)>div:nth-child(1)").css("zIndex","5");
+            $(".detalls > div:nth-child(3) > div:nth-child(2)").css({
+                transition:"all 0.4s",
+                right: "0px",
+                opacity: "0"
+            })
+        });
+        $(".FW img").click(function (){
+            $(".guarantee").css("display","block")
+        })
+        $(".guarantee div img").click(function (){
+            $(".guarantee").css("display","none")
+        })
+    }])
+</script>
+<script src="../gonyong.js"></script>
+</html>

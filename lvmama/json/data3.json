@@ -1,0 +1,199 @@
+{
+	"nav": [
+		{
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481419_28843.png",
+			"ps": "酒+景"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481321_28421.png",
+			"ps": "周边跟团"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481279_12002.png",
+			"ps": "当地参团"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481209_43114.png",
+			"ps": "亲子游"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481130_80884.png",
+			"ps": "周边酒店"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486481321_28421.png",
+			"ps": "一日游"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/02/1486480939_44727.png",
+			"ps": "门票"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/05/1495173762_37051.jpg",
+			"ps": "房车自驾"
+		}
+	],
+	"uli": [
+		{
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/06/1497425625_25508.jpg",
+			"ps": "古北水镇"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/11/1511525569_15745.jpg",
+			"ps": "长白山"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/11/1511525921_81153.jpg",
+			"ps": "崇礼"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2016/12/1482725896_51206.jpg",
+			"ps": "青岛"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2017/06/1498110401_19612.jpg",
+			"ps": "呼伦贝尔"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2016/12/1482725971_66424.jpg",
+			"ps": "大连"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2016/12/1482726034_97833.jpg",
+			"ps": "威海"
+		}, {
+			"img": "https://pics.lvjs.com.cn/pics/super/2016/12/1482725975_97880.jpg",
+			"ps": "济南"
+		}
+	],
+	"bao": [
+		{
+			"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1511525492_28391.jpg",
+			"span": "崇礼",
+			"ps": "住1晚张家口云顶大酒店（多种房型任选）＋2人早餐＋密苑云顶乐园全天雪票＋索道（2天中任选1天）",
+			"lei": "自由行",
+			"price": "￥1589"
+		}, {
+			"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1510039606_66027.jpg",
+			"span": "长白山",
+			"ps": "住3晚长白山万达智选假日酒店＋自助早餐＋滑雪（含雪具）＋每间房赠送1名12周岁以下儿童滑雪项目＋度假区大巴机场接送，不同入住日期有更多惊喜等您来享。",
+			"lei": "自由行",
+			"price": "￥2851"
+		}
+	],
+	"lvyou": [
+		{
+			"img1": "https://pics.lvjs.com.cn/pics/super/2017/11/1509589387_76364.jpg",
+			"img2": "https://pics.lvjs.com.cn/pics/super/2017/11/1512024453_59423.png",
+			"img3": "https://pics.lvjs.com.cn/pics/super/2017/05/1493950041_10768.png",
+			"img4": "https://pics.lvjs.com.cn/pics/super/2016/12/1482477275_28859.jpg",
+			"img5": "https://pics.lvjs.com.cn/pics/super/2016/12/1482477363_42835.jpg",
+			"img6": "https://pics.lvjs.com.cn/pics/super/2017/09/1504682186_59661.jpg"
+		}
+	],
+	"tabs": {
+		"bei": [
+			{
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1511525857_60617.jpg",
+				"ps1": "北京美神宫私汤温泉主题套餐",
+				"ps2": "入住1晚北京美神宫温泉城堡酒店＋双份早餐＋独立温泉泡池，周末私汤温泉好去处！",
+				"email": "北京",
+				"span1": "惠",
+				"span2": "返",
+				"price": "470"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1511525973_50513.jpg",
+				"ps1": "密苑云顶乐园滑雪季2天1晚",
+				"ps2": "住1晚张家口云顶大酒店（多种房型任选）＋2人早餐＋密苑云顶乐园开季狂欢趴-单日雪票（11月18、19日任选一天使用）",
+				"email": "张家口",
+				"span1": "惠",
+				"span2": "返",
+				"price": "1886"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1511526029_26482.jpg",
+				"ps1": "长白山万达智选雪季3晚连住",
+				"ps2": "住3晚长白山万达智选假日酒店＋自助早餐＋滑雪（含雪具）＋每间房赠送1名12周岁以下儿童滑雪项目＋度假区大巴机场接送",
+				"email": "白山",
+				"span1": "惠",
+				"span2": "返",
+				"price": "2619"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/11/1511526118_73252.jpg",
+				"ps1": "长白山万达套房2晚连住",
+				"ps2": "住2晚长白山万达套房假日酒店＋早餐和午餐＋滑雪（含雪具）＋每间房赠送1名12周岁以下儿童滑雪项目＋度假区大巴机场接送",
+				"email": "白山",
+				"span1": "惠",
+				"span2": "返",
+				"price": "2678"
+			}
+		],
+		"gen": [
+			{
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/07/1499764878_15494.jpg",
+				"ps1": "万达度假区长白山巴士1日深度游",
+				"ps2": "(长白山一日游)",
+				"ps3": "出发地：二道白河",
+				"span1": "返",
+				"price": "388"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495529581_12025.jpg",
+				"ps1": "【开心驴行】古北水镇2日跟团游",
+				"ps2": "(驴妈妈品牌线路、宿古北内客栈，赏古北夜景，回程时间自行决定，想怎么玩就怎么玩)",
+				"ps3": "出发地：北京",
+				"span1": "惠",
+				"span2": "返",
+				"price": "498"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495529458_29069.jpg",
+				"ps1": "五台山汽车2日跟团游",
+				"ps2": "品尝五台山素斋宴，全程导游陪同",
+				"ps3": "出发地：北京",
+				"span1": "惠",
+				"span2": "返",
+				"price": "242"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495527743_17862.jpg",
+				"ps1": "古北水镇2日游",
+				"ps2": "素有小乌镇之称",
+				"email": "白山",
+				"span1": "返",
+				"price": "458"
+			}
+		],
+		"dan": [
+			{
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495533140_21872.jpg",
+				"ps1": "颐和园、天坛、故宫2日跟团游",
+				"ps2": "纯玩无购物，免费接送站",
+				"email": "北京",
+				"span1": "返",
+				"price": "450"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495532431_58762.jpg",
+				"ps1": "故宫、八达岭长城2日跟团游",
+				"ps2": "逛故宫登长城，品老北京特色美食",
+				"email": "北京",
+				"span1": "返",
+				"price": "498"
+			}, {
+				"imgs": "https://pics.lvjs.com.cn/pics/super/2017/05/1495532383_28688.jpg",
+				"ps1": "天安门广场故宫2日当地游",
+				"ps2": "免费接送站或飞机，舒适出游、不进店、纯净玩、探访帝王生活，古建古迹，纵览北京全景",
+				"email": "北京",
+				"span1": "返",
+				"price": "462"
+			}
+			
+		],
+		"jiu":[
+			{
+			 "imgs":"http://pic.lvmama.com/pics//uploads/pc/place2/2016-12-06/b2fd9cfc-02ba-494f-acb8-7cb4d94c8fde_480_320.jpg",
+			 "price":"229",
+			 "ps":"大连长城饭店"
+			},
+			{
+			 "imgs":"http://pic.lvmama.com/uploads/pc/place2/2017-04-14/f2675b90-5d1a-4832-a487-7b6ad1b36dfd_480_320.jpg",
+			 "price":"842",
+			 "ps":"哈尔滨凯宾斯基酒店"
+			},
+			{
+			 "imgs":"http://pic.lvmama.com/pics//uploads/pc/place2/2016-11-29/72123587-2bf6-4740-9362-81b29b480cdf_480_320.jpg",
+			 "price":"348",
+			 "ps":"泰安宝龙福朋喜来登酒店"
+			},
+			{
+			 "imgs":"http://pic.lvmama.com/pics//uploads/pc/place2/2016-11-15/fb6dfb98-eee7-4752-858d-dcc338383be7_480_320.jpg",
+			 "price":"862",
+			 "ps":"崇礼云顶大酒店"
+			}
+			
+		]
+	}
+}

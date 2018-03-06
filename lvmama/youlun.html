@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>邮轮</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route1.4.5.js"></script>
+		<script src="libs/swiper.min.js"></script>
+		<script src="libs/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/youlun.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="youlun">
+			<div id="ding">
+			<span class="icon iconfont icon-top"></span>
+			<p>顶部</p>
+			</div>
+			
+			<!--邮轮-->
+			<header>
+				<p class="fanhui"><i class="iconfont icon-back"></i></p>
+				<h1>邮轮</h1>
+				<p>
+				<span>
+					<a href="index.html">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACHUlEQVRo3u2YX0RDURzHZ7Ea5TIiRsSIMUaMSBERESUmWnrqpZ5iT6OnnnoqPUWkiIiIsdeeYk+xjIieYvQUkda/0+/ke/m59udu98/Och4+Zuf+zp/Pveee8zs3cNebDXiIQeSB4UUfQog/vJToJ4qEAEWUdZVImLiGwBMQKAt3i0iIKGDgFSIGKigrIEZpkR7iEgN+JhLsWhxlAjE9qorIgZ1hoC9EskZMEtdkzAkRVFHkCAN8JVIN4lKIkbH7qonsYWBvxJSN+AnEfhM5VUR2IFElZluoN4M6n8RGp0W2mcRCG/XnUfeDWEVZ0G+RLUh8EWkH7aTRRrWddpyKrLMde82F6ZlBW3KarfglkmESmy6ueubN+SGWUdbnlcgSpoHsMOtBVsCn6yL2pgG3ReYwjwVecq/ytJxlFQy5KTKNdV92sOtx6s+X9Hf07YrIOJM48EGi1iY76VRkjOVGxz5K2E577IgkWLZ67la22ganjRLRZiKjlpQ71CEJM6u+YEeDuF2REXaiK3RYgh/W8uzEGWsmEiUe2YYXVkCCywgmM1xPZJC4Z8FCIQkTPrYHeeOtIhGihIDbLhAxv86U5QMwRQx2oYQno7pIhN1w+WsE2IogH9WQpYKqIuarUMb/K1lwCKtonQqqipiL043cOO1WaPVFbAUnIk03RC3iYbwW0SJaRItoES2iRbSIFtEiWkSLaBEt4oKIqvxfkV+o3A3jUUk7XAAAAABJRU5ErkJggg==" alt="" />
+					</a>
+				</span>
+				<span class="dianji">
+
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAiCAYAAAApkEs2AAAAYklEQVRYw+3WsQnAIBgF4bNyqWQsJ4yZwIG0sJFAIJX8gXuViMUHNpdaLhdwMFeBk4BLLZf+vHt524V+hK5ffy/ncF/PHyZUqFChQoXGg5p5Zp6ZJ1SoUKFChZp51pOZt3kD3m9Em64cZgcAAAAASUVORK5CYII=" alt="" />
+				</span>
+				</p>
+			</header>
+			<!--导航-->
+			<nav>
+				<div>
+					<p>北京站 <i class="iconfont icon-down"></i></p>
+					<i class="iconfont icon-search"></i>
+					搜索目的地/关键字/主题
+				</div>
+			</nav>
+			<!--轮播-->
+			<div class="swiper-container banner">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511346782_32489.jpg" alt=""/></li>
+					<li class="swiper-slide"><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1510221400_25803.jpg" alt=""/></li>
+					<li class="swiper-slide"><img src="https://pics.lvjs.com.cn/pics/super/2017/09/1506579742_13002.jpg" alt=""/></li>
+				</ul>
+				<!--分也器-->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--全部航线-->
+			<div class="qbhx">
+				<div class="qbhx_one">
+					<span class="le"></span>
+					<strong>全部航线</strong>
+					<span class="ri"></span>
+				</div>
+				<ul>
+					<li ng-repeat="item in obj.info">
+						<a href="">
+							<img ng-src="{{item.url}}" alt=""/>
+							<span>{{item.name}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--特惠专区-->
+			<div class="thzq">
+				<a href="#">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/09/1506390764_88200.jpg" alt=""/>
+				</a>
+				<a href="#">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/03/1488780319_12573.png" alt=""/>
+				</a>
+			</div>
+			<!--邮轮公司-->
+			<div class="ylgs">
+				<div class="qbhx_one">
+					<span class="le"></span>
+					<strong>邮轮公司</strong>
+					<span class="ri"></span>
+				</div>
+				<ul>
+					<li ng-repeat="item in obj.ylgs"><a href="">
+						<img ng-src="{{item.url}}" alt=""/>
+						<span>{{item.name}}</span>
+					</a></li>
+				</ul>
+			</div>
+			<!--推荐航线-->
+			<div class="tjhx">
+				<div class="qbhx_one">
+					<span class="le"></span>
+					<strong>推荐航线</strong>
+					<span class="ri"></span>
+				</div>
+				<ul>
+					<li ng-repeat="item in obj.tjlx">
+						<img ng-src="{{item.url}}" alt=""/>
+						<h3>{{item.name}}</h3>
+						<p>{{item.txt1}}</p>
+						<p>{{item.txt2}}</p>
+						<p>
+							<span>{{item.txt3}}</span>
+							<span><i>￥</i><b>{{item.txt4}}</b>起</span>
+						</p>
+					</li>
+				</ul>
+				<div class="qbhx_two">
+					<span class="le"></span>
+					<strong>已加载显示全部内容</strong>
+					<span class="ri"></span>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<script type="text/javascript">
+			var sw = new Swiper(".banner",{
+				autoplay:2000,
+				loop: true,
+				pagination:".swiper-pagination"
+			})
+			
+			//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>200){
+                    $("#ding").fadeIn(500);
+                }
+                else
+                {
+                    $("#ding").fadeOut(500);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+            $("#ding").click(function(){
+                  $('body,html').animate({scrollTop:0},500);
+		                         
+           });  
+			var App = angular.module("myApp",[]);
+			
+			App.controller("myCtrl",["$scope","$http",function($scope,$http){
+				$scope.obj = {};
+//				$http.get("youlun.json").then(function(res){
+//					console.log(res.data)
+//				})
+				$http({
+					method:"get",
+					url:"json/youlun.json"
+				}).then(function(res){
+					$scope.obj = res.data;
+					console.log($scope.obj)
+				})
+			}])
+		</script>
+	</body>
+	<script src="gonyong.js"></script>
+</html>

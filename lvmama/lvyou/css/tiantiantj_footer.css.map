@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,WAAW;EACT,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,CAAC;EACT,aAAC;IACC,OAAO,EAAE,KAAK;IACd,eAAe,EAAE,IAAI;IACrB,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,SAAS;IAEjB,mBAAI;MACF,KAAK,EAAE,IAAI;MACX,MAAM,EAAE,IAAI",
+"sources": ["tiantiantj_footer.scss"],
+"names": [],
+"file": "tiantiantj_footer.css"
+}

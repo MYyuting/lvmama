@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+p, h1 {
+  margin: 0; }
+
+body {
+  font-size: 0.14rem;
+  background: gainsboro; }
+
+a:hover {
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.06rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 3; }
+  header h1 {
+    font-size: 0.19rem;
+    font-weight: 400; }
+  header p {
+    width: 0.7rem;
+    display: flex;
+    align-items: center; }
+    header p .iconfont {
+      font-size: 0.25rem;
+      color: #E362A8; }
+    header p span:nth-of-type(2) {
+      margin-left: 0.1rem; }
+      header p span:nth-of-type(2) img {
+        width: 0.22rem; }
+    header p span img {
+      width: 0.24rem; }
+
+#sou {
+  padding: 0.06rem;
+  margin-top: -0.01rem;
+  background: white; }
+  #sou > div:first-of-type {
+    width: 100%;
+    height: 0.3rem;
+    border: 1px solid #E2E2E2;
+    padding: 0.01rem 0.01rem;
+    background: white;
+    display: flex;
+    border-radius: 1%;
+    padding-top: 0.04rem; }
+    #sou > div:first-of-type > div:first-of-type {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border-right: 1px solid gainsboro; }
+      #sou > div:first-of-type > div:first-of-type > p {
+        color: #D30775;
+        font-size: 0.14rem; }
+      #sou > div:first-of-type > div:first-of-type > div {
+        width: 0.08rem;
+        height: 0.08rem;
+        border-bottom: 1px solid #D30775;
+        border-right: 1px solid #D30775;
+        transform: rotate(45deg);
+        margin-top: 0.04rem;
+        margin-left: 0.07rem; }
+    #sou > div:first-of-type > div:last-of-type {
+      width: 80%;
+      display: flex; }
+      #sou > div:first-of-type > div:last-of-type > span:first-of-type {
+        font-size: 0.14rem;
+        color: gainsboro;
+        margin-top: 2px;
+        margin-left: 10px; }
+      #sou > div:first-of-type > div:last-of-type > p {
+        margin-top: 2px;
+        margin-left: 2px;
+        font-size: 0.14rem;
+        color: gainsboro; }
+
+.swiper-container {
+  width: 100%;
+  height: 0.9rem; }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    .swiper-container .swiper-wrapper .swiper-slide {
+      width: 100%;
+      height: 100%; }
+      .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        height: 100%; }
+  .swiper-container .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.6); }
+  .swiper-container .swiper-pagination-bullet-active {
+    background: white; }
+
+#nav {
+  width: 100%;
+  background: white;
+  padding: 0.04rem; }
+  #nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0; }
+    #nav > ul li {
+      width: 25%;
+      text-align: center;
+      padding-top: 0.1rem; }
+      #nav > ul li a {
+        color: #0F0F0F;
+        text-decoration: none; }
+        #nav > ul li a img {
+          width: 0.42rem;
+          height: 0.42rem; }
+        #nav > ul li a > p {
+          font-size: 0.14rem;
+          margin-top: 0.06rem; }
+
+#tabs {
+  width: 100%;
+  background: white;
+  margin-top: 0.1rem; }
+  #tabs > div:first-of-type {
+    width: 100%;
+    height: 0.8rem;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap; }
+    #tabs > div:first-of-type > div {
+      padding: 0.22rem;
+      text-align: center;
+      padding-top: 0.08rem;
+      margin-left: -5px;
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px solid #ccc; }
+      #tabs > div:first-of-type > div > img {
+        width: 0.25rem;
+        height: 0.25rem; }
+      #tabs > div:first-of-type > div > p {
+        font-size: 0.14rem;
+        margin-top: 0.02rem; }
+      #tabs > div:first-of-type > div > P:hover {
+        color: #D30775; }
+      #tabs > div:first-of-type > div > div {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background: white;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        transform: rotate(-45deg);
+        bottom: -7px;
+        left: 44%;
+        display: none; }
+      #tabs > div:first-of-type > div .qiehuan {
+        display: block; }
+
+#fath {
+  width: 100%;
+  overflow: hidden; }
+  #fath > div {
+    width: 100%;
+    background: white;
+    display: none; }
+  #fath > div:first-of-type {
+    display: flex; }
+
+#tbs1 {
+  width: 100%; }
+  #tbs1 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs1 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs1 ul li a {
+        color: #333333; }
+
+#tbs2 {
+  width: 100%; }
+  #tbs2 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs2 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs2 ul li a {
+        color: #333333; }
+
+#tbs3 {
+  width: 100%; }
+  #tbs3 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs3 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs3 ul li a {
+        color: #333333; }
+
+#tbs4 {
+  width: 100%; }
+  #tbs4 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs4 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs4 ul li a {
+        color: #333333; }
+
+#tbs5 {
+  width: 100%; }
+  #tbs5 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs5 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs5 ul li a {
+        color: #333333; }
+
+#tbs6 {
+  width: 100%; }
+  #tbs6 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs6 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs6 ul li a {
+        color: #333333; }
+
+#tbs7 {
+  width: 100%; }
+  #tbs7 ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    #tbs7 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs7 ul li a {
+        color: #333333; }
+
+#tbs8 {
+  width: 100%; }
+  #tbs8 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #tbs8 ul li {
+      height: 0.3rem;
+      width: 22.5%;
+      background-color: #f3f3f3;
+      font-size: 0.14rem;
+      float: left;
+      text-align: center;
+      border-radius: 27px;
+      list-style-type: none;
+      line-height: 0.3rem;
+      margin-left: 2%;
+      margin-top: 0.15rem; }
+      #tbs8 ul li a {
+        color: #333333; }
+
+#tuji {
+  width: 100%;
+  margin-top: 0.1rem;
+  background: white; }
+  #tuji > div {
+    width: 100%;
+    display: flex; }
+    #tuji > div > div:first-of-type {
+      width: 49.9%; }
+      #tuji > div > div:first-of-type img {
+        width: 100%;
+        height: 1.72rem;
+        border: 0.5px solid gainsboro; }
+    #tuji > div > div:nth-of-type(2) {
+      width: 49.9%; }
+      #tuji > div > div:nth-of-type(2) > div:first-of-type {
+        width: 100%; }
+        #tuji > div > div:nth-of-type(2) > div:first-of-type > img {
+          width: 100%;
+          height: 0.7rem;
+          border: 0.5px solid gainsboro; }
+      #tuji > div > div:nth-of-type(2) > div:nth-of-type(2) {
+        width: 100%;
+        display: flex; }
+        #tuji > div > div:nth-of-type(2) > div:nth-of-type(2) > img {
+          width: 50%;
+          height: 1.02rem;
+          border: 0.5px solid gainsboro; }
+
+#footer {
+  width: 100%;
+  background: white;
+  margin-top: 0.1rem;
+  padding-top: 0.1rem; }
+  #footer > div:first-of-type {
+    width: 100%; }
+    #footer > div:first-of-type > ul {
+      width: 94%;
+      margin: 0 auto;
+      display: flex; }
+      #footer > div:first-of-type > ul li {
+        width: 50%;
+        text-align: center;
+        padding: 0.1rem;
+        line-height: 0.16rem; }
+      #footer > div:first-of-type > ul li:hover {
+        color: #D30775;
+        border-bottom: 2px solid #D30775; }
+    #footer > div:first-of-type #fot {
+      width: 100%; }
+      #footer > div:first-of-type #fot > div {
+        width: 100%;
+        display: none; }
+      #footer > div:first-of-type #fot > div:first-of-type {
+        display: block; }
+
+#fot1 {
+  width: 100%;
+  perspective-origin: 50% 630.5px; }
+  #fot1 > div {
+    width: 100%; }
+    #fot1 > div > div {
+      width: 100%;
+      height: 1.36rem;
+      position: relative; }
+      #fot1 > div > div > img {
+        width: 100%;
+        height: 100%; }
+      #fot1 > div > div > span:first-of-type {
+        padding: 0.02rem;
+        background: #000000;
+        opacity: 0.7;
+        color: white;
+        position: absolute;
+        left: 0%;
+        top: 0.1rem; }
+      #fot1 > div > div > span:nth-of-type(2) {
+        padding: 0.02rem;
+        background: black;
+        opacity: 0.7;
+        color: white;
+        font-size: 0.14rem;
+        position: absolute;
+        left: 0%;
+        bottom: 0.2rem; }
+      #fot1 > div > div > span:nth-of-type(3) {
+        padding: 0.1rem;
+        background: #FF6700;
+        color: white;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        position: absolute;
+        bottom: 0.2rem;
+        right: 0%; }
+    #fot1 > div > p {
+      width: 96%;
+      margin: 0 auto;
+      height: 0.36rem;
+      line-height: 0.18rem;
+      max-height: 0.36rem;
+      overflow: hidden;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 0.1rem; }
+
+#fot2 {
+  width: 100%; }
+  #fot2 > div {
+    width: 100%; }
+    #fot2 > div > div {
+      width: 100%;
+      height: 1.36rem;
+      position: relative; }
+      #fot2 > div > div > img {
+        width: 100%;
+        height: 100%; }
+      #fot2 > div > div > span:first-of-type {
+        padding: 0.02rem;
+        background: #000000;
+        opacity: 0.7;
+        color: white;
+        position: absolute;
+        left: 0%;
+        top: 0.1rem; }
+      #fot2 > div > div > span:nth-of-type(2) {
+        padding: 0.02rem;
+        background: black;
+        opacity: 0.7;
+        color: white;
+        font-size: 0.14rem;
+        position: absolute;
+        left: 0%;
+        bottom: 0.2rem; }
+      #fot2 > div > div > span:nth-of-type(3) {
+        padding: 0.1rem;
+        background: #FF6700;
+        color: white;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        position: absolute;
+        bottom: 0.2rem;
+        right: 0%; }
+    #fot2 > div > p {
+      width: 96%;
+      margin: 0 auto;
+      height: 0.36rem;
+      line-height: 0.18rem;
+      max-height: 0.36rem;
+      overflow: hidden;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 0.1rem; }
+
+/*# sourceMappingURL=chu.css.map */

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem; }
+
+a:link {
+  text-decoration: none;
+  color: #666; }
+
+a:visited {
+  text-decoration: none;
+  color: #666; }
+
+a:hover {
+  text-decoration: none;
+  color: #666; }
+
+a:active {
+  text-decoration: none;
+  color: #666; }
+
+a {
+  color: #666; }
+
+#top {
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background: #D30775;
+  border-radius: 50%;
+  display: block;
+  color: #fff;
+  padding: 2px 0; }
+
+/*# sourceMappingURL=gonyon.css.map */

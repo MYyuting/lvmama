@@ -1,0 +1,267 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+html{
+    font-size: 625%;
+}
+body{
+    font-size: 0.14rem;
+}
+//头部
+header{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.06rem;
+    background: #fff;
+    z-index: 3;
+    h1{
+        font-size: 0.2rem;
+        font-weight: 200;
+        width: 3rem;
+        overflow: hidden;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+    p{
+        .iconfont{
+            font-size: 0.2rem;
+            color: #E0509E;
+        }
+    }
+    p:nth-of-type(2){
+        img{
+            width: 0.25rem;
+            margin-right: 0.05rem;
+        }
+    }
+       
+}
+//标题图
+.tu{
+    width: 100%;
+    margin-bottom: -0.04rem;
+    position: relative;
+    .guize{
+        position: absolute;
+        top: 0.7rem;
+        right: 0;
+        height: 0.78rem;
+        width: 0.3rem;
+        padding: 0.09rem;
+        font-size: 0.12rem;
+        background:  url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/rule10.png") no-repeat;
+        background-size: 100% 100%;
+        color: #fff;
+        line-height: 0.14rem;
+    }
+    img{
+        width: 100%;
+    }
+    
+}
+//活动规则
+.huodongguize{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+    .main{
+        width: 90%;
+        padding: 0.1rem;
+        background: #fff;
+        h3{
+            text-align: center;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            font-weight: 400;
+            
+        }
+        p{
+            font-size: 0.1rem;
+            padding-top: 0.1rem;
+        }
+        button{
+            display: block;
+            width: 1.56rem;
+            height: 0.36rem;
+            border-radius: 0.18rem;
+            background: #FEC202;
+            font-size: 0.22rem;
+            font-weight: 500;
+            color: #fff;
+            border: none;
+            outline: none;
+            margin: auto;
+            margin-top: 0.15rem;
+        }
+    }
+}
+
+
+//出发地
+.chufadi{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   padding: 0 0.08rem;
+   height: 0.36rem;
+   align-items: center;
+   background: #72C9F6;
+   font-size: 0.16rem;
+   .iconfont{
+       font-size: 0.12rem;
+   }
+   p:nth-of-type(1){
+       color: #fff;
+   }
+   p:nth-of-type(2){
+       color: #fff;
+   }
+   
+}
+//地区
+.diqu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 0.1rem 0.1rem;
+    flex-wrap: wrap;
+    display: none;
+    li{
+        width: 0.8rem;
+        height: 0.28rem;
+        border: 1px solid #cdcddc;
+        text-align: center;
+        line-height: 0.28rem;
+        font-size: 0.16rem;
+        color: #999;
+        margin-top: 0.1rem;
+    }
+    li.bgColor{
+        background: #72C9F6;
+        color: #fff;
+        border: 1px solid #72C9F6;
+    }
+    
+}
+
+
+//标题
+.content{
+    width: 100%;
+    padding: 0 0.12rem 0.45rem;
+    background: #D7F2FF;
+    .biaoti{
+        width: 2rem;
+        height: 0.56rem;
+        background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/title1.png") center no-repeat;
+        background-size: 100% 40%;
+        text-align: center;
+        margin: auto;
+        h2{
+            font-size: 0.26rem;
+            color: #2195CB;
+            height: 0.56rem;
+            line-height: 0.56rem;
+        }
+    }
+    ul{
+        width: 100%;
+        li{
+            width: 100%;
+            position: relative;
+            background: #fff;
+            padding-bottom: 0.07rem;
+            margin-top: 0.12rem;
+            transform: scale(1.1);
+            img{
+                width: 100%;
+                height: 1.92rem;
+            }
+            >p:nth-of-type(1){
+                color: #999;
+                font-size: 0.13rem;
+                text-indent: 0.15rem;
+            }
+            div{
+                padding: 0.1rem 0.15rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 0.21rem;
+                a{
+                    display: block;
+                    width: 0.78rem;
+                    height: 0.21rem;
+                    border-radius: 0.05rem;
+                    background: red;
+                    color: #fff;
+                    padding: 0;
+                    text-align: center;
+                    line-height: 0.21rem;
+                    
+                }
+                p{
+                    display: flex;
+                    font-size: 0.16rem;
+                    align-items: flex-end;
+                    color: #de2500;
+                    span:nth-of-type(2){
+                        font-size: 0.12rem;
+                        padding-left: 0.05rem;
+                    }
+                }
+            }
+        }
+    }
+    .chakan{
+        width: 100%;
+        height: 0.31rem;
+        line-height: 0.31rem;
+        color: #fff;
+        background: #8FD5F7; 
+        text-align: center;
+        font-size: 0.14rem;
+        border-radius: 0 0 0.06rem 0.06rem;  
+        margin-top: 0.12rem;
+    }
+}
+.zhiding{
+   width: 0.6rem;
+    position: fixed;
+    bottom: 0.6rem;
+    right: 0.12rem;
+    z-index: 33;
+    background: rgba(0,0,0,0.8);
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #fff;
+    border-radius: 0.04rem;
+    text-align: center;
+    font-size: 0.12rem;
+    display: none;
+}
+

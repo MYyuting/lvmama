@@ -1,0 +1,319 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: 0.14rem;
+}
+
+//头部
+header {
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.06rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    h1 {
+        font-size: 0.19rem;
+        font-weight: 400;
+    }
+    p {
+        width: 0.6rem;
+        .iconfont {
+            font-size: 0.25rem;
+        }
+    }
+}
+
+//搜索
+.ss {
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    padding: 0 0.1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.45rem;
+    >a {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: 1px solid #cdcdcd;
+        input {
+            width: 100%;
+            padding-left: 0.5rem;
+            height: 0.3rem;
+            border: none;
+            outline: none;
+        }
+         ::-webkit-input-placeholder {
+            color: #999;
+        }
+        span {
+            position: absolute;
+            top: 0.04rem;
+            left: 0.1rem;
+            .iconfont {
+                font-size: 0.18rem;
+            }
+        }
+    }
+}
+
+//轮播图
+.banner {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+//导航
+.daohang {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.15rem;
+    border-bottom: 0.08rem solid #cddccd;
+    li {
+        width: 25%;
+        text-align: center;
+        padding-top: 0.15rem;
+        img {
+            width: 0.5rem;
+        }
+        p {
+            padding-top: 0.05rem;
+            font-size: 0.12rem;
+        }
+    }
+}
+
+//标题
+.tese {
+    width: 100%;
+    height: 0.3rem;
+    padding: 0 0.1rem;
+    line-height: 0.3rem;
+    color: #666;
+    font-size: 0.12rem;
+}
+
+//广告
+.gg {
+    width: 100%;
+    padding-bottom: 0.07rem;
+    border-bottom: 0.08rem solid #efefef;
+    img {
+        width: 100%;
+    }
+}
+
+//路由
+.luyou {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+    a {
+        display: block;
+        height: 0.44rem;
+        line-height: 0.44rem;
+    }
+    .bor {
+        border-bottom: 2px solid #A71D5D;
+    }
+}
+
+.ng-scope {
+    width: 100%;
+}
+
+#tuijian {
+    width: 100%;
+    ul {
+        width: 100%;
+        li {
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            P {}
+            p:nth-of-type(1) {
+                text-indent: 0.15rem;
+                font-size: 0.14rem;
+                color: #333;
+                line-height: 0.2rem;
+                padding-top: 0.1rem;
+            }
+            p:nth-of-type(2) {
+                text-indent: 0.15rem;
+                font-size: 0.12rem;
+                color: #666;
+                line-height: 0.2rem;
+                padding-bottom: 0.1rem;
+            }
+            p:nth-of-type(3),
+            p:nth-of-type(4) {
+                position: absolute;
+            }
+            p:nth-of-type(3) {
+                left: 0.1rem;
+                bottom: 0.8rem;
+                color: #fff;
+            }
+            p:nth-of-type(4) {
+                font-size: 0.1rem;
+                color: #fff;
+                bottom: 0.7rem;
+                right: 0;
+                background: #ff7200;
+                height: 0.33rem;
+                padding: 0 0.1rem;
+                border-radius: 0.03rem;
+                line-height: 0.33rem;
+                span {
+                    font-size: 0.16rem;
+                }
+            }
+        }
+    }
+}
+
+//演出
+//content
+#yanchu {
+    width: 100%;
+    ul {
+        width: 100%;
+        li {
+            width: 100%;
+            a {
+                display: block;
+                display: flex;
+                width: 100%;
+                padding: 0.1rem;
+                position: relative;
+                .left {
+                    width: 0.95rem;
+                    height: 0.77rem;
+                    position: relative;
+                    p {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0.45rem;
+                        height: 0.15rem;
+                        background: url("//pics.lvjs.com.cn/mobile/coding/v750/ticket/img/sign2.png") no-repeat;
+                        background-size: cover;
+                    }
+                    img {
+                        width: 100%;
+                        height: 0.77rem;
+                    }
+                }
+                .right {
+                    flex-grow: 1;
+                    div {
+//                      font-size: 0.1rem;
+                        text-indent: 0.04rem;
+                        height: 0.2rem;
+                        line-height: 0.2rem;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    div:nth-of-type(1) {
+                        font-size: 0.14rem;
+                    }
+                    div:nth-of-type(2) {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p:nth-of-type(1) span {
+                            border: 1px solid #FF8A34;
+                            margin-right: 0.05rem;
+                            padding: 0 0.05rem;
+                            font-size: 0.1rem;
+                            color: #FF8A34;
+                        }
+                        p:nth-of-type(2){
+                            font-size: 0.1rem;
+                            color: #E157A2;
+                            span{
+                                font-size: 0.16rem;
+                            }
+                        }
+                    }
+                    div:nth-of-type(3) {
+                        color: #777;
+                        height: 0.2rem;
+                        line-height: 0.2rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 0.1rem;
+                    }
+                    div:nth-of-type(4) {
+                        color: #c5c5c5;
+                        font-size: 0.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//底部
+.dibu{
+    width: 100%;
+    text-align: center;
+    height: 0.44rem;
+    background: #EFEFF7;
+    color: #aaa;
+    line-height: 0.44rem;
+    font-size: 0.14rem;
+}
+//置顶
+.zhiding {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: red;
+    position: fixed;
+    right: 0.2rem;
+    bottom: 0.8rem;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    display: none;
+    span {
+        display: block;
+        margin-top: 0.05rem;
+    }
+}

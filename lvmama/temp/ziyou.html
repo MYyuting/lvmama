@@ -1,0 +1,101 @@
+
+		<div id="boxs">
+			<div>
+				<ul>
+					<li onclick="taba('zi1')">全部</li>
+					<li onclick="taba('zi2')">三亚</li>
+					<li onclick="taba('zi3')">海南</li>
+					<li onclick="taba('zi4')">亚龙湾国家旅游度假区</li>
+					<li onclick="taba('zi5')">杭州宋城烂苹果乐园</li>
+					<li>杭州野生动物世界</li>
+					<li>杭州宋城景区</li>
+					<li>珠海</li>
+					<li>宋城杭州乐园</li>
+					<li>杭州</li>
+				</ul>
+			</div>
+			<div id="yes">
+				<div id="zi1">
+					<div ng-repeat="obj in qubs">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.ps}}</span>
+							<span>￥<a href="">{{obj.price}}</a>起</span>
+						</div>
+						<div>
+							<p>{{obj.lis1}}</p>
+							<p>{{obj.lis2}}</p>
+						</div>
+					</div>
+				</div>
+				<div id="zi2">
+					<div ng-repeat="obj in qusy">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.ps}}</span>
+							<span>￥<a href="">{{obj.price}}</a>起</span>
+						</div>
+						<div>
+							<p>{{obj.lis1}}</p>
+							<p>{{obj.lis2}}</p>
+						</div>
+					</div>
+				</div>
+				<div id="zi3">
+					<div ng-repeat="obj in qunhn">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.ps}}</span>
+							<span>￥<a href="">{{obj.price}}</a>起</span>
+						</div>
+						<div>
+							<p>{{obj.lis1}}</p>
+							<p>{{obj.lis2}}</p>
+						</div>
+					</div>
+				</div>
+				<div id="zi4">
+					<div ng-repeat="obj in qunyl">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.ps}}</span>
+							<span>￥<a href="">{{obj.price}}</a>起</span>
+						</div>
+						<div>
+							<p>{{obj.lis1}}</p>
+							<p>{{obj.lis2}}</p>
+						</div>
+					</div>
+				</div>
+				<div id="zi5">
+					<div ng-repeat="obj in qunsong">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.ps}}</span>
+							<span>￥<a href="">{{obj.price}}</a>起</span>
+						</div>
+						<div>
+							<p>{{obj.lis1}}</p>
+							<p>{{obj.lis2}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+
+	<script type="text/javascript">
+		function taba(pid){
+			var tabs = ["zi1", "zi2", "zi3", "zi4","zi5"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+	</script>
+

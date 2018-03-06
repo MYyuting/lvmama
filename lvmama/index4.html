@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="libs/rem.js"></script>
+		<script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route1.4.5.js"></script>
+		<script src="libs/swiper.min.js"></script>
+		<script src="libs/iscroll-probe.js"></script>
+		<script src="libs/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index4.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="zhoubian">
+			<header>
+				<!--导航-->
+				<nav>
+					<p></p>
+					<h1>周边</h1>
+					<a href="bddt.html"><img src="素材/zb_03.png" alt=""/></a>
+				</nav>
+				<!--定位-->
+				<div id="dw">
+					<img src="素材/zb_06.png" alt=""/>
+				</div>
+			</header>
+			<!--主体-->
+			<main>
+				<div id="main_main">
+					<div class="main_one">
+						<a href="#a" class="bgColor">门票</a>
+						<a href="#b">酒店</a>
+						<a href="#c">酒+景</a>
+						<a href="#d">当地游</a>
+					</div>
+					<ng-view></ng-view>
+
+				</div>
+			</main>
+
+			<div class="fot">
+				<footer>
+					<ul></ul>
+				</footer>
+			</div>
+		</div>
+		<script src="foot.js"></script>
+		<link rel="stylesheet" href="css/foot2.css"/>
+		<script type="text/javascript">
+			var App = angular.module("myApp",["ngRoute"]);
+			
+			App.config(["$routeProvider",function($routeProvider){
+				$routeProvider
+				.when("/a",{
+					templateUrl:"temp/temp4/demo1.html"
+				})
+				.when("/b",{
+					templateUrl:"temp/temp4/demo2.html"
+				})
+				.when("/c",{
+					templateUrl:"temp/temp4/demo3.html"
+				})
+				.when("/d",{
+					templateUrl:"temp/temp4/demo4.html"
+				})
+				.otherwise({
+					redirectTo:"/a"
+				})
+			}]);
+			
+			App.controller("myCtrl",["$scope","$http","$interval","$filter",function($scope,$http,$interval,$filter){
+				$scope.obj = {};
+				$http({
+					method:"get",
+					url:"json/index4.json"
+				}).then(function(res){
+					$scope.obj = res.data;
+					console.log($scope.obj)
+				})
+			}])
+			
+			$(".main_one a").click(function(){
+				$(this).addClass("bgColor").siblings().removeClass("bgColor")
+			})
+			
+			$("nav span").click(function(){
+				alert("1")
+			});
+			
+			var iscr = new IScroll("main",{
+				scrollY:true 
+			});
+			iscr.on("beforeScrollStart",function(){
+			          iscr.refresh();
+			});
+
+			$("footer li:eq(3)").addClass("fot_active");
+		</script>
+	</body>
+</html>

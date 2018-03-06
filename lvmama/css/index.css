@@ -1,0 +1,409 @@
+#box {
+  margin-bottom: 0.35rem; }
+
+header {
+  width: 100%;
+  background: #fff;
+  height: 0.45rem; }
+  header .tou {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem; }
+    header .tou .ss {
+      position: relative; }
+      header .tou .ss i {
+        position: absolute;
+        font-size: 0.18rem;
+        color: #aaa;
+        top: 0.05rem;
+        left: 0.1rem; }
+    header .tou input {
+      height: 0.3rem;
+      width: 2.5rem;
+      text-indent: 0.3rem;
+      border: 1px solid #ccc; }
+    header .tou div:first-child i {
+      font-size: 0.12rem;
+      color: #D30775; }
+    header .tou div:last-child span {
+      font-size: 0.22rem; }
+    header .tou div span {
+      color: #D30775;
+      font-size: 0.16rem; }
+
+.s-ban a {
+  display: block;
+  height: 0.78rem; }
+  .s-ban a img {
+    width: 100%;
+    height: 100%; }
+.s-ban .swiper-pagination-bullet-active {
+  background: #fff; }
+.s-ban .swiper-gg {
+  position: absolute;
+  width: 0.23rem;
+  height: 0.1rem;
+  bottom: 0.05rem;
+  left: 0;
+  z-index: 55;
+  background: url(//pics.lvjs.com.cn/mobile/img/icons/guangg.png) center;
+  background-size: 100%; }
+
+.s-lei ul {
+  margin-top: 0.03rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .s-lei ul li {
+    width: 33%;
+    height: 100%; }
+    .s-lei ul li a {
+      display: block; }
+    .s-lei ul li a {
+      color: #fff;
+      text-align: center;
+      font-size: 0.16rem; }
+    .s-lei ul li div:nth-child(2) {
+      margin-top: 0.01rem; }
+.s-lei .lei_1 {
+  height: 0.862rem; }
+  .s-lei .lei_1 li a {
+    background: #ec4c40;
+    height: 0.425rem;
+    line-height: 0.425rem; }
+  .s-lei .lei_1 li:first-child a {
+    height: 0.862rem;
+    background: url("https://pics.lvjs.com.cn/pics/super/2017/09/1504487790_59820.png") no-repeat;
+    background-size: 100% 100%; }
+.s-lei .lei_2 {
+  height: 0.555rem; }
+  .s-lei .lei_2 li {
+    height: 100%;
+    background: #f8791c; }
+    .s-lei .lei_2 li a {
+      line-height: 0.555rem; }
+  .s-lei .lei_2 li:first-child a {
+    height: 100%;
+    background: url("https://pics.lvjs.com.cn/pics/super/2017/08/1503933614_69369.png") no-repeat;
+    background-size: 100% 100%; }
+.s-lei .lei_3 {
+  height: 1.298rem; }
+  .s-lei .lei_3 li {
+    height: 0.862rem; }
+    .s-lei .lei_3 li a {
+      background: #7ec553; }
+  .s-lei .lei_3 li:first-child a {
+    background: url("https://pics.lvjs.com.cn/pics/super/2017/11/1510817214_66095.png") no-repeat;
+    background-size: 100% 100%; }
+  .s-lei .lei_3 li:nth-child(4) {
+    width: 100%;
+    height: 0.426rem;
+    display: flex;
+    justify-content: space-around; }
+    .s-lei .lei_3 li:nth-child(4) div {
+      margin-top: 0.01rem;
+      width: 33%; }
+.s-lei .lei_4 li:first-child {
+  border-bottom-left-radius: 0.05rem;
+  border-top-left-radius: 0.05rem; }
+  .s-lei .lei_4 li:first-child a {
+    background: url(""); }
+.s-lei .lei_4 li {
+  background: #5598dc; }
+  .s-lei .lei_4 li .iconfont {
+    font-size: 0.2rem;
+    margin-right: 0.05rem; }
+.s-lei .lei_lie {
+  padding: 0.17rem 0; }
+  .s-lei .lei_lie li {
+    width: 20%;
+    text-align: center; }
+    .s-lei .lei_lie li a {
+      display: block;
+      color: #000; }
+    .s-lei .lei_lie li span {
+      display: block;
+      width: 100%;
+      height: 0.28rem;
+      font-size: 0.2rem;
+      background: url(https://pics.lvjs.com.cn/pics/super/2017/12/1512369763_76425.png) no-repeat center;
+      background-size: 50% 90%;
+      margin-bottom: 0.08rem;
+      position: relative; }
+      .s-lei .lei_lie li span i {
+        width: 47px;
+        height: 12px;
+        position: absolute;
+        top: -12px;
+        left: 14px; }
+    .s-lei .lei_lie li p {
+      font-size: 0.14rem; }
+  .s-lei .lei_lie li:nth-child(3) i {
+    background: url("https://pics.lvjs.com.cn/pics/super/2017/12/1512369703_96092.png") no-repeat;
+    background-size: 47px 12px; }
+
+.gangtu {
+  background: #4C7D22;
+  padding-top: 10px;
+  margin-top: 6px;
+  border-top: 5px solid #f5f5f5; }
+  .gangtu img {
+    width: 100%;
+    height: 100%; }
+
+.huo {
+  margin-top: 5px; }
+  .huo .til {
+    height: 47px;
+    line-height: 47px;
+    font-size: 15px;
+    color: #589adc;
+    text-align: center;
+    position: relative; }
+    .huo .til .til_l, .huo .til .til_r {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: #aaa;
+      color: #666;
+      margin-right: 8px;
+      vertical-align: middle;
+      border-radius: 100%;
+      position: relative; }
+    .huo .til .til_r {
+      margin-left: 8px;
+      margin-right: 0; }
+    .huo .til .til_r::after {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 1px;
+      border-left: 0.5rem solid #aaa;
+      border-right: 0 solid transparent;
+      border-top: 1px solid #aaa; }
+    .huo .til .til_l::after {
+      content: "";
+      position: absolute;
+      right: 7px;
+      top: 1px;
+      border-left: 0 solid transparent;
+      border-right: 0.5rem solid #aaa;
+      border-top: 1px solid #aaa; }
+    .huo .til i {
+      display: inline-block;
+      vertical-align: middle; }
+  .huo .huo_con {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #efeff7; }
+    .huo .huo_con li {
+      width: 50%;
+      border-right: 1px solid #ccc;
+      border-top: 1px solid #ccc; }
+      .huo .huo_con li img {
+        width: 100%; }
+
+.qianggou {
+  padding-bottom: 10px; }
+  .qianggou .til {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc; }
+    .qianggou .til span:first-child {
+      position: relative;
+      text-indent: 10px; }
+    .qianggou .til span:first-child::before {
+      content: "";
+      border-left: 5px solid #D30775;
+      border-right: 0px solid transparent;
+      border-top: 18px solid #D30775;
+      position: absolute;
+      top: 5px;
+      left: 0; }
+    .qianggou .til span a {
+      color: #D30775; }
+  .qianggou .qg_con {
+    width: 100%;
+    padding: 10px 10px 0;
+    overflow: hidden; }
+    .qianggou .qg_con > div {
+      display: flex;
+      width: 11.6rem; }
+      .qianggou .qg_con > div a {
+        display: block;
+        width: 1.4rem;
+        margin-right: 5px; }
+      .qianggou .qg_con > div .qg_img {
+        position: relative; }
+        .qianggou .qg_con > div .qg_img .bj {
+          background: url("https://pics.lvjs.com.cn/uploads/pc/place2/2016-05-19/1b438aa5-c69c-45d0-994b-feec94a2c32b_180_120.jpg") no-repeat;
+          background-size: cover;
+          padding-bottom: 68.1%; }
+        .qianggou .qg_con > div .qg_img div:last-child {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.6);
+          font-size: 12px;
+          line-height: 23px;
+          padding: 0 5px;
+          overflow: hidden; }
+      .qianggou .qg_con > div .qg_info {
+        padding: 2px 3px 4px;
+        border: 1px solid #ccc; }
+        .qianggou .qg_con > div .qg_info p {
+          font-size: 12px;
+          height: 32px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+          line-height: 16px;
+          color: #333;
+          margin-bottom: 5px; }
+        .qianggou .qg_con > div .qg_info div {
+          display: flex;
+          justify-content: space-between; }
+          .qianggou .qg_con > div .qg_info div span {
+            width: 50%;
+            display: block;
+            text-align: center;
+            color: #d30775;
+            font-size: 12px; }
+            .qianggou .qg_con > div .qg_info div span i {
+              color: #aaa;
+              font-size: 9px; }
+      .qianggou .qg_con > div .gd {
+        width: 60px; }
+        .qianggou .qg_con > div .gd div {
+          margin-top: 28px;
+          display: flex;
+          align-items: center; }
+          .qianggou .qg_con > div .gd div span {
+            width: 20px;
+            display: block;
+            line-height: 100%;
+            text-align: center;
+            color: #333; }
+
+.table {
+  border-top: 5px solid #ccc;
+  width: 100%;
+  background: #fff; }
+  .table nav {
+    display: flex; }
+    .table nav a {
+      width: 25%;
+      text-align: center;
+      line-height: 44px;
+      font-size: 14px;
+      color: #000; }
+    .table nav .active span {
+      color: #fff;
+      background: #d30775;
+      border-radius: 20px;
+      padding: 5px 10px; }
+
+.xfu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; }
+
+.fen_con1 a {
+  display: block;
+  padding-bottom: 10px; }
+.fen_con1 .fen_img {
+  overflow: hidden;
+  background: url("//pics.lvjs.com.cn/mobile/zt/3.0.0/img/loading.png") center center no-repeat;
+  position: relative;
+  background-size: 150px 150px !important;
+  padding-bottom: 36%; }
+  .fen_con1 .fen_img img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    transition: all 1s;
+    transform: scale(2);
+    opacity: 0; }
+  .fen_con1 .fen_img .price {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: hidden; }
+    .fen_con1 .fen_img .price p {
+      background: #ff720e;
+      color: #fff;
+      font-size: 12px;
+      padding: 5px 10px; }
+      .fen_con1 .fen_img .price p span {
+        font-size: 20px; }
+    .fen_con1 .fen_img .price > span {
+      background: #fff;
+      color: #ff720e;
+      font-size: 12px;
+      display: block;
+      line-height: 24px;
+      padding: 0 10px; }
+.fen_con1 .fen_til {
+  padding: 10px; }
+  .fen_con1 .fen_til p {
+    color: #333;
+    max-height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; }
+
+.kefu {
+  position: fixed;
+  top: 78%;
+  left: 4%;
+  width: 0.45rem;
+  height: 0.45rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.45rem; }
+  .kefu .iconfont {
+    font-size: 0.4rem;
+    color: #fff; }
+
+.kufumo {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  background: rgba(0, 0, 0, 0.2); }
+  .kufumo div {
+    background: #fff;
+    width: 85%;
+    height: 45%;
+    z-index: 113;
+    margin: 40% auto;
+    text-align: center;
+    padding-bottom: 20px; }
+    .kufumo div a {
+      display: block;
+      width: 90%;
+      height: 0.45rem;
+      line-height: 0.45rem;
+      background: #D30775;
+      margin: 0.2rem auto 0;
+      color: #fff;
+      font-size: 0.16rem;
+      border-radius: 5px; }
+    .kufumo div a:last-child {
+      background: #FF720E; }
+
+/*# sourceMappingURL=index.css.map */

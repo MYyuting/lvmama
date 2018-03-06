@@ -1,0 +1,36 @@
+
+		<div id="box1">
+			<div id="tab">
+				<ul class="tabs">
+					<li>
+						<a href="" ng-click="huan()">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" ng-click="huan()">出游类型</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" ng-click="huan()">价格</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" ng-click="huan()">出游月份</a>
+						<div></div>
+					</li>
+				</ul>
+			</div>
+			<div id="box_fat">
+				<div ng-repeat="obj in tabs">
+					<div class="tabs_left">
+						<img ng-src={{obj.imgs}} alt="" />
+						<span>{{obj.span}}</span>
+					</div>
+					<div class="tabs_right">
+						<p>{{obj.ps}}</p>
+						<p><span>{{obj.span2}}</span></p>
+						<p><a href="">{{obj.price}}</a>起</p>
+					</div>
+				</div>
+			</div>
+		</div>

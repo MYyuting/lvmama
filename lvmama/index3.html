@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>目的地</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="libs/rem.js"></script>
+		<script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route1.4.5.js"></script>
+		<script src="libs/swiper.min.js"></script>
+		<script src="libs/iscroll-probe.js"></script>
+		<script src="libs/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index3.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="mdidi">
+			<!--头部-->
+			<header>
+				<!--目的地-->
+				<div id="tb">
+					<h2>目的地</h2>
+				</div>
+				<!--导航-->
+				<div class="dh">
+					<div>
+						<p>北京站 <i class="iconfont icon-down"></i></p>
+						<span>|</span>
+						<i class="iconfont icon-search"></i>
+						搜索目的地
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<!--轮播-->
+				<div class="swiper-container banner">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+						<li class="swiper-slide"><img src="素材/目的地_03.png" alt=""/></li>
+					</ul>
+					<!--分也器-->
+					<div class="swiper-pagination"></div>
+				</div>
+				<!--旅游圣地-->
+				<ul id="lysd">
+					<li ng-repeat="item in obj.lysd">
+						<a href="index2.html">
+							<img ng-src="素材/{{item.url}}" alt=""/>
+							<p>{{item.name}}</p>
+						</a>
+					</li>
+				</ul>
+				<!--当季热门-->
+				<div id="djrm">
+					<div class="djrm_1">
+						<h2>当季热门</h2>
+						<span>目的地大全<i class="iconfont icon-right"></i></span>
+					</div>
+					<div class="djrm_2">
+						<a href="#a" class="bgColor">热门</a>
+						<a href="#b">周边</a>
+						<a href="#c">浙江泸</a>
+						<a href="#d">闽粤桂</a>
+						<a href="#e">大西北</a>
+						<a href="#f">云贵</a>
+						<a href="#g">川藏</a>
+						<a href="#h">港澳台</a>
+						<a href="#i">东南亚</a>
+						<a href="#j">日本</a>
+					</div>
+					<div class="djrm_3">
+						<ng-view></ng-view>
+						<!--<div ng-repeat="item in obj.djrm_3">
+                            <a href="#">
+                                <img ng-src="素材/{{item.url}}" alt=""/>
+                                <h3>{{item.name}}</h3>
+                                <span>{{item.sl}}人去过</span>
+                                <p>{{item.txt}}</p>
+                            </a>
+                        </div>-->
+					</div>
+				</div>
+			</main>
+			<!-- 底部-->
+			<footer>
+				<ul></ul>
+			</footer>
+
+		</div>
+
+
+		<script src="foot.js"></script>
+		<link rel="stylesheet" href="css/foot2.css"/>
+
+		<script type="text/javascript">
+			var App = angular.module("myApp",["ngRoute"]);
+
+			App.config(["$routeProvider",function($routeProvider){
+				$routeProvider
+				.when("/a",{
+					templateUrl:"temp/temp3/demo3.html"
+				})
+				.when("/b",{
+					templateUrl:"temp/temp3/demo1.html"
+				})
+				.when("/c",{
+					templateUrl:"temp/temp3/demo2.html"
+				})
+				.when("/d",{
+					templateUrl:"temp/temp3/demo3.html"
+				})
+				.when("/e",{
+					templateUrl:"temp/temp3/demo1.html"
+				})
+				.when("/f",{
+					templateUrl:"temp/temp3/demo3.html"
+				})
+				.when("/g",{
+					templateUrl:"temp/temp3/demo1.html"
+				})
+				.when("/h",{
+					templateUrl:"temp/temp3/demo3.html"
+				})
+				.when("/i",{
+					templateUrl:"temp/temp3/demo1.html"
+				})
+				.when("/j",{
+					templateUrl:"temp/temp3/demo2.html"
+				})
+				.otherwise({
+					redirectTo:"/a"
+				})
+			}])
+			
+			App.controller("myCtrl",["$scope","$http","$interval","$filter",function($scope,$http,$interval,$filter){
+				$scope.obj = {};
+				$http({
+					method:"get",
+					url:"json/index3.json"
+				}).then(function(res){
+					$scope.obj = res.data;
+					console.log($scope.obj)
+				})
+			}])
+			
+			var sw = new Swiper(".banner",{
+//				autoplay:2000,
+				loop:true,
+				pagination:".swiper-pagination",
+				centeredSlides: true,
+				effect : "coverflow"
+			})
+			
+			$(".djrm_2 a").click(function(){
+				$(this).addClass("bgColor").siblings().removeClass("bgColor")
+			})
+
+
+			$("footer li:eq(2)").addClass("fot_active");
+
+		</script>
+	</body>
+</html>

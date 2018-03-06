@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 100%;
+			}
+			#box >ul{
+				width: 100%;
+			}
+			#box >ul li{
+				padding: 20px 10px;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid darkgray;
+			}
+			#box >ul li>div:first-of-type{
+				width:70% ;
+				
+			}
+			#box >ul li>div:first-of-type>p:first-of-type{
+				font-size: 18px;
+				
+			}
+			#box >ul li>div:first-of-type>p:last-of-type{
+				font-size: 12px;
+			    color: #AAA;
+			    margin-top: 10px;
+			    line-height: 16px;
+			}
+			#box >ul li>div:last-of-type{
+				width:30% ;
+				
+			}
+			#box >ul li>div:last-of-type>span{
+				color:#D30775;
+				margin-top: 20px;
+				margin-right: 4px;
+			}
+			#box >ul li>div:last-of-type>span>a{
+				color: #D30775;
+				font-size: 21px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li ng-repeat="obj in ulse">
+					<div>
+						<p><span>{{obj.di1}}</span>
+						<span><img src="imgs/1.png" alt="" /></span>
+						<span>{{obj.di2}}</span></p>
+						<p>{{obj.hour}}</p>
+					</div>
+					<div>
+						<span>￥<a href="">{{obj.prieces}}</a></span>起
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

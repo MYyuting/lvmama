@@ -1,0 +1,382 @@
+@charset "utf-8";
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html{
+  font-size: 625%;
+}
+body{
+  font-size: 0.14rem;
+}
+.zhc_head{
+  display: flex;
+  width: 100%;
+  height: 0.45rem;
+  align-items: center;
+  justify-content: space-between;
+  >div,a{
+    width: 15%;
+    text-align: center;
+  }
+  span{
+    font-size: 0.19rem;
+  }
+  div:first-child{
+    i{
+      color: #D30775;
+      font-size: 0.2rem;
+    }
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    i{
+      color: #D30775;
+      font-size: 0.3rem;
+
+    }
+  }
+}
+.zhc_banner{
+  width: 100%;
+  height: 2.43rem;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.cydisplay{
+  width: 100%;
+  display: none;
+}
+.zhc_content{
+  background: #FCE2E4;
+}
+.listcity{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  li{
+    width: 23%;
+    border: 0.01rem solid #f1f1f1;
+    color: #666;
+    text-align: center;
+    font-size: 0.14rem;
+    line-height: 0.26rem;
+  }
+  .zty_bjColor{
+    color: #fff;
+    background: #FF9CA6;
+  }
+}
+
+.zhc_navCity{
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: #FF9CA6;
+  padding: 0 0.1rem;
+  box-sizing: border-box;
+  i{
+    font-style: normal;
+  }
+  span{
+    color: #ffffff;
+    font-size: 0.14rem;
+  }
+  >span:last-child{
+    float: right;
+    i{
+      color: #FFE017;
+      font-size: 0.12rem;
+    }
+  }
+}
+.zhc_footer{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 0.4595rem;
+
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+#zhc_Swiper{
+  margin-top:0.1rem;
+}
+#zhc_Swiper img{
+  width: 100%;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ffffff;
+}
+.zhc_miaosha{
+  width: 100%;
+  height: 0.84rem;
+  padding: 0.1rem 0;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.zhc_miaoshaBox{
+  padding: 0 0.12rem;
+  background-color:#FCE2E4;
+  box-sizing: border-box;
+}
+.ms_list{
+  display: flex;
+  flex-direction: column;
+  >div{
+    padding: .06rem 0.1rem;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+  >a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 1.6rem;
+    >img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.Cont_ms_lis{
+  font-size: 0.11rem;
+  color: #666;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.ms_list{
+  margin-bottom: 0.1rem;
+}
+.ms_price{
+  margin-top: 0.01rem;
+  overflow: hidden;
+  color: #de2500;
+  >.p1{
+    font-size: 0.18rem;
+  }
+  >.p2{
+    font-size: 0.13rem;
+  }
+}
+.ms_price>button{
+  float: right;
+  font-size: 0.15rem;
+  text-align: center;
+  background: #de2500;
+  color: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.02rem 0.08rem;
+  border: 0;
+}
+.zhc_mzbk{
+  padding: 0.1rem 0;
+  img{
+    width: 100%;
+  }
+}
+.city_mabk{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FF9CA6;
+  li{
+    width: 25%;
+    height: 0.5rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.5rem;
+    position: relative;
+  }
+  li.bk_Color{
+    background: #FF5260;
+  }
+}
+.city_mabk li:not(:first-child)::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left: 1px solid rgba(255,255,255,0.4);
+  height: 0.15rem;
+  top: 0.18rem;
+}
+.mzbk{
+  overflow: hidden;
+}
+.bk_tab{
+  .bk_list{
+    display: none;
+  }
+  .bk_list:nth-of-type(1){
+    display: block;
+  }
+}
+.tj_navLeft>ul>li:not(:last-child)::after{
+  content: "";
+  border-top: 0.01rem solid #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0.15rem;
+  width: 0.35rem;
+}
+.tj_navLeft{
+  ul{
+    position: fixed;
+    z-index: 3;
+    right: 0.12rem;
+    bottom: 1.31rem;
+    display: none;
+  }
+  >div{
+    span{
+      display: block;
+      position: fixed;
+      right: 0.12rem;
+      bottom: 0.95rem;
+      i{
+        font-size: 0.12rem;
+      }
+    }
+  }
+  li{
+    position: relative;
+  }
+  li:first-child{
+    border-top-left-radius: 0.05rem;
+    border-top-right-radius: 0.05rem;
+  }
+  li,>div>span,>div>p{
+    padding: 0 0.05rem;
+    text-align: center;
+    line-height: 0.35rem;
+    color: #ffffff;
+    background: rgba(0,0,0,0.7);
+    font-size: 0.13rem;
+  }
+  >div{
+    border-bottom-left-radius: 0.05rem;
+    border-bottom-right-radius: 0.05rem;
+    span{
+      width: 0.52rem;
+      text-align: center;
+      border-bottom-left-radius: 0.05rem;
+      border-bottom-right-radius: 0.05rem;
+    }
+    p{
+      position: fixed;
+      border-radius: 0.05rem;
+      right: 0.12rem;
+      bottom: 0.57rem;
+    }
+  }
+}
+.ty_footer>img{
+  margin-bottom: 0.4rem;
+  width: 100%;
+  color: red;
+}
+.wanzhuan{
+  width: 100%;
+  line-height: 0.5rem;
+  display: flex;
+  align-items: center;
+  background: #FF9CA6;
+    li{
+      width: 50%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 0.14rem;
+    }
+  li.bk_Color{
+    background: #FF5260;
+  }
+}
+.wz_tab>div:not(:first-child){
+  display: none;
+}
+
+.zhc_fhc{
+  width: 1.7rem;
+  line-height: 0.6rem;
+  margin: 0 auto;
+  text-align: center;
+  background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/title3.png") center center no-repeat;
+  background-size: 100% 0.2rem;
+  margin-bottom: 0.05rem;
+  >h3{
+    font-size: 0.23rem;
+    color: #FF6975;
+  }
+}
+.fhc_list,.fhc_gdtj{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.12rem;
+  box-sizing: border-box;
+  >li{
+    width: 48.5%;
+    margin-bottom: 0.1rem;
+    a{
+      display: block;
+      width: 100%;
+      height: 1rem;
+    }
+    a>img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.fhc_gdtj>li{
+  width: 100%;
+  a{
+    display: block;
+    width: 100%;
+    height: 0.8rem;
+  }
+  a>img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.hdgz{
+  background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/rule3.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  color: #ffffff;
+  width: 0.24rem;
+  height: 0.7rem;
+  span{
+    width: 0.12rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+    margin-top: 0.1rem;
+  }
+}

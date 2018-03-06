@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自驾游</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="css/headCss.css"/>
+    <link rel="stylesheet" href="css/zijiayouStyle.css"/>
+</head>
+<body ng-controller="myControl">
+    <!--头部-->
+    <div class="mainbox">
+        <div class="head">
+            驴妈妈自驾游-周边、房车、川...
+            <div class="goback"  onclick="window.history.back()">
+                <i class="iconfont icon-back"></i>
+            </div>
+        </div>
+    </div>
+    <!--banner部分-->
+    <div class="minboxBgColor">
+        <div class="goTop">
+            <i class="iconfont icon-top"></i>
+            顶部
+        </div>
+        <!--banner定位城市-->
+        <div class="city">
+            <span>上海</span>出发
+            <i class="iconfont icon-down"></i>
+        </div>
+        <ul class="listCity">
+            <li>上海</li>
+            <li>北京</li>
+            <li>成都</li>
+            <li>广州</li>
+            <li>山东</li>
+        </ul>
+        <!--swiper轮播部分-->
+        <div class="swiper-container" id="zjy_swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512123701_34339.jpg" alt=""/></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511489820_91689.jpg" alt=""/></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512978323_13475.jpg" alt=""/></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1510829319_90642.jpg" alt=""/></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/06/1498197375_76193.jpg" alt=""/></a>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--房车露营、精选路线部分-->
+        <ul class="zjy_Oul">
+            <li><a href=""><img src="https://pics.lvjs.com.cn/pics/super/2016/09/1475048558_16530.jpg" alt=""/></a></li>
+            <li><a href=""><img src="https://pics.lvjs.com.cn/pics/super/2016/07/1467960288_55188.jpg" alt=""/></a></li>
+        </ul>
+        <div class="zjy_path">
+            <div>
+                <a href="" class="Oimg">
+                    <img src="https://pics.lvjs.com.cn/pics/super/2017/06/1497346571_53940.jpg" alt=""/>
+                </a>
+            </div>
+           <div>
+               <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512545789_27049.jpg" alt=""/></a>
+               <a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/06/1497346559_94682.jpg" alt=""/></a>
+           </div>
+        </div>
+        <!--周末/车程/更远车程导航部分-->
+        <ul class="project">
+            <li class="borderColr"><span >周末</span></li>
+            <li><span>三小时车程</span></li>
+            <li><span>更远车程</span></li>
+        </ul>
+        <!--车程导航内容部分-->
+        <div class="projectCont mainTab">
+            <!--第一个数据周末-->
+            <div class="tabList1" style="display: block">
+                <!--内容1-->
+               <div class="zjy_projectCont">
+                   <a href="">
+                       <div>
+                           <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2015-03-09/68471f06-6aca-4f6d-a05c-da99b6cac405_480_320.jpg" alt=""/>
+                           <div class="posiConts">
+                               <div class="dw_pach">
+                                   <i class="iconfont icon-location"> 全国</i>
+                               </div>
+                               <div class="zyj_price">
+                                   <j class="zyj_price_a">￥</j>
+                                   <span>99</span>
+                                   <j class="zyj_price_a">起</j>
+                               </div>
+                               <div class="zjy_zy_pach">
+                                   <p>
+                                       <span>自由行</span>
+                                       <span> | </span>
+                                       <span>黄山自驾</span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                       <ul>
+                           <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                           <li>住黄山醉温泉国际度假酒店1晚＋游奇美大黄山＋夜泡醉温泉＋享酒店早餐＋免费停车＋免费参与圣诞定制线下活动（2人起订·偶数有效）</li>
+                       </ul>
+                   </a>
+               </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-04-01/4e50c3d9-a839-40db-8f36-17219b90aca6_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>499</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自驾游</span>
+                                        <span> | </span>
+                                        <span>五义跟队</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.30【武义唐风·泉新泉意·元旦非跟队自驾】</li>
+                            <li>住2晚唐风温泉度假村＋唐风温泉无限次泡＋酒店自助早2天、温泉养生餐2顿＋插花、瑜伽免费体验＋线下主题活动</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2015-03-04/0ee94511-c500-4909-859b-55c7ac6d24da_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>299</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>黄山自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住黄山醉温泉国际度假酒店1晚＋游奇美大黄山＋夜泡醉温泉＋享酒店早餐＋免费停车＋免费参与圣诞定制线下活动（2人起订·偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-12-06/91d8486c-709b-4a1c-8c9d-dc51b21bd09b_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>199</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>黄山自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住1晚黄山碧桂园凤凰酒店＋游黄山风景区，看冬雪、享美景＋享酒店自助早＋免费停车＋圣诞定制线下活动（2人起订，偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-11-23/74db8de3-73a7-49ef-a711-7810e4fe71c1_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>912</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>安吉自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住1晚黄山碧桂园凤凰酒店＋游黄山风景区，看冬雪、享美景＋享酒店自助早＋免费停车＋圣诞定制线下活动（2人起订，偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-11-06/b4819bc3-690f-4ca9-bec6-73a63e34a88f_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 临安市</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>120</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>临安自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住1晚黄山碧桂园凤凰酒店＋游黄山风景区，看冬雪、享美景＋享酒店自助早＋免费停车＋圣诞定制线下活动（2人起订，偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2015-06-29/f2ada99b-5a9e-42d0-a89d-3aef2a9d205c_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 临安市</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>788</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>杭州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【2大1小杭州宋城亲子游】</li>
+                            <li>住：杭州宋城第一世界大酒店，内选烂苹果乐园、杭州乐园、云曼温泉等亲子套餐</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-04-25/979c0bc6-7726-429f-8688-42a37505ad87_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>399</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>房车自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【镇江首家房车露营地大放送！】</li>
+                            <li>住：途居镇江圌山国际露营地房车，畅游镇江圌山风景区，享精致早餐，感受不一样的新颖假期</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-02-28/9abf23b1-9a74-4c77-941b-ba2a43c3c26c_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>709</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>杭州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【宿开元旗舰店】住杭州开元名都大酒店</li>
+                            <li>烂苹果乐园／长乔极地海洋公园／云曼温泉／杭州乐园（景点4选1），享自助双早、免费泳池、健身房、停车</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2016-09-14/f1d4c6cc-c8b7-4392-816b-37f446305b02_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>678</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>杭州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>杭州良渚君澜度假酒店2天1晚自驾</li>
+                            <li>住杭州良渚君澜度假酒店一晚＋中西式自助早餐，参观良渚博物院、室内游泳池、畅玩酒店室内外儿童乐园！——驴悦亲子游</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont" >
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2015-07-23/f4892ea9-0779-4cb2-b1be-7d2d9e6e00d7_480_320.jpg"/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>1188</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>临安自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【泡温泉·享水世界】临安湍口众安氡温泉度假酒店</li>
+                            <li>酒店海鲜自助餐晚餐＋自助早餐＋双人下午茶，泡温泉，巴厘岛水世界，畅玩水上乐园----驴悦亲子游</li>
+                        </ul>
+                    </a>
+                </div>
+                <!--底部加载文字部分-->
+                <div class="zjy_footer">
+                已经加载显示完全部内容
+                </div>
+           </div>
+            <!--第二个数据 3小时车程-->
+            <div class="tabList1">
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-10-20/cd16c7ce-60b7-4d17-9bd5-e4a43b34f01c_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>299</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>黄山自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住黄山醉温泉国际度假酒店1晚＋游奇美大黄山＋夜泡醉温泉＋享酒店早餐＋免费停车＋免费参与圣诞定制线下活动（2人起订·偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2015-04-22/283b9832-0745-46fa-b0d4-08fbd94f43ed_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>670</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>安吉自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>湖州 2天1晚 【安吉圣诞非跟队自驾特卖】</li>
+                            <li>住安吉君澜度假酒店／安吉芽芽度假村自选房型，泡安吉君澜石语汤池温泉，吃酒店圣诞大餐，看圣诞表演，尽情浪（可自选杭州HelloKitty乐园）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-07-17/38d48e73-4ee6-48b2-adfe-23b7b5d34271_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>658</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>杭州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>杭州 2天1晚自由行特卖 【秋冬温情暖心套餐】</li>
+                            <li>住杭州金马国际酒店高级房1晚＋玩杭州烂苹果乐园／云曼温泉（景区2选1）可免费携带1米以下儿童一名，赠双人早餐，含两份自助晚餐，畅玩酒店内儿童乐园，享免费停车。</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-09-30/800254cf-a796-4964-9e68-eeaa02982f54_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>715</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>湖州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>湖州 2天1晚 特卖 【雾气萦绕，宛如仙境】</li>
+                            <li>住1晚莫干山客堂间遊者温泉度假酒店自选房型（含双早）＋每间房都有温泉泡池＋部分房型赠双人晚餐＋莫干山风景区＼下渚湖湿地景区二选一，赠欢迎水果一份</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-02-21/5003cb0d-866f-4d08-a688-68e21acf8dbb_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>550</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>武夷自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【夏季特惠．武义牛头山】</li>
+                            <li>住：牛头山梦温泉酒店／牛角山庄／牛头山山里人家三选一＋牛头山国家森林景区2张＋酒店双份早餐</li>
+                        </ul>
+                    </a>
+                </div>
+                <!--底部加载文字部分-->
+                <div class="zjy_footer">
+                已经加载显示完全部内容
+                </div>
+            </div>
+
+            <!--第三个数据更远车程-->
+            <div class="tabList1">
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-12-08/07b445f1-79c1-43b9-a5f9-a37669748fcd_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>299</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>黄山自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>12.23【圣诞驾到·舞动黄山·跟队自驾特卖】</li>
+                            <li>住黄山醉温泉国际度假酒店1晚＋游奇美大黄山＋夜泡醉温泉＋享酒店早餐＋免费停车＋免费参与圣诞定制线下活动（2人起订·偶数有效）</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-11-01/79ed9b63-33e3-42eb-91e3-301a4a203f1f_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 海口</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>5180</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>海南黄岛</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>海南房车、骑行亲子环岛5日深度游</li>
+                            <li>([本产品至少4位成人起订，不足人数需补差价，随时出发]穿越北纬18度热带海岛，房车环岛，私人游艇，海滨潜水 雨林探秘，原始渔港，椰林乡村骑行 。)</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2016-10-26/16c0e46c-6970-4a10-97a9-9e2f46ed0cd3_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>748</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>洪湖自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【夏趣·玩水】住洪湖悦兮半岛国际温泉度假村</li>
+                            <li>2大1小悦兮半岛温泉／水世界门票＋营养早餐2大1小＋亲亲鱼疗劵一张＋餐饮50元代金劵一张</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="zjy_projectCont">
+                    <a href="">
+                        <div>
+                            <img src="http://pic.lvmama.com/pics//uploads/pc/place2/2017-04-12/15ca1c11-6829-45ba-b405-12de37665432_480_320.jpg" alt=""/>
+                            <div class="posiConts">
+                                <div class="dw_pach">
+                                    <i class="iconfont icon-location"> 全国</i>
+                                </div>
+                                <div class="zyj_price">
+                                    <j class="zyj_price_a">￥</j>
+                                    <span>1158</span>
+                                    <j class="zyj_price_a">起</j>
+                                </div>
+                                <div class="zjy_zy_pach">
+                                    <p>
+                                        <span>自由行</span>
+                                        <span> | </span>
+                                        <span>随州自驾</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>【随州3天2晚自由行】住2晚随州碧桂园凤凰酒店</li>
+                            <li>大洪山风景区门票2张＋西游记公园门票2张</li>
+                        </ul>
+                    </a>
+                </div>
+                <!--底部加载文字部分-->
+                <div class="zjy_footer">
+                    已经加载显示完全部内容
+                </div>
+            </div>
+        </div> <!--tab结束标签    -->
+    </div>
+</body>
+<script>
+
+    var app = angular.module("myApp",[]);
+    app.controller("myControl",["$scope","$http",function($scope,$http){
+        $http.get("info.json").success(function(data){
+//            console.log(data)
+        })
+    }]);
+
+
+//    轮播图初始化
+    var zjySw = new Swiper("#zjy_swiper",{
+        autoplay:2000,
+        resistanceRatio:0,
+//        speed:1000,
+        pagination:".swiper-pagination"
+    });
+
+//轮播图上面定位城市
+    $(".city").click(function(){
+        $(".listCity").css("display","block");
+    });
+    $(".listCity li").click(function(){
+        $(".city>span").html($(this).text());
+        $(".listCity").css("display","none")
+    });
+
+//    tab切换颜色
+
+    $(".project").on("click","li",function(){
+        var index = $(this).index();
+//       console.log($(this).children().text());
+        $(this).addClass("borderColr").siblings().removeClass("borderColr");
+        $(".tabList1").eq(index).fadeIn().siblings().hide();
+    });
+
+//    点击回到头部
+    $(function () {
+        console.log(document.documentElement.clientWidth );
+        $(".goTop").css("display","none");
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 375) {
+                $('.goTop').fadeIn();
+            }else{
+                $('.goTop').fadeOut();
+            }
+        });
+    });
+    $('.goTop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    });
+
+// 图片加载过度
+//$(function () {
+//    $(window).scroll(function () {
+//        for(var i =0; i<$(".zjy_projectCont img").length;i++){
+//            if ($(window).scrollTop() >= 100) {
+//                $('.zjy_projectCont img').css({transition:"3s",opacity:1,transform:"scale(1)"})
+//            }
+//        }
+//    });
+//});
+    $(function () {
+        $(window).scroll(function () {
+            $(".zjy_projectCont img").each(function(){
+                if (checkShow($(this))) {
+                    $(this).css({transition:"3s",opacity:1,transform:"scale(1)"})
+                }
+            });
+        });
+    });
+    function checkShow($img) { // 传入一个img的jq对象
+        var scrollTop = $(window).scrollTop();  //即页面向上滚动的距离
+        var windowHeight = $(window).height(); // 浏览器自身的高度
+        var offsetTop = $img.offset().top;  //目标标签img相对于document顶部的位置
+
+//        console.log(offsetTop);
+        if (offsetTop < (scrollTop + windowHeight) && offsetTop >= scrollTop) { //在2个临界状态之间的就为出现在视野中的
+            return true;
+        }
+        return false;
+    }
+</script>
+</html>

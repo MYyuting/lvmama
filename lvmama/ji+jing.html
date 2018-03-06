@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>机+景</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <script src="libs/rem.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/iscroll-probe.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="css/gonyon.css"/>
+    <link rel="stylesheet" href="libs/swiper.min.css">
+    <link rel="stylesheet" href="css/IndependentTravel.css">
+
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <div class="fanhui">
+        <img src="Images/Left.png" alt="">
+    </div>
+    <p>酒+景</p>
+    <div>
+        <a href="index.html"><img src="Images/home.png" alt=""></a>
+        <img src="Images/menu.png" alt="">
+    </div>
+</header>
+<main>
+    <div class="Search">
+        <div>
+            <p>北京</p>
+            <img src="Images/2017-12-11_191417.png" alt="">
+        </div>
+        <div>
+            <img src="Images/2017-12-11_191405.png" alt="">
+            <input type="text" placeholder="请输入目的地/关键词">
+        </div>
+    </div>
+</main>
+<!--banner轮播图-->
+<div class="swiper-container Banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="i in obj.banner">
+            <img ng-src="{{i.img}}">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<!--HotIndependentTravel-->
+<div class="HotIndependentTravel">
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li>热门目的地</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--130-->
+    <div>
+        <div ng-repeat="item in obj.nav1">
+            <p>{{item.test}}</p>
+        </div>
+    </div>
+</div>
+<div class="HotIndependentTravel_2">
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li>精选主题</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--130-->
+    <div>
+        <div ng-repeat="item in obj.nav2">
+            <img ng-src="{{item.img}}" alt="">
+            <p>{{item.test}}</p>
+        </div>
+    </div>
+    <!--特价-->
+    <div class="SpecialProducts">
+        <div>
+            <div></div>
+            <p>特价产品</p>
+        </div>
+        <div class="ISC">
+            <ul>
+                <li ng-repeat="item in obj.Iscroll">
+                    <img ng-src="{{item.img}}" alt="">
+                    <div><span>{{item.test}}</span><span>|</span><span>{{item.text}}</span></div>
+                    <div><span>￥</span><span>{{item.price}}</span><p>起</p></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--热门产品-->
+    <div class="HotProducts">
+        <div>
+            <div></div>
+            <p>热门产品</p>
+        </div>
+        <div class="recommend">
+            <div ng-repeat="item in obj.commend">
+                <div><img ng-src="{{item.img}}" alt=""></div>
+                <p>{{item.day}}</p>
+                <div><span>￥</span><span>{{item.money}}</span><p>起</p></div>
+                <div>
+                    <p>{{item.name}}</p>
+                    <span>{{item.test}}</span>
+                    <div>
+                        <div ng-repeat="isa in item.activity">{{isa.name}}</div>
+                    </div>
+                </div>
+                <p>{{item.GT}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--返回顶部-->
+<div id="top">
+    <span class="iconfont icon-top"></span>
+    <p>顶部</p>
+</div>
+</body>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl",["$timeout","$scope","$http",function ($timeout,$scope,$http) {
+        var url="json/IndependentTravel.json";
+        $http.get(url).success( function(response) {
+            $scope.obj = response;
+            console.log($scope.obj)
+        });
+
+        $timeout(function (){
+            var banner = new Swiper(".Banner",{
+                loop:true,
+                autoplay:500,
+                pagination: '.swiper-pagination'
+            });
+
+            var isc = new IScroll(".ISC",{
+                scrollX:true
+            });
+
+            for (var i = 0; i<$(".recommend > div").length; i++){
+                for  (var j = 0; j<$(".recommend > div > div:nth-child(4) > div > div").length; j++){
+                    if ($(".recommend > div").eq(i).children("div:nth-child(4)").children("div").children("div").eq(j).text() == ""){
+                        $(".recommend > div").eq(i).children("div:nth-child(4)").children("div").children("div").eq(j).css("display","none")
+                    }else if ($(".recommend > div").eq(i).children("div:nth-child(4)").children("div").children("div").eq(j).text() == "可再减"){
+                        $(".recommend > div").eq(i).children("div:nth-child(4)").children("div").children("div").eq(j).css({
+                            color:"#D30775",
+                            border:"solid 1px #D30775"
+                        })
+                    }else{
+                        $(".recommend > div").eq(i).children("div:nth-child(4)").children("div").children("div").eq(j).css({
+                            color:"#FF740D",
+                            border:"solid 1px #FF740D"
+                        })
+                    }
+                }
+            }
+        },100);
+
+//        .recommend > div > div:nth-child(4) > div > div:first-child
+        $(window).scroll(function (){
+            for (var i = 0; i<$(".recommend > div").length; i++){
+//                $(".recommend > div > div:nth-child(4) > div > div").eq(i)
+                if ($(".recommend > div").eq(i).offset().top - $(window).scrollTop() <=670){
+                    $(".recommend > div").eq(i).children("div:nth-child(1)").children("img").css({
+                        transition:"all 0.6s",
+                        opacity:"1",
+//                        marginTop:"0rem",
+                        transform:"scale(1)"
+                    });
+                    $(".recommend > div").eq(i).css("marginTop","0rem");
+                    console.log($(".recommend > div").eq(i).offset().top - $(window).scrollTop())
+                }
+            }
+        })
+    }])
+</script>
+<script src="gonyong.js"></script>
+
+</html>

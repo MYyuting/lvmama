@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/scss1.css" />
+		<link rel="stylesheet" type="text/css" href="index2/scss/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<script src="libs/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular-route1.4.5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="index2/scss/tab.css"/>
+
+		<style>
+			h3,ul{
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+
+	<body ng-controller="ct1">
+		<header>
+			<div>
+				<a style="text-decoration: none" class="fanhui">
+					<span class="iconfont icon-back "></span>
+				</a>
+				<p>特卖会</p>
+				<a href="">北京</a>
+			</div>
+		</header>
+		<div id="midel">
+			<section class="selcts1">
+				<h3>
+					<img src="imgs/zuo.png" alt="" />
+					<span>天天特价</span>
+				</h3>
+				<div>
+					<div href="" ng-repeat="obj in arr">
+						<div class="fathes">
+							<div class="erzi">
+								<img ng-src={{obj.imgs}} alt="" />
+							</div>
+							<i class="erzi_top">{{ obj.i }}</i>
+							<p>距离结束：
+								<a>{{time1}}</a>天
+								<a>{{cha|date:"HH":"UTC"}}</a>:
+								<a>{{cha|date:"mm":"UTC"}}</a>:
+								<a>{{cha|date:"ss":"UTC"}}</a>
+							</p>
+						</div>
+						<div class="shuo">
+							<p>
+								<a href="">{{obj.ps}}</a><span>|</span>{{obj.ps1}}</p>
+						</div>
+						<div class="price">
+							<span>{{obj.prices}}</span>
+							<span>{{obj.mai}}</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="selcts2">
+				<ul>
+					<li ng-repeat="obj in ast">
+						<a href=""><img ng-src={{obj.img}} alt="" /></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="selcts3">
+				<h3 class="cts3_top">
+					<img src="imgs/cts_3.png" alt="" />
+					<span>尾货特价，捡到就走</span>
+				</h3>
+				<div class="cts_father">
+					<div ng-repeat="obj in scts">
+						<div class="cts_son">
+							<img ng-src={{obj.imgs}} alt="" />
+							<div>
+								<span>{{obj.pans}}</span><b>出游</b>
+							</div>
+						</div>
+						<div class="cts_shuo">
+							<p>
+								<a href="">{{obj.ps}}</a><span>|</span>{{obj.ps1}}</p>
+						</div>
+						<div class="cts_price">
+							<p>
+								<a href="">{{obj.prices}}</a>起</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="selcts4">
+				<div>
+					<span><img src="http://pic.lvmama.com/uploads/pc/place2/2017-12-07/81c57011-7ca5-4b65-9238-d200d1c5b3fd.jpg" alt="" /></span>
+					<span>Neil</span>
+					<span>不为看看世界、没有净化心灵，来一场单纯的探食寻味、安逸享乐之旅犒劳一下疲惫的自己吧！</span>
+				</div>
+				<div class="swiper-container" id="swiper-contral1">
+					<div class="swiper-wrapper">
+						<div ng-repeat="obj in slids" class="swiper-slide">
+							<div class="slide_top">
+								<span>{{obj.ptop}}</span><span>|</span><span>{{obj.ptops}}</span>
+							</div>
+							<div class="swiper_fat">
+								<div>
+									<div>
+										<a href=""><img ng-src={{obj.imgs1}} alt="" /></a>
+										<span>{{obj.span1}}</span>
+									</div>
+									<div>
+										<span>{{obj.ps}}</span><span>|</span><span>{{obj.ps1}}</span>
+									</div>
+									<div>
+										<p>
+											<a href="">{{obj.priece}}</a>起</p>
+									</div>
+								</div>
+								<div>
+									<div>
+										<a href=""><img ng-src={{obj.imgs2}} alt="" /></a>
+										<span>{{obj.span2}}</span>
+									</div>
+									<div>
+										<span>{{obj.pss}}</span><span>|</span><span>{{obj.ps2}}</span>
+									</div>
+									<div>
+										<p>
+											<a href="">{{obj.priece2}}</a>起</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-button-white" id="nxt">换一换</div>
+				</div>
+			</section>
+			<section class="selcts5">
+				<div>
+					<a href="https://zt1.lvmama.com/template4/index/1808">
+						<img src="http://pic.lvmama.com/uploads/pc/place2/228007/1512539389275.jpg" alt="" />
+					</a>
+				</div>
+			</section>
+			<section class="selcts6">
+				<div>
+					<ul>
+						<li>
+							<a href="#/tab1">周边游</a>
+						</li>
+						<li>
+							<a href="#/tab2">国内游</a>
+						</li>
+						<li>
+							<a href="#/tab3">出境游</a>
+						</li>
+						<li>
+							<a href="#/tab4">门票</a>
+						</li>
+						<li>
+							<a href="#/tab5">酒店</a>
+						</li>
+						<li>
+							<a href="#/tab6">机票</a>
+						</li>
+					</ul>
+				</div>
+				<ng-view></ng-view>
+			</section>
+		</div>
+
+
+		<!--隐藏模板1-->
+		<div class="layer">
+			<div id="flas">
+				<ul class="uls">
+					<li>
+						<a href="#/tab1">周边游</a>
+					</li>
+					<li>
+						<a href="#/tab2">国内游</a>
+					</li>
+					<li>
+						<a href="#/tab3">出境游</a>
+					</li>
+					<li>
+						<a href="#/tab4">门票</a>
+					</li>
+					<li>
+						<a href="#/tab5">酒店</a>
+					</li>
+					<li>
+						<a href="#/tab6">机票</a>
+					</li>
+				</ul>
+				<ul class="tabs">
+					<li>
+						<a href="" onclick="tabz('biaow1')">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz('biaow2')">出游类型</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz('biaow3')">价格</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz('biaow4')">出游月份</a>
+						<div></div>
+					</li>
+				</ul>
+				<div id="qie">
+					<div id="biaow1">
+						<ul>
+							<li ng-repeat="obj in dif">
+								<span>{{obj.zhi}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaow2">
+						<ul>
+							<li ng-repeat="obj in you">
+								<span>{{obj.span}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaow3">
+						<ul>
+							<li ng-repeat="obj in jia">
+								<span>{{obj.price}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaow4">
+						<ul>
+							<li ng-repeat="obj in chu">
+								<span>{{obj.yue}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--隐藏模板2-->
+		<div class="layers">
+			<div id="flas">
+				<ul class="ul2s">
+					<li>
+						<a href="#/tab1">周边游</a>
+					</li>
+					<li>
+						<a href="#/tab2">国内游</a>
+					</li>
+					<li>
+						<a href="#/tab3">出境游</a>
+					</li>
+					<li>
+						<a href="#/tab4">门票</a>
+					</li>
+					<li>
+						<a href="#/tab5">酒店</a>
+					</li>
+					<li>
+						<a href="#/tab6">机票</a>
+					</li>
+				</ul>
+				<ul class="tabs">
+					<li>
+						<a href="" onclick="tabz2('biao1')">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz2('biao2')">出游类型</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz2('biao3')">价格</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz2('biao4')">出游月份</a>
+						<div></div>
+					</li>
+				</ul>
+				<div id="qie">
+					<div id="biao1">
+						<ul>
+							<li ng-repeat="obj in difs">
+								<span>{{obj.zhi}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biao2">
+						<ul>
+							<li ng-repeat="obj in yous">
+								<span>{{obj.span}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biao3">
+						<ul>
+							<li ng-repeat="obj in jias">
+								<span>{{obj.price}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biao4">
+						<ul>
+							<li ng-repeat="obj in chus">
+								<span>{{obj.yue}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--隐藏模板3-->
+		<div class="layerg">
+			<div id="flas">
+				<ul class="ul3s">
+					<li>
+						<a href="#/tab1">周边游</a>
+					</li>
+					<li>
+						<a href="#/tab2">国内游</a>
+					</li>
+					<li>
+						<a href="#/tab3">出境游</a>
+					</li>
+					<li>
+						<a href="#/tab4">门票</a>
+					</li>
+					<li>
+						<a href="#/tab5">酒店</a>
+					</li>
+					<li>
+						<a href="#/tab6">机票</a>
+					</li>
+				</ul>
+				<ul class="tabs">
+					<li>
+						<a href="" onclick="tabz3('biaog1')">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz3('biaog2')">出游类型</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz3('biaog3')">价格</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz3('biaog4')">出游月份</a>
+						<div></div>
+					</li>
+				</ul>
+				<div id="qie">
+					<div id="biaog1">
+						<ul>
+							<li ng-repeat="obj in difg">
+								<span>{{obj.zhi}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaog2">
+						<ul>
+							<li ng-repeat="obj in youg">
+								<span>{{obj.span}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaog3">
+						<ul>
+							<li ng-repeat="obj in jiag">
+								<span>{{obj.price}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaog4">
+						<ul>
+							<li ng-repeat="obj in chug">
+								<span>{{obj.yue}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--隐藏4-->
+		<div class="layerxs">
+			<div id="flas">
+				<ul class="ul4s">
+					<li>
+						<a href="#/tab1">周边游</a>
+					</li>
+					<li>
+						<a href="#/tab2">国内游</a>
+					</li>
+					<li>
+						<a href="#/tab3">出境游</a>
+					</li>
+					<li>
+						<a href="#/tab4">门票</a>
+					</li>
+					<li>
+						<a href="#/tab5">酒店</a>
+					</li>
+					<li>
+						<a href="#/tab6">机票</a>
+					</li>
+				</ul>
+				<ul class="tabs">
+					<li>
+						<a href="" onclick="tabz4('biaoq1')">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz4('biaoq2')">出游类型</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz4('biaoq3')">价格</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz4('biaoq4')">出游月份</a>
+						<div></div>
+					</li>
+				</ul>
+				<div id="qie">
+					<div id="biaoq1">
+						<ul>
+							<li ng-repeat="obj in difq">
+								<span>{{obj.zhi}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaoq2">
+						<ul>
+							<li ng-repeat="obj in youq">
+								<span>{{obj.span}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaoq3">
+						<ul>
+							<li ng-repeat="obj in jiaq">
+								<span>{{obj.price}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biaoq4">
+						<ul>
+							<li ng-repeat="obj in chuq">
+								<span>{{obj.yue}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--隐藏5-->
+		<div class="layfivs">
+			<div id="flas">
+				<ul class="ul5s">
+					<li>
+						<a href="#/tab1">周边游</a>
+					</li>
+					<li>
+						<a href="#/tab2">国内游</a>
+					</li>
+					<li>
+						<a href="#/tab3">出境游</a>
+					</li>
+					<li>
+						<a href="#/tab4">门票</a>
+					</li>
+					<li>
+						<a href="#/tab5">酒店</a>
+					</li>
+					<li>
+						<a href="#/tab6">机票</a>
+					</li>
+				</ul>
+				<ul class="tab2s">
+					<li class="left">
+						<a href="" onclick="tabz5('biasr1')">目的地</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="" onclick="tabz5('biasr2')">价格</a>
+						<div></div>
+					</li>
+				</ul>
+				<div id="qie">
+					<div id="biasr1">
+						<ul>
+							<li ng-repeat="obj in difd">
+								<span>{{obj.zhi}}</span>
+							</li>
+						</ul>
+					</div>
+					<div id="biasr2">
+						<ul>
+							<li ng-repeat="obj in youd">
+								<span>{{obj.price}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- 底部-->
+	<footer>
+	       <ul>
+		   </ul>
+	</footer>
+
+
+	<!--返回顶部-->
+	<div id="top" >
+		<span class="iconfont icon-top"></span>
+		<p>顶部</p>
+	</div>
+	</body>
+	<script src="foot.js"></script>
+	<link rel="stylesheet" href="css/foot2.css"/>
+	<script src="gonyong.js"></script>
+	<script type="text/javascript">
+
+//		$("#biaow1 li").eq(0).addClass("attr1");
+
+
+
+
+
+
+
+
+
+		var app = angular.module("app1", ["ngRoute"]);
+		app.config(function($routeProvider) {
+			$routeProvider.when("/tab1", {
+				templateUrl: "index2/tab1.html"
+			});
+			$routeProvider.when("/tab2", {
+				templateUrl: "index2/tab2.html"
+			});
+			$routeProvider.when("/tab3", {
+				templateUrl: "index2/tab3.html"
+			});
+			$routeProvider.when("/tab4", {
+				templateUrl: "index2/tab4.html"
+			});
+			$routeProvider.when("/tab5", {
+				templateUrl: "index2/tab5.html"
+			});
+			$routeProvider.when("/tab6", {
+				templateUrl: "index2/tab6.html"
+			}).otherwise("/tab1");
+			//			$routeProvider.when("/wu",{templateUrl:"wu.html"});
+		})
+		app.controller("ct1", ["$scope","$http","$interval","$filter","$timeout",function($scope, $http,$interval,$filter ,$timeout) {
+			$http.get("index2/data.json").then(function(res) {
+				$scope.arr = res.data.temai;
+
+				$interval(add,1000)
+				var data1 = new Date("2017-12-16 12:00:00");
+				function add(){
+					var data2 = new Date();
+					$scope.cha = data1-data2;
+					$scope.time1 = $filter("date")($scope.cha,"dd")-1;
+					$scope.time1<=10 ? $scope.time1 = "0" + $scope.time1:$scope.time1
+				}
+				add();
+
+
+
+				console.log(res.data);
+
+				$scope.ast = res.data.sct1;
+				$scope.scts = res.data.sct2;
+				$scope.slids = res.data.swipers;
+
+
+				$scope.tabs = res.data.tabs1;
+				$scope.tabs2 = res.data.tabs2;
+				$scope.tabs3 = res.data.tabs3;
+				$scope.tabs4 = res.data.tabs4;
+				$scope.tabs5 = res.data.tabs5;
+				$scope.ulse = res.data.piao;
+
+				//模板YI1
+				$scope.dif = res.data.zhobian.email;
+				$scope.you = res.data.zhobian.spans;
+				$scope.jia = res.data.zhobian.prices;
+				$scope.chu = res.data.zhobian.chu;
+				//模板2
+				$scope.difs = res.data.guonei.email;
+				$scope.yous = res.data.guonei.spans;
+				$scope.jias = res.data.guonei.prices;
+				$scope.chus = res.data.guonei.chu;
+
+				//模板3
+				$scope.difg = res.data.guowai.email;
+				$scope.youg = res.data.guowai.spans;
+				$scope.jiag = res.data.guowai.prices;
+				$scope.chug = res.data.guowai.chu;
+
+				//模块4
+				$scope.difq = res.data.jinqu.email;
+				$scope.youq = res.data.jinqu.spans;
+				$scope.jiaq = res.data.jinqu.prices;
+				$scope.chuq = res.data.jinqu.chu;
+
+				//模块5
+				$scope.difd = res.data.jindian.email;
+				$scope.youd = res.data.jindian.prices;
+
+				$scope.mySwiper = $timeout(function() {
+					var mySwiper = new Swiper(".swiper-container", {
+						loop: true,
+						effect: 'flip',
+						nextButton: '.swiper-button-next',
+						flip: {
+							slideShadows: true,
+							limitRotation: true
+						}
+					})
+				}, 1000)
+				$scope.flag = 1;
+				$scope.huan = function() {
+					$(".layer").css("display", "block");
+				}
+				$scope.huan1 = function() {
+					$(".layers").css("display", "block");
+				}
+				$scope.huan2 = function() {
+					$(".layerg").css("display", "block");
+				}
+				$scope.huansd = function() {
+					$(".layerxs").css("display", "block");
+				}
+				$scope.huans = function() {
+					$(".layfivs").css("display", "block");
+				}
+			})
+		}])
+
+		//模板
+
+//		$(".tabs").on("click", "li", function() {
+//			//					$(".layer").hide()
+//
+//		})
+
+		function tabz(pid) {
+			var tabs = ["biaow1", "biaow2", "biaow3", "biaow4"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+
+		$(".uls").on("click", "li", function() {
+			$(".layer").hide()
+		})
+		$(".ul2s").on("click", "li", function() {
+			$(".layers").hide()
+		})
+		$(".ul3s").on("click", "li", function() {
+			$(".layerg").hide()
+		})
+		$(".ul4s").on("click", "li", function() {
+			$(".layerxs").hide()
+		})
+		$(".ul5s").on("click", "li", function() {
+			$(".layfivs").hide()
+		})
+		//国内游
+		function tabz2(pid) {
+			var tabs = ["biao1", "biao2", "biao3", "biao4"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+		//出境游
+		function tabz3(pid) {
+			var tabs = ["biaog1", "biaog2", "biaog3", "biaog4"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+		//门票
+		function tabz4(pid) {
+			var tabs = ["biaoq1", "biaoq2", "biaoq3", "biaoq4"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+		//酒店
+		function tabz5(pid) {
+			var tabs = ["biasr1", "biasr2"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+
+
+		$("footer li:eq(1)").addClass("fot_active");
+
+	</script>
+	<script src="gonyong.js"></script>
+
+</html>

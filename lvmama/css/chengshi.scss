@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+//头部
+.tou{
+  height: 0.45rem;
+  background: #f5f5f5;
+  position: relative;
+  padding: 7px 12px;
+  p{
+    text-align: center;
+    font-size: 0.21rem;
+    line-height: 32px;
+  }
+  span{
+    position: absolute;
+    font-size: 25px;
+    color: #DB3A91;
+    line-height: 32px;
+    top: 5px;
+  }
+  .fanhui{
+    width: 0.27rem;
+    height: 0.45rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+}

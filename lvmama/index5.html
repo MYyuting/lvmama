@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="libs/rem.js"></script>
+		<script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route1.4.5.js"></script>
+		<script src="libs/swiper.min.js"></script>
+		<script src="libs/iscroll-probe.js"></script>
+		<script src="libs/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index5.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="wode">
+			<!-- 头部-->
+			<header>
+				<a href="index.html">
+					<span class="iconfont icon-house"></span>
+				</a>
+				<h1>我的驴妈妈</h1>
+				<span class="glyphicon glyphicon-option-horizontal show"></span>
+			</header>
+			<!-- 模板-->
+			<div class="mo">
+				<div class="mo_slit">
+					<a href="index.html">
+						<span class="iconfont icon-house"></span>
+						首页
+					</a>
+					<a href="index5.html">
+						<span class="iconfont icon-user"></span>
+						我的
+					</a>
+					<a href="zhuce/denglu.html">
+						<span class="iconfont icon-password"></span>
+						登录注册
+					</a>
+				</div>
+			</div>
+			<!--导航-->
+			<nav>
+				<img src="素材/wd_02.png" alt=""/>
+			</nav>
+			<!--全部订单-->
+			<div class="qbdd">
+				<div class="qbdd_one">
+					<h3>全部订单</h3>
+					<span>查看所以订单   ></span>
+				</div>
+				<ul class="qbdd_two">
+					<li ng-repeat="item in obj.qbdd_two">
+						<a href="#">
+							<img ng-src="素材/{{item.url}}"/>
+							<p>{{item.name}}</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--我的钱包-->
+			<ul class="wdqb">
+				<li ng-repeat="item in obj.wdqb">
+					<img ng-src="素材/{{item.url}}" alt=""/>
+					<h3>{{item.name}}</h3>
+					<p>{{item.txt}}</p>
+				</li>
+			</ul>
+			<!--会员俱乐部-->
+			<div class="hyjlb">
+				<p><img src="素材/wd1_35.png" alt=""/>会员俱乐部</p>
+				<span class="iconfont icon-right"></span>
+			</div>
+			<!--常用信息-->
+			<ul class="cyxx">
+				<li ng-repeat="item in obj.cyxx">
+					<p><img ng-src="素材/{{item.url}}" alt=""/>{{item.name}}</p>
+					<span class="iconfont icon-right"></span>
+				</li>
+			</ul>
+			<!--设置-->
+			<div class="sz">
+				<li ng-repeat="item in obj.sz">
+					<p><img ng-src="素材/{{item.url}}" alt=""/>{{item.name}}</p>
+					<span class="iconfont icon-right"></span>
+				</li>
+				<!--<li>
+					<p><img src="素材/wd1_35.png" alt=""/>会员俱乐部</p>
+					<span class="iconfont icon-right"></span>
+				</li>-->
+			</div>
+			<footer>
+				<ul></ul>
+			</footer>
+		</div>
+		<script src="foot.js"></script>
+		<link rel="stylesheet" href="css/foot2.css"/>
+		<script type="text/javascript">
+			var App = angular.module("myApp",["ngRoute"]);
+			
+			App.controller("myCtrl",["$scope","$http","$interval","$filter",function($scope,$http,$interval,$filter){
+				$scope.obj = {};
+				$http({
+					method:"get",
+					url:"json/index5.json"
+				}).then(function(res){
+					$scope.obj = res.data;
+					console.log($scope.obj)
+				})
+			}])
+
+			$("footer li:eq(4)").addClass("fot_active");
+
+			$(".show").click(function(){
+				$(".mo").slideDown()
+			})
+			$(".mo").click(function(){
+				$(this).hide()
+			})
+		</script>
+	</body>
+</html>

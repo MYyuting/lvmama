@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>特卖会</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="libs/rem.js"></script>
+		<script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route1.4.5.js"></script>
+		<script src="libs/swiper.min.js"></script>
+		<script src="libs/iscroll-probe.js"></script>
+		<script src="libs/jquery-3.1.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="temaihui">
+			<!--导航-->
+			<nav>
+				<p></p>
+				<h1>特卖会</h1>
+				<p>北京<a class="glyphicon glyphicon-menu-down"></a></p>
+			</nav>
+			<!--限时抢购-->
+			<p class="xsqg"><img src="素材/tm1_03.png" alt=""/>天天特价，限量狂欢</p>
+			<!--头部-->
+			<div id="toubu">
+				<ul>
+					<li ng-repeat="item in obj.header">
+						<a href="index3.html">
+							<img ng-src="素材/{{item.url}}" alt=""/>
+							<div class="mb">
+								距结束：<span>{{time1}}</span>天<span>{{cha|date:"HH":"UTC"}}</span>：<span>{{cha|date:"mm":"UTC"}}</span>：<span>{{cha|date:"ss":"UTC"}}</span>
+							</div>
+							<p><b>{{item.title}}</b>&nbsp;|{{item.txt}}</p>
+							<p><span>{{item.txt1}}</span><span>{{item.txt2}}</span></p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--天天特价-->
+			<ul id="tttj">
+				<li ng-repeat="item in obj.tttj">
+					<a href="index3.html">
+						<h3>{{item.name}}</h3>
+						<p>{{item.txt}}</p>
+						<img ng-src="素材/{{item.url}}" alt=""/>
+					</a>
+				</li>
+			</ul>
+			<!--超级甩尾-->
+			<div id="cjsw">
+				<p class="cjsw_p1"><img src="素材/tm1_20.png" alt=""/>尾货特价，捡到就走</p>
+				<ul>
+					<li ng-repeat="item in obj.cjsw">
+						<a href="index3.html">
+							<img ng-src="素材/{{item.url}}" alt=""/>	
+							<p><b>{{item.name}}</b> <span>|</span>【领是大家快和节是肯定】【收到就好.....</p>
+							<p><span>￥{{item.price}}</span>起</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--三亚冬日优选-->
+			<div id="sydryx">
+				<div>
+					<img src="素材/3 (5).png" alt=""/>
+					<h3>Joyce</h3>
+					<p>"死了福建高考啊实打实的临家，阿三是...</p>
+				</div>
+				<div>
+					<p><b>周边游</b> <span>|</span> 发就开了房间看拉法基上课了阿迪达斯放假肯定啦就是和方法进化算法将会受到...</p>
+					<span class="hyh">换一换</span>
+				</div>
+				<ul>
+					<li>
+						<a href="index3.html">
+							<img src="素材/tmh_03.gif" alt=""/>	
+							<p><b>自由行</b> <span>|</span>【领是大家快和节是肯定】【收到就好.....</p>
+							<p><span>￥470</span>起</p>
+						</a>
+					</li>
+					<li>
+						<a href="index3.html">
+							<img src="素材/tmh_05.gif" alt=""/>	
+							<p><b>自由行</b> <span>|</span>【领是大家快和节是肯定】【收到就好.....</p>
+							<p><span>￥479</span>起</p>
+						</a>
+					</li>
+				</ul>
+				<div class="gg">
+					<img src="素材/tmh_09.gif" alt=""/>
+				</div>
+			</div>
+			<!--切换-->
+			<div id="qh">
+				<div class="qh_one">
+					<ul class="qh_1">
+						<a href="#a" class="bgColor">周边游</a>
+						<a href="#b">国内游</a>
+						<a href="#c">出境游</a>
+						<a href="#d">门票游</a>
+						<a href="#e">酒店</a>
+						<a href="#f">机电</a>
+					</ul>
+				</div>
+				<ul class="qh_2">
+					<li>目的地<span class="iconfont icon-down"></span></li>
+					<li>出游类型<span class="iconfont icon-down"></span></li>
+					<li>价格<span class="iconfont icon-down"></span></li>
+					<li style="border-right: none;">出游月份<span class="iconfont icon-down"></span></li>
+				</ul>
+				<ng-view></ng-view>
+				<!--<div class="qh_3" ng-repeat="item in obj.qh_3">
+					<a href="#">
+						<img ng-src="素材/{{item.url}}" alt=""/>
+						<p>{{item.txt}}</p>
+						<span class="span">{{item.name}}</span>
+						<p><span>￥{{item.price}}</span>起</p>
+					</a>	
+				</div>-->
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				var Heig = $(window).scrollTop();
+//				console.log(Heig)
+				if(Heig>= 1400){
+//					alert("已经到顶部了...")
+//					$("#qh .qh_one").css("position","fixed").css("top","0")
+				}
+			})
+			
+			
+			
+			
+			
+			var App = angular.module("myApp",["ngRoute"]);
+			
+			App.config(["$routeProvider",function($routeProvider){
+				$routeProvider
+				.when("/a",{
+					templateUrl:"demo2.html"
+				})
+				.when("/b",{
+					templateUrl:"demo2.html"
+				})
+				.when("/c",{
+					templateUrl:"demo2.html"
+				})
+				.when("/d",{
+					templateUrl:"demo2.html"
+				})
+				.when("/e",{
+					templateUrl:"demo2.html"
+				})
+				.when("/f",{
+					templateUrl:"demo2.html"
+				})
+				.otherwise({
+					redirectTo:"/a"
+				})
+			}])
+			
+			App.controller("myCtrl",["$scope","$http","$interval","$filter",function($scope,$http,$interval,$filter){
+				$scope.obj = {};
+				$http({
+					method:"get",
+					url:"json/index2.json"
+				}).then(function(res){
+					$scope.obj = res.data;
+					console.log($scope.obj)
+				})
+				
+				$interval(add,1000)
+				var data1 = new Date("2017-12-16 12:00:00");
+				function add(){
+					var data2 = new Date();
+					$scope.cha = data1-data2;
+					$scope.time1 = $filter("date")($scope.cha,"dd")-1;
+					$scope.time1<=10 ? $scope.time1 = "0" + $scope.time1:$scope.time1
+				}
+				add()
+				
+			}])
+			var is1 = new IScroll("#toubu",{
+				scrollX:true
+			})
+			
+			var is2 = new IScroll("#qh .qh_one",{
+				scrollX:true
+			})
+			
+			$("#qh .qh_1 a").click(function(){
+				var index = $(this).index();
+				console.log(index)
+				$(this).addClass("bgColor").siblings().removeClass("bgColor") 
+			})
+			
+			$("#qh .qh_2 li").click(function(){
+				var index = $(this).index();
+				$(this).children("span").toggleClass("icon-up")
+				$(this).toggleClass("active").siblings().removeClass("active")
+			})
+			
+			
+		</script>
+	</body>
+</html>

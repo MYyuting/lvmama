@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+#boxs {
+  width: 100%; }
+
+#boxs > div:first-of-type {
+  width: 100%; }
+
+#boxs > div:first-of-type > ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+#boxs > div:first-of-type > ul > li {
+  width: 18%;
+  margin: 5px 1%;
+  line-height: 0.3rem;
+  background: gainsboro;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  font-size: 0.14rem;
+  text-align: center;
+  border-radius: 27px;
+  padding: 2px 2px; }
+
+#boxs > div:first-of-type > ul > li:hover {
+  background: #D30775;
+  color: white; }
+
+#yes {
+  width: 100%;
+  height: 100%; }
+
+#yes > div {
+  width: 100%;
+  display: none; }
+
+#yes > div > div {
+  width: 100%; }
+
+#yes > div > div > div {
+  width: 100%;
+  position: relative; }
+
+#yes > div > div > div:first-of-type > img {
+  width: 100%;
+  height: 1.41rem; }
+
+#yes > div > div > div:first-of-type > span:first-of-type {
+  padding: 0.02rem;
+  background: #000000;
+  opacity: 0.8;
+  position: absolute;
+  top: 0.08rem;
+  left: 0.08rem;
+  color: white; }
+
+#yes > div > div > div:first-of-type > span:nth-of-type(2) {
+  padding: 0.04rem;
+  background: #FF6700;
+  border-radius: .2rem 0 0 .2rem;
+  position: absolute;
+  bottom: 0.08rem;
+  right: 0;
+  color: white; }
+
+#yes > div > div > div:first-of-type > span:nth-of-type(2) > a {
+  color: white;
+  font-size: 0.16rem; }
+
+#yes > div > div > div:nth-of-type(2) {
+  width: 100%; }
+
+#yes > div > div > div:nth-of-type(2) > p:first-of-type {
+  width: 90%;
+  height: 0.16rem;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  margin: 0.04rem 0.0rem 0.02rem 0.06rem; }
+
+#yes > div > div > div:nth-of-type(2) > p:nth-of-type(2) {
+  width: 90%;
+  height: 0.2rem;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  margin: 0.04rem 0.0rem 0.02rem 0.06rem; }
+
+#yes > div:first-of-type {
+  display: block; }
+
+/*# sourceMappingURL=tabs.css.map */

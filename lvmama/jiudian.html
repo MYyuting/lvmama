@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>酒店</title>
+    <script src="libs/rem.js"></script>
+    <script src="libs/jquery-3.1.1.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <script src="libs/angular-route1.4.5.js"></script>
+    <link rel="stylesheet" href="libs/swiper.min.css">
+    <link rel="stylesheet" href="css/gonyon.css"/>
+    <link rel="stylesheet" href="css/jiudian.css">
+</head>
+<body ng-controller="myCtrl">
+    <header>
+        <div class="fanhui">
+            <img src="Images/Left.png" alt="">
+        </div>
+        <p>酒店</p>
+        <div>
+            <a href="index.html"><img src="Images/home.png" alt=""></a>
+            <img src="Images/menu.png" alt="">
+        </div>
+    </header>
+    <!--banner轮播图-->
+    <div class="swiper-container Banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="i in obj.banner">
+                <img ng-src="Images/{{i.img}}">
+            </div>
+        </div>
+        <div class="swiper-container"></div>
+    </div>
+    <!--Tab路由部分-->
+    <div class="Tab">
+        <div>
+            <a href="#past">国内酒店</a>
+            <a href="#order">国际酒店</a>
+        </div>
+        <div ng-view ></div>
+    </div>
+
+
+    <!--返回顶部-->
+    <div id="top">
+        <span class="iconfont icon-top"></span>
+        <p>顶部</p>
+    </div>
+</body>
+<script src="gonyong.js"></script>
+<script>
+    var app = angular.module("myApp",["ngRoute"]);
+    app.config(["$routeProvider",function ($routeProvider){
+        $routeProvider
+            .when("/past",{
+                templateUrl:"temp/past.html"
+            })
+            .when("/order",{
+                templateUrl:"temp/order.html"
+            })
+            .otherwise({
+                redirectTo:"/past"
+            })
+    }]);
+    app.controller("myCtrl",["$interval","$timeout","$scope","$http",function ($interval,$timeout,$scope,$http){
+        var url="json/jiudian.json";
+        $http.get(url).success( function(response) {
+            $scope.obj = response;
+            console.log($scope.obj)
+        });
+        $timeout(function (){
+            var banner = new Swiper(".Banner",{
+                loop:true,
+                autoplay:2000,
+                pagination: '.swiper-pagination'
+            })
+        },300);
+
+        $(".Tab > div:nth-child(1) > a").click(function (){
+            index = $(this).index();
+            $(".Tab > div:nth-child(1) > a").eq(index).css({
+                borderBottom:"solid 2px #D30775",
+                color:"#D30775"
+            }).siblings().css({
+                borderBottom:"solid 2px white",
+                color:"#666666"
+            })
+        })
+//        $(".RankingList > div:nth-child(2) img").offset().top - $(window).scrollTop() <=670
+        $timeout(function (){
+            $interval(function (){
+//                console.log($(".RankingList > div:nth-child(2) img").offset().top - $(window).scrollTop())
+            },1000)
+        },300)
+
+
+        $(window).scroll(function (){
+            for (var i=0 ; i<$(".RankingList > div:nth-child(2) img").length; i++){
+                if ($(".RankingList > div:nth-child(2) img").eq(i).offset().top - $(window).scrollTop() <=670){
+//                    console.log($(".RankingList > div:nth-child(2) img").eq(i).index()+1)
+                    $(".RankingList > div:nth-child(2) img").eq(i).css({
+                        transition:"all 0.6s",
+                        transform:"scale(1)",
+                        opacity:"1"
+                    })
+                }
+            }
+        })
+
+    }])
+
+
+    //    返回顶部
+    $(window).scroll(function(){
+        var scrol = ($(window).scrollTop());
+        //console.log(scrol);
+        if(scrol >250){
+            $("#top").show(500);
+        }else{
+            $("#top").stop(true).hide(500)
+        }
+    });
+    $("#top").click(function(){
+        $("#top").hide(500)
+        $("body,html").animate({scrollTop:0},400)
+    });
+</script>
+
+</html>

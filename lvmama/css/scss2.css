@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem;
+  background: #EFEFF7; }
+
+p, h1 {
+  margin: 0; }
+
+#ding {
+  width: 0.45rem;
+  height: 0.45rem;
+  position: fixed;
+  z-index: 1000;
+  background: #D30775;
+  color: white;
+  bottom: 1.4rem;
+  right: 0.1rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.21rem;
+  display: none; }
+  #ding > span {
+    font-size: 0.14rem;
+    margin-top: 0.1rem; }
+
+header {
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 3; }
+  header h1 {
+    font-size: 0.19rem;
+    font-weight: 400; }
+  header p {
+    width: 0.7rem;
+    display: flex;
+    align-items: center; }
+    header p .iconfont {
+      font-size: 0.25rem;
+      color: #E362A8;
+      margin-left: 5px; }
+    header p span:nth-of-type(2) {
+      margin-left: 0.1rem; }
+      header p span:nth-of-type(2) img {
+        width: 0.22rem; }
+    header p span img {
+      width: 0.24rem; }
+
+#sou {
+  padding: 0.06rem;
+  margin-top: 50px; }
+  #sou > div:first-of-type {
+    width: 100%;
+    height: 0.3rem;
+    border: 1px solid #E2E2E2;
+    padding: 0.01rem 0.01rem;
+    background: white;
+    display: flex;
+    border-radius: 1%;
+    padding-top: 4px; }
+    #sou > div:first-of-type > div:first-of-type {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border-right: 1px solid gainsboro; }
+      #sou > div:first-of-type > div:first-of-type > p {
+        color: #D30775;
+        font-size: 0.14rem; }
+      #sou > div:first-of-type > div:first-of-type > div {
+        width: 0.08rem;
+        height: 0.08rem;
+        border-bottom: 1px solid #D30775;
+        border-right: 1px solid #D30775;
+        transform: rotate(45deg);
+        margin-top: 0.04rem;
+        margin-left: 0.04rem; }
+    #sou > div:first-of-type > div:last-of-type {
+      width: 80%;
+      display: flex; }
+      #sou > div:first-of-type > div:last-of-type > span:first-of-type {
+        font-size: 0.16rem;
+        color: gainsboro;
+        margin-top: 2px;
+        margin-left: 10px; }
+      #sou > div:first-of-type > div:last-of-type > p {
+        margin-top: 2px;
+        margin-left: 2px;
+        color: gainsboro; }
+
+.swiper-container {
+  width: 100%;
+  height: 1.52rem; }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    .swiper-container .swiper-wrapper .swiper-slide {
+      width: 100%;
+      height: 100%; }
+      .swiper-container .swiper-wrapper .swiper-slide > img {
+        width: 100%;
+        height: 100%; }
+  .swiper-container .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.6); }
+  .swiper-container .swiper-pagination-bullet-active {
+    background: white; }
+
+#middle {
+  width: 100%;
+  margin-top: 10px; }
+
+#middle > section:first-of-type {
+  width: 100%;
+  background: white; }
+  #middle > section:first-of-type > div:first-of-type {
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.16rem; }
+    #middle > section:first-of-type > div:first-of-type > span {
+      background: #fff;
+      border-left: 3px solid #d30775;
+      color: darkgray;
+      padding-left: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+  #middle > section:first-of-type > div:nth-of-type(2) {
+    width: 100%; }
+    #middle > section:first-of-type > div:nth-of-type(2) > ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid gainsboro; }
+      #middle > section:first-of-type > div:nth-of-type(2) > ul li {
+        width: 25%;
+        text-align: center;
+        line-height: 40px;
+        border-right: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro; }
+        #middle > section:first-of-type > div:nth-of-type(2) > ul li > span {
+          padding: 2px 2px;
+          background: #FF6700;
+          color: white;
+          margin-right: 4px; }
+      #middle > section:first-of-type > div:nth-of-type(2) > ul li:last-of-type {
+        border-right: none; }
+      #middle > section:first-of-type > div:nth-of-type(2) > ul .di {
+        border-bottom: none; }
+      #middle > section:first-of-type > div:nth-of-type(2) > ul .ri {
+        border-right: none; }
+      #middle > section:first-of-type > div:nth-of-type(2) > ul .gray {
+        background: #ddd;
+        color: black;
+        margin-left: 4px; }
+  #middle > section:first-of-type > div:nth-of-type(3) {
+    width: 100%; }
+    #middle > section:first-of-type > div:nth-of-type(3) > ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #middle > section:first-of-type > div:nth-of-type(3) > ul li {
+        width: 25%;
+        text-align: center; }
+        #middle > section:first-of-type > div:nth-of-type(3) > ul li > img {
+          width: 0.46rem;
+          height: 0.46rem; }
+        #middle > section:first-of-type > div:nth-of-type(3) > ul li > p {
+          font-size: 0.12rem; }
+
+#sect2 {
+  width: 100%;
+  margin-top: 10px;
+  background: white; }
+  #sect2 > div:first-of-type {
+    width: 100%;
+    height: 0.38rem;
+    line-height: 0.45rem;
+    font-size: 0.15rem; }
+    #sect2 > div:first-of-type > span {
+      background: #fff;
+      border-left: 3px solid #d30775;
+      color: darkgray;
+      padding-left: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+  #sect2 > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    overflow: auto; }
+    #sect2 > div:nth-of-type(2) > div {
+      width: 1.42rem;
+      border: 1px solid gainsboro;
+      margin-left: 10px; }
+      #sect2 > div:nth-of-type(2) > div > div:first-of-type {
+        width: 100%;
+        height: 0.81rem;
+        position: relative; }
+        #sect2 > div:nth-of-type(2) > div > div:first-of-type > img {
+          width: 142px;
+          height: 100%; }
+        #sect2 > div:nth-of-type(2) > div > div:first-of-type > span {
+          padding: 4px 2px;
+          background: black;
+          opacity: 0.6;
+          color: white;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          font-size: 0.12rem; }
+      #sect2 > div:nth-of-type(2) > div > div:nth-of-type(2) {
+        width: 100%; }
+        #sect2 > div:nth-of-type(2) > div > div:nth-of-type(2) > p {
+          width: 100%;
+          height: 0.3rem;
+          line-height: 0.4rem;
+          max-height: 0.4rem;
+          overflow: hidden;
+          display: block;
+          font-size: 0.14rem; }
+        #sect2 > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(2) {
+          color: #D30775; }
+          #sect2 > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(2) a {
+            color: #D30775;
+            font-size: 0.16rem; }
+          #sect2 > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(2) > span {
+            color: #000000;
+            margin-left: 0.01rem;
+            margin-top: -1px; }
+
+#sect3 {
+  width: 100%;
+  margin-top: 0.1rem;
+  background: white; }
+  #sect3 > div:first-of-type {
+    width: 100%; }
+    #sect3 > div:first-of-type > ul {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      #sect3 > div:first-of-type > ul li {
+        width: 32%;
+        text-align: center;
+        padding: 0.1rem;
+        border: none; }
+        #sect3 > div:first-of-type > ul li a {
+          color: #333333;
+          text-decoration: none; }
+      #sect3 > div:first-of-type > ul li:hover {
+        border-bottom: 2px solid #D30775; }
+        #sect3 > div:first-of-type > ul li:hover a {
+          color: #D30775; }
+
+/*# sourceMappingURL=scss2.css.map */

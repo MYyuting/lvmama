@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem; }
+
+header {
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.06rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 3; }
+  header h1 {
+    font-size: 0.19rem;
+    font-weight: 400; }
+  header p {
+    width: 0.7rem;
+    display: flex;
+    align-items: center; }
+    header p .iconfont {
+      font-size: 0.25rem;
+      color: #E362A8; }
+    header p span:nth-of-type(2) {
+      margin-left: 0.1rem; }
+      header p span:nth-of-type(2) img {
+        width: 0.22rem; }
+    header p span img {
+      width: 0.24rem; }
+
+.yincang {
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0.45rem;
+  left: 0;
+  z-index: 5; }
+  .yincang ul {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap; }
+    .yincang ul li {
+      width: 33.33333%;
+      text-align: center;
+      height: 0.4rem;
+      display: flex;
+      align-items: center;
+      padding-left: 0.3rem;
+      border-top: 1px solid #cdcdcd;
+      border-right: 1px solid #cdcdcd; }
+      .yincang ul li img {
+        width: 0.25rem;
+        margin-right: 0.1rem; }
+
+.mo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0.45rem;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  display: none; }
+
+.ss {
+  width: 100%;
+  height: 0.45rem;
+  background: #efeff7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0.45rem;
+  left: 0;
+  z-index: 3;
+  padding: 0 0.1rem; }
+  .ss .ss-cont {
+    width: 100%;
+    height: 0.3rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .ss .ss-cont p {
+      font-size: 0.12rem;
+      text-align: center;
+      padding-left: 0.05rem; }
+      .ss .ss-cont p a {
+        border-right: 1px solid #aaa;
+        padding-right: 0.09rem;
+        color: #666; }
+      .ss .ss-cont p .iconfont {
+        font-size: 0.08rem; }
+    .ss .ss-cont > a {
+      display: block;
+      flex-grow: 1;
+      position: relative; }
+      .ss .ss-cont > a input {
+        width: 100%;
+        padding-left: 0.3rem;
+        height: 0.3rem;
+        border: none;
+        outline: none; }
+      .ss .ss-cont > a ::-webkit-input-placeholder {
+        color: #aaa; }
+      .ss .ss-cont > a span {
+        position: absolute;
+        top: 0.06rem;
+        left: 0.08rem; }
+        .ss .ss-cont > a span .iconfont {
+          font-size: 0.16rem;
+          color: #aaa; }
+
+.banner {
+  margin-top: 0.91rem;
+  width: 100%; }
+  .banner img {
+    width: 100%; }
+  .banner .swiper-pagination-bullet {
+    background: #efeff7; }
+  .banner .swiper-pagination-bullet-active {
+    background: #fff; }
+
+.renqi {
+  width: 100%;
+  height: 0.3rem;
+  padding: 0 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .renqi span {
+    color: #666;
+    font-size: 0.12rem; }
+    .renqi span a {
+      color: #666; }
+
+.isc {
+  width: 100%;
+  padding: 0.09rem 0 0.05rem 0.1rem;
+  border-top: 1px solid #cecece;
+  overflow: hidden; }
+  .isc ul {
+    width: 14.9rem;
+    display: flex;
+    justify-content: space-between; }
+    .isc ul li {
+      width: 1.4rem;
+      height: 1.5rem;
+      border: 1px solid #cdcdcd;
+      position: relative; }
+      .isc ul li a {
+        display: block;
+        height: 100%;
+        width: 100%; }
+      .isc ul li p:nth-of-type(1) {
+        font-size: 0.1rem;
+        margin-bottom: 0.05rem;
+        color: #666;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-indent: 0.05rem; }
+      .isc ul li p:nth-of-type(2) {
+        color: #d30775;
+        font-size: 0.15rem;
+        text-indent: 0.05rem; }
+        .isc ul li p:nth-of-type(2) span {
+          font-size: 0.1rem; }
+      .isc ul li p:nth-of-type(3) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 0.06rem 0 0.04rem;
+        border-bottom-right-radius: 0.07rem;
+        background: #FF720E;
+        color: #fff;
+        font-size: 0.11rem; }
+      .isc ul li img {
+        width: 100%; }
+
+.gg {
+  width: 100%;
+  padding: 0.1rem 0;
+  background: #EFEFF7; }
+  .gg img {
+    width: 100%; }
+
+.jingxuan {
+  width: 100%;
+  padding: 0.09rem 0 0.05rem 0.1rem;
+  border-top: 1px solid #cecece;
+  overflow: hidden;
+  border-bottom: 0.1rem solid #EFEFF7; }
+  .jingxuan ul {
+    width: 6.48rem;
+    display: flex;
+    margin: 0; }
+    .jingxuan ul li {
+      width: 0.81rem;
+      height: 0.75rem;
+      text-align: center; }
+      .jingxuan ul li a {
+        display: block;
+        height: 100%;
+        width: 100%; }
+      .jingxuan ul li p {
+        font-size: 0.12rem;
+        margin-bottom: 0.05rem;
+        color: #666;
+        margin: 0; }
+      .jingxuan ul li img {
+        width: 60%; }
+
+.content {
+  width: 100%; }
+  .content li {
+    width: 100%;
+    margin-top: 0.2rem;
+    opacity: 0; }
+    .content li a {
+      display: block;
+      display: flex;
+      width: 100%;
+      padding: 0.1rem;
+      position: relative; }
+      .content li a .left {
+        width: 0.95rem;
+        height: 0.77rem;
+        position: relative; }
+        .content li a .left p {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0.45rem;
+          height: 0.15rem;
+          background: url("//pics.lvjs.com.cn/mobile/coding/v750/ticket/img/sign2.png") no-repeat;
+          background-size: cover; }
+        .content li a .left img {
+          width: 100%;
+          height: 0.77rem; }
+      .content li a .right p {
+        font-size: 0.1rem;
+        text-indent: 0.04rem; }
+      .content li a .right p:nth-of-type(1) {
+        font-size: 0.14rem;
+        color: #787878; }
+      .content li a .right p:nth-of-type(2) {
+        padding-top: 0.06rem; }
+        .content li a .right p:nth-of-type(2) span {
+          color: #D30775;
+          border: 1px solid #D30775;
+          margin-right: 0.05rem;
+          padding: 0.01rem 0.05rem; }
+        .content li a .right p:nth-of-type(2) span:nth-of-type(1) {
+          border: 1px solid #FF740D;
+          color: #FF740D; }
+      .content li a .right p:nth-of-type(3) {
+        color: #666;
+        height: 0.2rem;
+        line-height: 0.2rem; }
+      .content li a .right p:nth-of-type(4) {
+        color: #aaa; }
+      .content li a .ding {
+        position: absolute;
+        top: 0.25rem;
+        right: 0.1rem;
+        text-align: right; }
+        .content li a .ding p {
+          font-size: 0.1rem;
+          color: #666; }
+          .content li a .ding p span {
+            font-size: 0.2rem;
+            color: #E35FA6; }
+        .content li a .ding p:nth-of-type(2) {
+          text-decoration: line-through;
+          color: #aaa; }
+
+.gengduo {
+  width: 100%;
+  height: 0.5rem;
+  border-bottom: 0.1rem solid #EFEFF7; }
+  .gengduo a {
+    display: block;
+    margin: 0 auto;
+    line-height: 0.4rem;
+    color: #333;
+    text-align: center; }
+
+.zhoubian {
+  width: 100%;
+  padding: 0.09rem 0 0.05rem 0.1rem;
+  border-top: 1px solid #cecece;
+  overflow: hidden;
+  border-bottom: 0.1rem solid #EFEFF7; }
+  .zhoubian ul {
+    width: 7.8rem;
+    display: flex;
+    margin: 0; }
+    .zhoubian ul li a {
+      border: 1px solid #777;
+      height: 0.30rem;
+      display: block;
+      height: 100%;
+      padding: 0 0.16rem;
+      font-size: 0.1rem;
+      line-height: 0.3rem;
+      color: #666;
+      margin-right: 0.1rem; }
+
+.footer {
+  width: 100%;
+  padding: 0 0.06rem;
+  height: 0.52rem;
+  border-bottom: 0.1rem solid #efefef; }
+  .footer span:nth-of-type(1) a {
+    font-size: 0.16rem; }
+    .footer span:nth-of-type(1) a .iconfont {
+      font-size: 0.2rem; }
+
+.zhiding {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: rgba(220, 57, 145, 0.8);
+  position: fixed;
+  right: 0.2rem;
+  bottom: 0.8rem;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  display: none; }
+  .zhiding span {
+    display: block;
+    margin-top: 0.05rem; }
+
+/*# sourceMappingURL=menpiao.css.map */

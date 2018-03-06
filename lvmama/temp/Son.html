@@ -1,0 +1,21 @@
+<!--我是一条友好的分割线！！-->
+<!--标注一下，这个页面是亲子游模板-->
+<div class="HotelAndScenic">
+    <!--单个内容结构-->
+    <div ng-repeat="item in obj.HotelAndScenic">
+        <img ng-src="{{item.img}}" alt="">
+        <div>
+            <p>{{item.title}}</p>
+            <span>{{item.test}}</span>
+            <div>
+                <div>
+                    <img ng-src="{{item.GPSIMG}}" alt="">
+                    <p>{{item.location}}</p>
+                </div>
+                <div>
+                    <span>￥</span><span>{{item.price}}</span><p>起/份</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

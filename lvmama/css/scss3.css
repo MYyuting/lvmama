@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 0.14rem;
+  background: #EFEFF7; }
+
+p, h1 {
+  margin: 0; }
+
+#ding {
+  width: 0.45rem;
+  height: 0.45rem;
+  position: fixed;
+  z-index: 1000;
+  background: #D30775;
+  color: white;
+  bottom: 1.2rem;
+  right: 0.12rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.21rem;
+  display: none; }
+  #ding > span {
+    font-size: 0.14rem;
+    margin-top: 0.1rem; }
+
+header {
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 3; }
+  header h1 {
+    font-size: 0.19rem;
+    font-weight: 400; }
+  header p {
+    width: 0.7rem;
+    display: flex;
+    align-items: center; }
+    header p .iconfont {
+      font-size: 0.25rem;
+      color: #E362A8;
+      margin-left: 5px; }
+    header p span:nth-of-type(2) {
+      margin-left: 0.1rem; }
+      header p span:nth-of-type(2) img {
+        width: 0.22rem; }
+    header p span img {
+      width: 0.24rem; }
+
+#sou {
+  padding: 0.06rem;
+  margin-top: 50px; }
+  #sou > div:first-of-type {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #E2E2E2;
+    padding: 0.01rem 0.01rem;
+    background: white;
+    display: flex;
+    border-radius: 1%;
+    padding-top: 4px; }
+    #sou > div:first-of-type > div:first-of-type {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      border-right: 1px solid gainsboro; }
+      #sou > div:first-of-type > div:first-of-type > p {
+        color: #D30775;
+        font-size: 0.14rem; }
+      #sou > div:first-of-type > div:first-of-type > div {
+        width: 8px;
+        height: 8px;
+        border-bottom: 1px solid #D30775;
+        border-right: 1px solid #D30775;
+        transform: rotate(45deg);
+        margin-top: 4px;
+        margin-left: 7px; }
+    #sou > div:first-of-type > div:last-of-type {
+      width: 80%;
+      display: flex; }
+      #sou > div:first-of-type > div:last-of-type > span:first-of-type {
+        font-size: 0.14rem;
+        color: gainsboro;
+        margin-top: 2px;
+        margin-left: 10px; }
+      #sou > div:first-of-type > div:last-of-type > p {
+        margin-top: 2px;
+        margin-left: 2px;
+        color: gainsboro; }
+
+.swiper-container {
+  width: 100%;
+  height: 0.91rem; }
+  .swiper-container .swiper-wrapper {
+    width: 100%;
+    height: 100%; }
+    .swiper-container .swiper-wrapper .swiper-slide {
+      width: 100%;
+      height: 100%; }
+      .swiper-container .swiper-wrapper .swiper-slide > img {
+        width: 100%;
+        height: 100%; }
+  .swiper-container .swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.6); }
+  .swiper-container .swiper-pagination-bullet-active {
+    background: white; }
+
+#nav {
+  width: 100%;
+  background: white;
+  padding: 0.04rem; }
+  #nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #nav > ul li {
+      width: 25%;
+      text-align: center;
+      padding-top: 0.06rem; }
+      #nav > ul li a {
+        color: #0F0F0F;
+        text-decoration: none; }
+        #nav > ul li a img {
+          width: 0.45rem;
+          height: 0.45rem; }
+        #nav > ul li a > p {
+          font-size: 0.14rem;
+          margin-top: 0.06rem; }
+
+#ariticle {
+  width: 100%; }
+
+#sext1 {
+  width: 100%;
+  background: white;
+  padding-bottom: 0.1rem;
+  margin-top: 0.1rem; }
+  #sext1 > div:first-of-type {
+    width: 100%;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.14rem; }
+    #sext1 > div:first-of-type > span {
+      background: #fff;
+      border-left: 3px solid #d30775;
+      color: darkgray;
+      padding-left: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+  #sext1 > div:nth-of-type(2) {
+    width: 100%; }
+    #sext1 > div:nth-of-type(2) > ul {
+      width: 100%;
+      display: flex;
+      overflow: auto; }
+      #sext1 > div:nth-of-type(2) > ul li {
+        width: 1.05rem;
+        height: 0.79rem;
+        position: relative;
+        margin-left: 0.1rem; }
+        #sext1 > div:nth-of-type(2) > ul li a {
+          text-decoration: none; }
+          #sext1 > div:nth-of-type(2) > ul li a img {
+            width: 105px;
+            height: 0.79rem; }
+        #sext1 > div:nth-of-type(2) > ul li span {
+          padding: 0.06rem;
+          background: black;
+          opacity: 0.5;
+          color: white;
+          position: absolute;
+          top: 28%;
+          left: 30%; }
+  #sext1 > div:nth-of-type(3) {
+    width: 100%; }
+    #sext1 > div:nth-of-type(3) ul {
+      width: 93.8%;
+      margin: 0 auto;
+      display: flex; }
+      #sext1 > div:nth-of-type(3) ul li {
+        width: 20%;
+        text-align: center;
+        height: 0.33rem;
+        line-height: 0.33rem;
+        border-radius: 27px;
+        background: gainsboro;
+        color: gray;
+        margin-left: 1%; }
+        #sext1 > div:nth-of-type(3) ul li a {
+          text-decoration: none;
+          color: #666666; }
+
+#sext2 {
+  width: 100%;
+  background: white;
+  padding-bottom: 0.1rem;
+  margin-top: 0.1rem; }
+  #sext2 > div:first-of-type {
+    width: 100%;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.14rem; }
+    #sext2 > div:first-of-type > span {
+      background: #fff;
+      border-left: 3px solid #d30775;
+      color: darkgray;
+      padding-left: 10px;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+  #sext2 > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+    #sext2 > div:nth-of-type(2) > div {
+      width: 47%;
+      margin: 0 0 0 0;
+      padding: 0.02rem; }
+      #sext2 > div:nth-of-type(2) > div > div:first-of-type {
+        width: 100%;
+        height: 0.8rem;
+        position: relative;
+        background: ghostwhite; }
+        #sext2 > div:nth-of-type(2) > div > div:first-of-type img {
+          width: 100%;
+          height: 100%; }
+        #sext2 > div:nth-of-type(2) > div > div:first-of-type span {
+          padding: 2px;
+          color: white;
+          background: #080808;
+          opacity: 0.5;
+          position: absolute;
+          top: 0%;
+          left: 0%; }
+      #sext2 > div:nth-of-type(2) > div > div:nth-of-type(2) {
+        width: 100%;
+        background: ghostwhite; }
+        #sext2 > div:nth-of-type(2) > div > div:nth-of-type(2) > p:first-of-type {
+          width: 96%;
+          margin: 0.06rem auto;
+          height: 0.36rem;
+          max-height: 0.36rem;
+          overflow: hidden;
+          display: block; }
+        #sext2 > div:nth-of-type(2) > div > div:nth-of-type(2) > div {
+          width: 98%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between; }
+          #sext2 > div:nth-of-type(2) > div > div:nth-of-type(2) > div > a {
+            color: darkgray; }
+          #sext2 > div:nth-of-type(2) > div > div:nth-of-type(2) > div > a:last-of-type {
+            color: #D30775;
+            font-size: 0.16rem; }
+
+#sext3 {
+  width: 100%;
+  margin-top: 0.1rem; }
+  #sext3 > div {
+    width: 100%; }
+    #sext3 > div > div:first-of-type {
+      width: 100%;
+      display: flex; }
+      #sext3 > div > div:first-of-type > div:first-of-type {
+        width: 49.9%;
+        height: 1.369rem; }
+        #sext3 > div > div:first-of-type > div:first-of-type img {
+          width: 100%;
+          height: 100%;
+          border: 0.5px solid gainsboro; }
+      #sext3 > div > div:first-of-type > div:nth-of-type(2) {
+        width: 49.9%;
+        height: 1.36rem; }
+        #sext3 > div > div:first-of-type > div:nth-of-type(2) > img {
+          width: 100%;
+          height: 50%;
+          border: 0.5px solid gainsboro; }
+    #sext3 > div > div:nth-of-type(2) {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start; }
+      #sext3 > div > div:nth-of-type(2) > img {
+        width: 33.33%;
+        height: 1.02rem;
+        border: 0.5px solid gainsboro; }
+
+.top_li {
+  width: 100%;
+  background: white;
+  margin-top: 0.1rem; }
+  .top_li > ul {
+    width: 96%;
+    margin: 0 auto;
+    display: flex; }
+    .top_li > ul > li {
+      width: 25%;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      text-align: center;
+      font-size: 0.14rem; }
+    .top_li > ul > li:hover {
+      color: #D30775;
+      border-bottom: 2px solid #D30775; }
+
+.dd {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  z-index: 77; }
+
+#boxz {
+  width: 100%;
+  height: 900px; }
+  #boxz > div {
+    width: 100%;
+    display: none; }
+  #boxz > div:first-of-type {
+    display: block; }
+
+.bx {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 77; }
+
+#tbs1 {
+  width: 100%; }
+  #tbs1 > div {
+    width: 100%;
+    margin-top: 0.1rem;
+    background: white; }
+    #tbs1 > div > img {
+      width: 100%;
+      height: 1.59rem; }
+    #tbs1 > div > div:first-of-type {
+      width: 100%;
+      padding-top: 0.1rem; }
+      #tbs1 > div > div:first-of-type > p:first-of-type {
+        width: 96%;
+        margin: 0 auto;
+        color: #000000;
+        font-size: 0.14rem; }
+      #tbs1 > div > div:first-of-type > p:nth-of-type(2) {
+        width: 96%;
+        margin: 0 auto;
+        color: gray;
+        font-size: 0.14rem; }
+      #tbs1 > div > div:first-of-type > div:first-of-type {
+        width: 96%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between; }
+        #tbs1 > div > div:first-of-type > div:first-of-type > p:first-of-type {
+          color: gray; }
+          #tbs1 > div > div:first-of-type > div:first-of-type > p:first-of-type span {
+            color: darkgray; }
+        #tbs1 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) {
+          color: #D30775; }
+          #tbs1 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > span {
+            padding: 0.01rem;
+            border: 1px  solid #D30775;
+            color: #D30775;
+            margin-left: 0.1rem; }
+          #tbs1 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:first-of-type {
+            color: #D30775;
+            text-decoration: none;
+            font-size: 0.16rem; }
+          #tbs1 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:nth-of-type(2) {
+            color: gray;
+            text-decoration: none;
+            font-size: 0.14rem; }
+
+#tbs2 {
+  width: 100%; }
+  #tbs2 > div {
+    width: 100%;
+    margin-top: 0.1rem;
+    background: white; }
+    #tbs2 > div > img {
+      width: 100%;
+      height: 1.59rem; }
+    #tbs2 > div > div:first-of-type {
+      width: 100%;
+      padding-top: 0.1rem; }
+      #tbs2 > div > div:first-of-type > p:first-of-type {
+        width: 96%;
+        margin: 0 auto;
+        color: #000000;
+        font-size: 0.14rem; }
+      #tbs2 > div > div:first-of-type > p:nth-of-type(2) {
+        width: 96%;
+        margin: 0 auto;
+        color: gray;
+        font-size: 0.14rem; }
+      #tbs2 > div > div:first-of-type > p:nth-of-type(3) {
+        width: 96%;
+        margin: 0.01rem auto;
+        color: gray;
+        font-size: 0.14rem; }
+      #tbs2 > div > div:first-of-type > div:first-of-type {
+        width: 96%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between; }
+        #tbs2 > div > div:first-of-type > div:first-of-type > p:nth-of-type(1) {
+          color: gray;
+          font-size: 0.16rem; }
+        #tbs2 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) {
+          color: #D30775; }
+          #tbs2 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > span {
+            padding: 0.01rem;
+            border: 1px  solid #D30775;
+            color: #D30775;
+            margin-left: 0.01rem; }
+          #tbs2 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:first-of-type {
+            color: #D30775;
+            text-decoration: none;
+            font-size: 0.16rem; }
+          #tbs2 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:nth-of-type(2) {
+            color: gray;
+            text-decoration: none;
+            font-size: 0.14rem; }
+
+#tbs3 {
+  width: 100%; }
+  #tbs3 > div {
+    width: 100%;
+    margin-top: 0.1rem;
+    background: white; }
+    #tbs3 > div > img {
+      width: 100%;
+      height: 1.59rem; }
+    #tbs3 > div > div:first-of-type {
+      width: 100%;
+      padding-top: 0.1rem; }
+      #tbs3 > div > div:first-of-type > p:first-of-type {
+        width: 96%;
+        margin: 0 auto;
+        color: #000000;
+        font-size: 0.14rem; }
+      #tbs3 > div > div:first-of-type > p:nth-of-type(2) {
+        width: 96%;
+        margin: 0 auto;
+        color: gray;
+        font-size: 0.14rem; }
+      #tbs3 > div > div:first-of-type > p:nth-of-type(3) {
+        width: 96%;
+        margin: 0.01rem auto;
+        color: gray;
+        font-size: 0.14rem; }
+      #tbs3 > div > div:first-of-type > div:first-of-type {
+        width: 96%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between; }
+        #tbs3 > div > div:first-of-type > div:first-of-type > p:first-of-type {
+          color: gray; }
+          #tbs3 > div > div:first-of-type > div:first-of-type > p:first-of-type span {
+            color: darkgray; }
+        #tbs3 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) {
+          color: #D30775; }
+          #tbs3 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > span {
+            padding: 0.01rem;
+            border: 1px  solid #D30775;
+            color: #D30775;
+            margin-left: 0.01rem; }
+          #tbs3 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:first-of-type {
+            color: #D30775;
+            text-decoration: none;
+            font-size: 0.16rem; }
+          #tbs3 > div > div:first-of-type > div:first-of-type > p:nth-of-type(2) > a:nth-of-type(2) {
+            color: gray;
+            text-decoration: none;
+            font-size: 0.14rem; }
+
+#tbs4 {
+  width: 100%; }
+  #tbs4 > div {
+    width: 100%;
+    margin-top: 0.1rem;
+    background: white;
+    position: relative; }
+    #tbs4 > div > img {
+      width: 100%;
+      height: 1.59rem; }
+    #tbs4 > div > span {
+      position: absolute;
+      top: 20%;
+      left: 0%;
+      padding: 0.1rem;
+      color: white;
+      background: black;
+      opacity: 0.6;
+      font-size: 0.16rem; }
+      #tbs4 > div > span a {
+        text-decoration: none;
+        font-size: 0.16rem; }
+    #tbs4 > div > div {
+      width: 100%;
+      padding: 0.1rem;
+      background: linear-gradient(white, black);
+      position: absolute;
+      bottom: 0;
+      color: white; }
+
+/*# sourceMappingURL=scss3.css.map */

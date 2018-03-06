@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/scss3.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../scss/tab2s.css"/>-->
+		<script src="libs/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular-route1.4.5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body ng-controller="ct1">
+		<div id="ding">
+			<span class="icon iconfont icon-top"></span>
+			<p>顶部</p>
+		</div>
+		<header>
+			<p class="fanhui"><i class="iconfont icon-back"></i></p>
+			<h1>周边游</h1>
+			<p>
+				<span>
+					<a href="index.html">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACHUlEQVRo3u2YX0RDURzHZ7Ea5TIiRsSIMUaMSBERESUmWnrqpZ5iT6OnnnoqPUWkiIiIsdeeYk+xjIieYvQUkda/0+/ke/m59udu98/Och4+Zuf+zp/Pveee8zs3cNebDXiIQeSB4UUfQog/vJToJ4qEAEWUdZVImLiGwBMQKAt3i0iIKGDgFSIGKigrIEZpkR7iEgN+JhLsWhxlAjE9qorIgZ1hoC9EskZMEtdkzAkRVFHkCAN8JVIN4lKIkbH7qonsYWBvxJSN+AnEfhM5VUR2IFElZluoN4M6n8RGp0W2mcRCG/XnUfeDWEVZ0G+RLUh8EWkH7aTRRrWddpyKrLMde82F6ZlBW3KarfglkmESmy6ueubN+SGWUdbnlcgSpoHsMOtBVsCn6yL2pgG3ReYwjwVecq/ytJxlFQy5KTKNdV92sOtx6s+X9Hf07YrIOJM48EGi1iY76VRkjOVGxz5K2E577IgkWLZ67la22ganjRLRZiKjlpQ71CEJM6u+YEeDuF2REXaiK3RYgh/W8uzEGWsmEiUe2YYXVkCCywgmM1xPZJC4Z8FCIQkTPrYHeeOtIhGihIDbLhAxv86U5QMwRQx2oYQno7pIhN1w+WsE2IogH9WQpYKqIuarUMb/K1lwCKtonQqqipiL043cOO1WaPVFbAUnIk03RC3iYbwW0SJaRItoES2iRbSIFtEiWkSLaBEt4oKIqvxfkV+o3A3jUUk7XAAAAABJRU5ErkJggg==" alt="" />
+					</a>
+				</span>
+				<span class="dianji">
+
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAiCAYAAAApkEs2AAAAYklEQVRYw+3WsQnAIBgF4bNyqWQsJ4yZwIG0sJFAIJX8gXuViMUHNpdaLhdwMFeBk4BLLZf+vHt524V+hK5ffy/ncF/PHyZUqFChQoXGg5p5Zp6ZJ1SoUKFChZp51pOZt3kD3m9Em64cZgcAAAAASUVORK5CYII=" alt="" />
+				</span>
+			</p>
+		</header>
+		<div id="sou">
+			<div>
+				<div>
+					<p>北京</p>
+					<div id="left"></div>
+				</div>
+				<div>
+					<span id="suo" class="icon iconfont icon-search"></span>
+					<p>
+						长白山
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512642580_97986.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512554661_68970.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511509693_58435.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1512028077_14548.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1512028077_14548.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/10/1509341688_52663.jpg" alt="" />
+				</div>
+
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/11/1511162263_64779.jpg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="https://pics.lvjs.com.cn/pics/super/2017/10/1509342253_43860.jpg" alt="" />
+				</div>
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li ng-repeat="obj in arr">
+					<a href="">
+						<img ng-src={{obj.img}} alt="" />
+						<p>{{obj.ps}}</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="ariticle">
+			<section id="sext1">
+				<div>
+					<span>热门目的地</span>
+				</div>
+				<div>
+					<ul>
+						<li ng-repeat="obj in lis">
+							<a href=""><img ng-src={{obj.img}} alt="" /></a>
+							<span>{{obj.ps}}</span>
+
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<a href="">哈尔滨</a>
+						</li>
+						<li>
+							<a href="">天津</a>
+						</li>
+						<li>
+							<a href="">长白山</a>
+						</li>
+						<li>
+							<a href="">大连</a>
+						</li>
+						<li>
+							<a href="">更多</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="sext2">
+				<div>
+					<span>爆款推荐</span>
+				</div>
+				<div>
+					<div ng-repeat="obj in kuan">
+						<div>
+							<img ng-src={{obj.imgs}} alt="" />
+							<span>{{obj.span}}</span>
+						</div>
+						<div>
+							<p>{{obj.ps}}</p>
+							<div>
+								<a href="">{{obj.lei}}</a>
+								<a href="">{{obj.price}}</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="sext3">
+				<div ng-repeat="obj in lvou">
+					<div>
+						<div>
+							<img ng-src={{obj.img1}} alt="" />
+						</div>
+						<div>
+							<img ng-src={{obj.img2}} alt="" />
+							<img ng-src={{obj.img3}} alt="" />
+						</div>
+					</div>
+					<div>
+						<img ng-src={{obj.img4}} alt="" />
+						<img ng-src={{obj.img5}} alt="" />
+						<img ng-src={{obj.img6}} alt="" />
+					</div>
+				</div>
+			</section>
+			<div class="top_li">
+				<ul>
+					<li onclick="tabsd('tbs1')">酒+景</li>
+					<li onclick="tabsd('tbs2')">跟团游</li>
+					<li onclick="tabsd('tbs3')">当地游</li>
+					<li onclick="tabsd('tbs4')">酒店</li>
+				</ul>
+			</div>
+			<div id="boxz">
+				<div id="tbs1">
+					<div ng-repeat="obj in beis">
+						<img ng-src={{obj.imgs}} alt="" />
+						<div>
+							<p>{{obj.ps1}}</p>
+							<p>{{obj.ps2}}</p>
+							<div>
+								<p><span class="icon iconfont icon-location"></span>{{obj.email}}</p>
+								<p>
+									<span>{{obj.span1}}</span>
+									<span>{{obj.span2}}</span>
+									￥<a href="">{{obj.email}}</a><a href="">起/份</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tbs2">
+					<div ng-repeat="obj in geng">
+						<img ng-src={{obj.imgs}} alt="" />
+						<div>
+							<p>{{obj.ps1}}</p>
+							<p>{{obj.ps2}}</p>
+							
+							<div>
+								<p>{{obj.ps3}}</p>
+								<p>
+									<span>{{obj.span1}}</span>
+								
+									￥<a href="">{{obj.email}}</a><a href="">起/份</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tbs3">
+					<div ng-repeat="obj in dang">
+						<img ng-src={{obj.imgs}} alt="" />
+						<div>
+							<p>{{obj.ps1}}</p>
+							<p>{{obj.ps2}}</p>
+							<div>
+								<p><span class="icon iconfont icon-location"></span>{{obj.email}}</p>						
+								<p>
+									<span>{{obj.span1}}</span>
+									￥<a href="">{{obj.price}}</a><a href="">起/份</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tbs4">
+					<div ng-repeat="obj in jiudi">
+						<img ng-src={{obj.imgs}} alt="" />
+						<span>￥<a href="">{{obj.price}}</a>起/间</span>
+						<div>
+							{{obj.ps}}
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+			console.log($(window).scrollTop())
+			if($(window).scrollTop() >= 1003) {
+				$(".top_li").addClass("dd")
+		
+			} else {
+				$(".top_li").removeClass("dd")
+			}
+		})
+
+		//轮播部分
+		var mySwier = new Swiper(".swiper-container", {
+			autoplay: 1000,
+			loop: true,
+			pagination: '.swiper-pagination'
+		})
+		var app = angular.module("app1", ["ngRoute"]);
+		app.controller("ct1", function($scope, $http) {
+			$http.get("json/data3.json").then(function(res) {
+				$scope.arr = res.data.nav;
+				$scope.lis = res.data.uli;
+				$scope.kuan = res.data.bao;
+				$scope.lvou = res.data.lvyou;
+				
+				
+				$scope.beis = res.data.tabs.bei;
+				$scope.geng = res.data.tabs.gen;
+				$scope.dang = res.data.tabs.dan;
+				$scope.jiudi = res.data.tabs.jiu;
+			})
+		});
+		function tabsd(pid) {
+			var tabs = ["tbs1", "tbs2", "tbs3", "tbs4"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+	</script>
+	<script src="gonyong.js"></script>
+</html>

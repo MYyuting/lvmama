@@ -1,0 +1,447 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.14rem;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > div{
+    width: 0.8rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header > div img:nth-child(1){
+    margin: 12px;
+}
+header > p{
+    font-size: 0.19rem;
+}
+main{
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFF7;
+}
+.Search{
+    width: 3.53rem;
+    height: 0.28rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #DDDDDD;
+    border-radius: 0.04rem;
+}
+.Search > div:nth-child(1){
+    width: 0.74rem;
+    border-right: solid 1px #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search > div:nth-child(1) > p{
+    color: #D5127B;
+    margin-right: 0.04rem;
+}
+.Search > div:nth-child(2){
+    position: relative;
+    width: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Search > div:nth-child(2) > input{
+    width: 100%;
+    height: 100%;
+    border: solid 0px;
+}
+.Search > div:nth-child(2) > img{
+    position: absolute;
+    left: 0.1rem;
+}
+.Search > div:nth-child(2) > input::-webkit-input-placeholder{
+    color: #DDDDDD;
+    text-indent: 35px;
+}
+.Banner{
+    width:100%;
+    height: 1.52rem;
+    border-bottom:  solid 0.1rem #EFEFF7 ;
+}
+.Banner img{
+    width:100%;
+    height:100%;
+}
+.TOPs{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0rem 0.1rem;
+}
+.TOPs > div:nth-child(1) ul{
+    width:100%;
+    height: 0.35rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.TOPs > div:nth-child(1) > ul > li:nth-child(1) p{
+    color: #D30775;
+}
+.TOPs > div:nth-child(1) ul li:not(:nth-child(1)) p{
+    color: #6F6F6F;
+}
+.TOPs > div:nth-child(1) ul li:not(:last-child):after{
+    content: '';
+    width: 1px;
+    height: 0.1rem;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #AAAAAA;
+}
+.TOPs > div:nth-child(1) li{
+    position: relative;
+    height:100%;
+    padding-right:0.1rem;
+    margin-right: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.TOPs > div:nth-child(1) li:not(:nth-child(1)) p{
+    display: inline-block;
+    height:100%;
+    border-bottom: solid 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TOPs > div:nth-child(1) li:first-child p{
+    display: inline-block;
+    height:100%;
+    border-bottom: solid 1px #D30775;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TOPs > div:nth-child(2){
+    width: 100%;
+    position: relative;
+}
+.TOPs > div:nth-child(2) > div:nth-child(2){
+    display: none;
+}
+.TOP,.TOPBrand{
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.TOP > div,.TOPBrand > div{
+    width: 1.12rem;
+    height: 0.82rem;
+    margin-top:0.1rem;
+    position: relative;
+}
+.TOP > div img,.TOPBrand > div img{
+    width: 100%;
+    height:100%;
+}
+.Test1,.Test2{
+    position: absolute;
+    bottom: 0;
+    left: 0.06rem;
+}
+.Test1 > p,.Test2 > p{
+    color: white;
+}
+.Test1 > span,.Test2 > span{
+    font-size: 0.13rem;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.NAV{
+    width: 100%;
+    height: 2.30rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 0.1rem #EFEFF7;
+    border-top: solid 0.1rem #EFEFF7;
+    margin-top:0.1rem;
+}
+.NAV > p{
+    font-size: 0.16rem;
+    color: #666666;
+}
+.NAV > div{
+    width: 100%;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.NAV > div > div{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.NAV > div > div > span{
+    margin-top: 0.1rem;
+    color: #666666;
+}
+.IMGS{
+    width:100%;
+    height: 2.05rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 0.1rem #EFEFF7;
+}
+.IMGS > div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IMGS > div:nth-child(1){
+    height: 66.66%;
+}
+.IMGS > div:nth-child(2){
+    height: 33.33%;
+}
+.IMGS > div:nth-child(1) > div{
+    width: 100%;
+    height:100%;
+}
+.IMGS > div:nth-child(2) > div{
+    height: 100%;
+    width:33.33%;
+}
+.IMGS > div:nth-child(1) > div:nth-child(2) > div{
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.IMGS img{
+    width: 100%;
+    height: 100%;
+}
+.Route{
+    width: 100%;
+    height: 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    z-index:33;
+}
+
+.Route a{
+    display: inline-block;
+    height: 100%;
+    padding:0 0.12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+}
+.Route a:not(:first-child){
+    border-bottom: solid 2px white;
+}
+.Route a:first-child{
+    border-bottom: solid 2px #D30775;
+    color: #D30775;
+}
+.Route a p{
+    color: #333333;
+}
+/*HOTEL&SCENIC*/
+.HotelAndScenic{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #EFEFF7;
+}
+.HotelAndScenic > div{
+    width: 100%;
+    /*height: 2.54rem;*/
+    display: flex;
+    flex-direction :column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.HotelAndScenic > div > img{
+    width:100%;
+    height: 1.6rem;
+}
+.HotelAndScenic > div >div:nth-child(2){
+    width: 100%;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction:column;
+    box-sizing: border-box;
+    background: white;
+    border-bottom: solid 0.1rem #EFEFF7;
+}
+.HotelAndScenic > div >div:nth-child(2)>span{
+    color: #AAAAAA;
+    font-size: 0.12rem;
+}
+.HotelAndScenic > div >div:nth-child(2)>div{
+    width: 100%;
+    margin-top: 0.04rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div:nth-child(1) p{
+    color: #666666;
+    font-size:0.16rem;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div:nth-child(2) p{
+    color: #666666;
+    font-size:0.12rem;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div:nth-child(2) span{
+    color: #D82586;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div:nth-child(2) span:nth-child(1){
+    font-size:0.12rem;
+}
+.HotelAndScenic > div >div:nth-child(2)>div div:nth-child(2) span:nth-child(2){
+    font-size:0.18rem;
+    line-height: 0.18rem;
+}
+
+/*HOTEL*/
+
+.Hotel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #EFEFF7;
+}
+.Hotel > div{
+    width:100%;
+    position: relative;
+    margin-bottom: 0.1rem;
+}
+.Hotel > div > img{
+    width: 100%;
+    height: 1.6rem;
+}
+.Hotel > div > p{
+    position: absolute;
+    bottom: 0;
+    left: 0.08rem;
+}
+.Hotel > div > div{
+    position: absolute;
+    left: 0;
+    bottom: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Hotel > div > p{
+    height: 40px;
+    line-height: 50px;
+    color: #fff;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-right: 30%;
+    font-size: 15px;
+    padding-left: 10px;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.6));
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.Hotel > div > div > span,.Hotel > div > div > p{
+    color: white;
+}
+.Hotel > div > div > span:nth-child(1){
+    font-size: 0.12rem;
+}
+.Hotel > div > div > span:nth-child(2){
+    font-size: 0.18rem;
+}
+/*HOT*/
+.Hot{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background: #EFEFF7;
+}
+.Hot > div{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 0.1rem;
+}
+.Hot > div img{
+    width:100%;
+    height: 1.6rem;
+}
+.Hot > div > div{
+    width:100%;
+    padding: 0.1rem;
+    box-sizing: border-box;
+    background: white;
+}
+.Hot > div > div > span{
+    font-size: 0.12rem;
+    color: #B3B3B3;
+}
+.AllHAS > div > div img{
+    transition:all 0.6s;
+    opacity:0;
+}
+.AllHAS > div:not(:first-child){
+    display: none;
+}

@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body{
+  background: #6438c6;
+}
+
+.tttj{
+  padding-bottom: 20%;
+  h3{
+    font-size: 0.23rem;
+    color: #fff;
+    margin-bottom: 0.07rem;
+  }
+  .tou{
+    height: 0.45rem;
+    line-height:0.45rem ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+    h1{
+      margin: 0 auto;
+      font-size: 20px;
+      width: 78%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 300;
+      color: #666;
+    }
+    span{
+      width: 10%;
+      font-size: 0.22rem;
+      color: #C93B83;
+    }
+    div{
+      width: 12%;
+      span{
+        font-size: 0.3rem;
+      }
+    }
+  }
+
+  .tj_1{
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .rul{
+      position: absolute;
+      right: 0;
+      top:0.6rem;
+      width: 0.24rem;
+      min-height: 0.64rem;
+      line-height: 1;
+      padding:  9px 4px;
+      color: #fff;
+      background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/rule.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  //限时秒杀
+  .xsms{
+    .til{
+      padding: 0 0.3rem 0.1rem;
+      margin-top: 0.13rem;
+      margin-bottom: 0.08rem;
+      text-align: center;
+      background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/title1.png")center center no-repeat;
+      background-size: 83% 0.2rem;
+      span{
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+
+    .xsms_con{
+      padding: 0  0.11rem 0;
+      .list{
+        position: relative;
+        margin-top: 0.13rem;
+        .list_img{
+          background: url(http://pic.lvmama.com//uploads/pc/place2/2015-11-06/d51c501c-c287-4421-9273-d0b1ff5e3735_480_320.jpg);
+          height: 1.9rem;
+          background-size: 100% 100%;
+        }
+      }
+      a{
+        display: block;
+        .list_til{
+          position: absolute;
+          left: 8px;
+          top: 8px;
+          max-width: 90%;
+          color: #fff;
+          background: rgba(0,0,0,.6);
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 0.1rem;
+          padding: 0 0.1rem;
+          border-radius: 10px;
+          margin-top: 0.1rem;
+        }
+      }
+      .list_text{
+        background: #fff;
+        padding: 5px 10px 10px;
+        p{
+          font-size: 0.1rem;
+          line-height: 1.6;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: #666;
+        }
+        .price{
+          font-size: 0.15rem;
+          color: #de2500;
+          padding-top: 3px;
+          line-height: 0.2rem;
+          button{
+            float: right;
+            background: #de2500;
+            color: #fff;
+            padding: 3px 10px;
+            border: none;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .tab_1{
+    display: none;
+  }
+
+  //一周爆款
+  .yizhou{
+    >ul{
+      display: flex;
+      background: #bc80ff;
+       li{
+         width: 25%;
+         line-height: 0.48rem;
+         text-align: center;
+         color: #fff;
+         font-size: 0.16rem;
+         position: relative;
+       }
+      .tab_active{
+        background: #321c63;
+      }
+    }
+  }
+  .yizhou>ul>li:not(:first-child)::before{
+    content: "";
+    border-left: 0.01rem solid rgba(255,255,255,0.3);
+    height: 0.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.15rem;
+  }
+
+//  weibu
+  .img-footer {
+    background: url(//pics.lvjs.com.cn/mobile/zt/img/footer2017/footer-white.png) no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 46%;
+  }
+}
+.zhiding {
+  width: 0.6rem;
+  position: fixed;
+  bottom: 0.6rem;
+  right: 0.12rem;
+  z-index: 33;
+  background: rgba(0, 0, 0, 0.8);
+  height: 0.3rem;
+  line-height: 0.3rem;
+  color: #fff;
+  border-radius: 0.04rem;
+  text-align: center;
+  font-size: 0.12rem;
+  display: none; }

@@ -1,0 +1,12 @@
+<!--我是一条友好的分割线！！-->
+<!--标注一下，这个页面是度假酒店模板-->
+<div class="Hotel">
+    <!--单个内容结构-->
+    <div ng-repeat="item in obj.Hotel">
+        <img ng-src="{{item.img}}" alt="">
+        <p>{{item.title}}</p>
+        <div>
+            <span>￥</span><span>{{item.price}}</span><p>起/间</p>
+        </div>
+    </div>
+</div>

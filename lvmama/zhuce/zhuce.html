@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../libs/rem.js"></script>
+		<script src="../libs/jquery-3.1.1.js"></script>
+		<script src="../iconfont/iconfont.js"></script>
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="zhuce.css"/>
+	</head>
+	<body>
+		<div id="zhuce">
+			<!--导航-->
+			<nav>
+				<span class="iconfont icon-back fanhui"></span>
+				<h1>注册</h1>
+				<span></span>
+			</nav>
+			<!--主体-->
+			<ul class="zt">
+				<li>
+					<span class="iconfont icon-mobile"></span>
+					<input type="text" placeholder="请输入11位手机号码"/>
+				</li>
+				<li>
+					<span class="iconfont icon-mobile"></span>
+					<input type="text" placeholder="请输入右侧图形验证码"/>
+					<span id="span" onclick="bianhua()"></span>
+				</li>
+				<li>
+					<span class="iconfont icon-mobile"></span>
+					<input type="text" placeholder="请输入短信验证码"/>
+					<span class="span1">发送验证码</span>
+				</li>
+				<li>
+					<spa·n class="iconfont icon-mobile"></span>
+					<input type="text" placeholder="请输入密码"/>
+				</li>
+			</ul>
+			<!--完成注册-->
+			<button class="btn">完成注册</button>
+			<!--底部-->
+			<footer>
+				<p><input type="checkbox" />  同意驴妈妈旅游网<a href="javascript:void(0);">《会员服务条款》</a></p>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			var oSpan = document.getElementById("span");
+//			产生随机数
+			function bianhua(){
+				var zm = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+				var num = [];
+				for(var i = 0; i<4; i++){
+					var suiji = parseInt(Math.random() * zm.length);
+					num.push(zm[suiji])
+				}
+				oSpan.innerHTML = num.join("")
+			}
+			bianhua()
+		</script>
+	</body>
+
+	<script src="../gonyong.js"></script>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/gonyon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chu.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="libs/swiper.min.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../scss/tabs.css" />-->
+		<script src="libs/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/angular-route1.4.5.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body ng-controller="ct1">
+		<!--<div id="ding">
+			<span class="icon iconfont icon-top"></span>
+			<p>顶部</p>
+		</div>-->
+		<header>
+			<p class="fanhui"><i class="iconfont icon-back"></i></p>
+			<h1>出境游</h1>
+			<p>
+				<span>
+					<a href="index.html">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACHUlEQVRo3u2YX0RDURzHZ7Ea5TIiRsSIMUaMSBERESUmWnrqpZ5iT6OnnnoqPUWkiIiIsdeeYk+xjIieYvQUkda/0+/ke/m59udu98/Och4+Zuf+zp/Pveee8zs3cNebDXiIQeSB4UUfQog/vJToJ4qEAEWUdZVImLiGwBMQKAt3i0iIKGDgFSIGKigrIEZpkR7iEgN+JhLsWhxlAjE9qorIgZ1hoC9EskZMEtdkzAkRVFHkCAN8JVIN4lKIkbH7qonsYWBvxJSN+AnEfhM5VUR2IFElZluoN4M6n8RGp0W2mcRCG/XnUfeDWEVZ0G+RLUh8EWkH7aTRRrWddpyKrLMde82F6ZlBW3KarfglkmESmy6ueubN+SGWUdbnlcgSpoHsMOtBVsCn6yL2pgG3ReYwjwVecq/ytJxlFQy5KTKNdV92sOtx6s+X9Hf07YrIOJM48EGi1iY76VRkjOVGxz5K2E577IgkWLZ67la22ganjRLRZiKjlpQ71CEJM6u+YEeDuF2REXaiK3RYgh/W8uzEGWsmEiUe2YYXVkCCywgmM1xPZJC4Z8FCIQkTPrYHeeOtIhGihIDbLhAxv86U5QMwRQx2oYQno7pIhN1w+WsE2IogH9WQpYKqIuarUMb/K1lwCKtonQqqipiL043cOO1WaPVFbAUnIk03RC3iYbwW0SJaRItoES2iRbSIFtEiWkSLaBEt4oKIqvxfkV+o3A3jUUk7XAAAAABJRU5ErkJggg==" alt="" />
+					</a>
+				</span>
+				<span class="dianji">
+
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAiCAYAAAApkEs2AAAAYklEQVRYw+3WsQnAIBgF4bNyqWQsJ4yZwIG0sJFAIJX8gXuViMUHNpdaLhdwMFeBk4BLLZf+vHt524V+hK5ffy/ncF/PHyZUqFChQoXGg5p5Zp6ZJ1SoUKFChZp51pOZt3kD3m9Em64cZgcAAAAASUVORK5CYII=" alt="" />
+				</span>
+			</p>
+		</header>
+		<div id="sou">
+			<div>
+				<div>
+					<p>北京</p>
+					<div id="left"></div>
+				</div>
+				<div>
+					<span id="suo" class="icon iconfont icon-search"></span>
+					<p>
+						请输入目的地/关键词
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/12/1512525165_61045.jpg" alt="" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1510883633_66937.jpg" alt="" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/11/1510545401_38983.jpg" alt="" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/09/1506750287_61104.jpg" alt="" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472641007_38993.jpg" alt="" /></a>
+				</div>
+				<div class="swiper-slide">
+					<a href=""><img src="https://pics.lvjs.com.cn/pics/super/2017/09/1506750287_61104.jpg" alt="" /></a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li ng-repeat="obj in arr">
+					<a href="">
+						<img ng-src={{obj.img}} alt="" />
+						<p>{{obj.ps}}</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="tabs">
+			<div class="suibian">
+				<div onclick="tabs('tbs1')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472612553_50450.png" alt="" />
+					<p>当季热门</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs2')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472613995_76176.png" alt="" />
+					<p>东南亚</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs3')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472614960_66426.png" alt="" />
+					<p>日本</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs4')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472615183_32792.png" alt="" />
+					<p>欧洲</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs5')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/09/1474516270_85867.png" alt="" />
+					<p>海岛</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs6')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472615941_75649.png" alt="" />
+					<p>中东非</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs7')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472621937_40925.png" alt="" />
+					<p>港澳台</p>
+					<div></div>
+				</div>
+				<div onclick="tabs('tbs8')">
+					<img src="https://pics.lvjs.com.cn/pics/super/2016/08/1472621724_91455.png" alt="" />
+					<p>澳洲</p>
+					<div></div>
+				</div>
+			</div>
+			<div id="fath">
+				<div id="tbs1">
+					<ul>
+						<li ng-repeat="obj in rem">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs2">
+					<ul>
+						<li ng-repeat="obj in donan">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs3">
+					<ul>
+						<li ng-repeat="obj in rib">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs4">
+					<ul>
+						<li ng-repeat="obj in ouo">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs5">
+					<ul>
+						<li ng-repeat="obj in dou">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs6">
+					<ul>
+						<li ng-repeat="obj in zhon">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs7">
+					<ul>
+						<li ng-repeat="obj in xiang">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+				<div id="tbs8">
+					<ul>
+						<li ng-repeat="obj in Aixm">
+							<a href="">{{obj.cyt}}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="tuji">
+			<div ng-repeat="obj in lvou">
+				<div>
+					<img ng-src={{obj.img1}} alt="" />
+				</div>
+				<div>
+					<div>
+						<img ng-src={{obj.img2}} alt="" />
+					</div>
+					<div>
+						<img ng-src={{obj.img3}} alt="" />
+						<img ng-src={{obj.img4}} alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul>
+					<li onclick="tabsd('fot1')">精选跟团游</li>
+					<li onclick="tabsd('fot2')">精选自助游</li>
+				</ul>
+				<div id="fot"> 
+					<div id="fot1">
+						<div ng-repeat="obj in tuangen">
+							<div>
+								<img ng-src={{obj.img}} alt="" />
+								<span>{{obj.span}}</span>
+								<span>{{obj.pin}}</span>
+								<span>{{obj.span2}}</span>
+							</div>
+							<p>{{obj.ps}}</p>
+						</div>
+					</div>
+					<div id="fot2">
+						<div ng-repeat="obj in zizhun">
+							<div>
+								<img ng-src={{obj.img}} alt="" />
+								<span>{{obj.span}}</span>
+								<span>{{obj.pin}}</span>
+								<span>{{obj.span2}}</span>
+							</div>
+							<p>{{obj.ps}}</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!--返回顶部-->
+		<div id="top" style="display: none">
+			<span class="iconfont icon-top"></span>
+			<p>顶部</p>
+		</div>
+	</body>
+
+	<script src="gonyong.js"></script>
+	<script type="text/javascript">
+		var mySwier = new Swiper(".swiper-container", {
+			autoplay: 1000,
+			loop: true,
+			pagination: '.swiper-pagination'
+		})
+		var app = angular.module("app1", ["ngRoute"]);
+		app.controller("ct1", function($scope, $http) {
+			$http.get("json/chu.json").then(function(res) {
+				$scope.arr = res.data.nav;
+				$scope.rem = res.data.guo.remen;
+				$scope.donan = res.data.guo.Donan;
+				$scope.rib = res.data.guo.Japhn;
+				$scope.ouo = res.data.guo.Errou;
+				$scope.dou = res.data.guo.Dao;
+				$scope.zhon = res.data.guo.Fei;
+				$scope.xiang = res.data.guo.Gang;
+				$scope.Aixm = res.data.guo.Amiren;
+				$scope.lvou = res.data.lvyou;
+				
+				$scope.tuangen = res.data.jinTab.geng;
+				$scope.zizhun = res.data.jinTab.zihu;
+			})
+		})
+
+		$(".suibian").on("click", "div", function() {
+			//				$("li").eq(0).children("div").css("display","none")
+			$(this).children("div").addClass("qiehuan").parent().siblings().children("div").removeClass("qiehuan")
+		})
+
+		function tabs(pid) {
+			var tabs = ["tbs1", "tbs2", "tbs3", "tbs4", "tbs5", "tbs6", "tbs7", "tbs8"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+
+				}
+
+			}
+		}
+		function tabsd(pid) {
+			var tabs = ["fot1", "fot2"];
+			for(var i = 0; i < tabs.length; i++) {
+				if(tabs[i] == pid) {
+					document.getElementById(tabs[i]).style.display = "block";
+
+				} else {
+					document.getElementById(tabs[i]).style.display = "none";
+				}
+			}
+		}
+
+	</script>
+</html>

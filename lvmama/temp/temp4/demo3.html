@@ -1,0 +1,22 @@
+<div class="main_two" ng-repeat="item in obj.main_two">
+	<div class="left">
+		<img ng-src="素材/{{item.url}}" alt="" />
+	</div>
+	<div class="right">
+		<h3>{{item.name}}</h3>
+		<p>
+			<span>{{item.txt1}}</span>
+			<span>{{item.txt2}}</span>
+			<span>返￥{{item.txt3}}</span>
+			<span><i>￥{{item.txt4}}</i>起</span>
+		</p>
+		<p>
+			<span>{{item.txt5}}满意</span>
+			<del>￥{{item.txt6}}</del>
+		</p>
+		<p>
+			<span>{{item.txt7}}</span>
+			<span>{{item.txt8}}</span>
+		</p>
+	</div>
+</div>

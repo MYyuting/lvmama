@@ -1,0 +1,21 @@
+
+		<div id="box1">
+			<div id="tab">
+				<ul>
+					<li><a href="" ng-click="huans()">目的地</a><div></div></li>
+					<li><a href="" ng-click="huans()">价格</a><div></div></li>
+				</ul>
+			</div>
+			<div id="box_fat">
+				<div ng-repeat="obj in tabs5">
+					<div class="tabs_left">
+						<img ng-src={{obj.imgs}} alt="" />
+					</div>
+					<div class="tabs_right">
+						<p>{{obj.ps}}</p>
+						<p><span>{{obj.span}}</span></p>
+						<p><a href="">{{obj.price}}</a>起</p>
+					</div>
+				</div>
+			</div>
+		</div>

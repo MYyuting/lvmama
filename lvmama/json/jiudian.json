@@ -1,0 +1,18 @@
+{
+  "banner":[
+    {"img":"banner1.png"},
+    {"img":"banner2.png"},
+    {"img":"banner3.png"},
+    {"img":"banner4.png"},
+    {"img":"banner5.png"},
+    {"img":"banner6.png"}
+  ],
+  "ranking":[
+    {"img":"hotel1.png"}, {"img":"hotel2.png"}, {"img":"hotel3.png"}, {"img":"hotel4.png"}, {"img":"hotel5.png"},
+    {"img":"hotel6.png"}, {"img":"hotel7.png"}, {"img":"hotel8.png"}, {"img":"hotel9.png"}, {"img":"hotel10.png"},
+    {"img":"hotel11.png"},{"img":"hotel12.png"},{"img":"hotel13.png"},{"img":"hotel14.png"},{"img":"hotel15.png"},
+    {"img":"hotel16.png"}, {"img":"hotel17.png"}, {"img":"hotel18.png"}, {"img":"hotel19.png"}, {"img":"hotel20.png"},
+    {"img":"hotel21.png"}, {"img":"hotel22.png"}, {"img":"hotel23.png"}, {"img":"hotel24.png"}, {"img":"hotel25.png"},
+    {"img":"hotel26.png"}, {"img":"hotel27.png"}, {"img":"hotel28.png"}
+  ]
+}

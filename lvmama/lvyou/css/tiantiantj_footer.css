@@ -1,0 +1,15 @@
+.zhc_footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0; }
+  .zhc_footer a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 0.4595rem; }
+    .zhc_footer a > img {
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=tiantiantj_footer.css.map */

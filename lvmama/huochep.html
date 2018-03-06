@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>火车票</title>
+    <script src="libs/swiper.min.js"></script>
+    <script src="libs/iscroll.js"></script>
+    <script src="libs/rem.js"></script>
+    <script src="libs/jquery-3.1.1.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/swiper.min.css">
+    <link rel="stylesheet" href="css/Train.css">
+</head>
+<body ng-controller="myCtrl">
+    <header>
+        <div class="fanhui">
+            <div><span class="glyphicon glyphicon-menu-left"></span></div>
+        </div>
+        <div>
+            <div>
+                <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+            <div><span class="glyphicon glyphicon-comment"></span></div>
+        </div>
+    </header>
+    <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" ng-repeat="item in obj.banner">
+                <img ng-src="{{item.img}}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="YBanner">
+        <div class="swiper-container isc">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="item in obj.isc">
+                    <span>{{item.span}}</span>
+                    <p>{{item.p}}</p>
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--不知到写什么好b（￣▽￣）d　-->
+<div class="detalls">
+    <div>
+        <div><p>上海</p></div>
+        <div>
+            <div class="Big"><img src="Img/2017-12-13_200832.png" alt=""></div>
+            <div class="Small"><img src="Img/2017-12-13_200846.png" alt=""></div>
+        </div>
+        <div><p>北京</p></div>
+    </div>
+    <div>
+        <div>
+            <img src="Img/2017-12-14_090740.png" alt="">
+            <p>12月5日</p>
+        </div>
+        <div>
+            <span>周五</span>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div>
+                <img src="Img/2017-12-14_091948.png" alt="">
+            </div>
+            <span>学生票</span>
+        </div>
+        <div>
+            <div>
+                <img src="Img/2017-12-14_091948.png" alt="">
+            </div>
+            <span>高铁动车</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img src="Img/2017-12-13_200858.png" alt="">
+            <span>查询</span>
+        </div>
+    </div>
+</div>
+<!--4-->
+<div class="ServerProcess">
+    <div ng-repeat="item in obj.F">
+        <img src="Img/{{item.img}}" alt="">
+        <span>{{item.test}}</span>
+    </div>
+</div>
+    <!--hongbao-->
+    <div class="RedPacked">
+        <img src="Img/2017-12-13_200905.png" alt="">
+    </div>
+<footer>
+    <img src="Img/2017-12-14_102937.png" alt="">
+</footer>
+</body>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl",["$scope","$http","$timeout",function ($scope,$http,$timeout){
+        var url="json/Train.json";
+        $http.get(url).success( function(response) {
+            $scope.obj = response;
+            console.log($scope.obj);
+            $timeout(function (){
+                var banner = new Swiper(".banner",{
+                    loop:true,
+                    autoplay:1000,
+                    pagination: '.swiper-pagination'
+                });
+                var banner1 = new Swiper(".isc",{
+                    loop:true,
+                    autoplay:2000,
+                    direction:"vertical"
+                });
+            },200)
+        });
+        var num = 0;
+
+        var LR = true
+        $(".detalls > div:nth-child(1) > div:nth-child(2)").click(function (){
+            var deg = (num+=180)+"deg";
+            $(".detalls > div:nth-child(1) > div:nth-child(2) > .Big > img").css({
+                transition:"all 0.6s",
+                transform:"rotate("+ deg +")"
+            });
+            if (LR == true){
+                LR = false;
+                $(".detalls > div:nth-child(1) > div:nth-child(1) p").css({
+                    transition:"all 0.6s",left:"316px"
+                });
+                $(".detalls > div:nth-child(1) > div:nth-child(3) p").css({
+                    transition:"all 0.6s",right:"316px"
+                })
+            }else{
+                LR = true;
+                transition:"all 0.6s";
+                $(".detalls > div:nth-child(1) > div:nth-child(1) p").css({
+                    transition:"all 0.6s",left:"22px"
+                });
+                $(".detalls > div:nth-child(1) > div:nth-child(3) p").css({
+                    transition:"all 0.6s",right:"22px"
+                })
+            }
+
+
+
+        })
+//        .detalls > div:nth-child(3) > div div
+        var clinum = true;
+        $(".detalls > div:nth-child(3) > div:nth-child(1)").click(function (){
+//            clinum = true;
+            console.log(clinum)
+            console.log($(".detalls > div:nth-child(4) > div span").html())
+            if (clinum == true){
+                clinum = false;
+                $(".detalls > div:nth-child(3) > div:nth-child(1) div:nth-child(1)").children("img").css("display","block");
+                $(".detalls > div:nth-child(3) > div:nth-child(1) div:nth-child(1)").css("border","solid 1px #D30775");
+                $(".detalls > div:nth-child(4) > div span").html("学生票查询");
+
+            }else{
+                clinum = true;
+                $(".detalls > div:nth-child(3) > div:nth-child(1) div:nth-child(1)").children("img").css("display","none");
+                $(".detalls > div:nth-child(3) > div:nth-child(1) div:nth-child(1)").css("border","solid 1px #cccccc");
+                $(".detalls > div:nth-child(4) > div span").html("查询")
+
+
+            }
+
+        })
+        var clinum2 = true;
+        $(".detalls > div:nth-child(3) > div:nth-child(2)").click(function (){
+            if (clinum2 == true){
+                clinum2 = false;
+                $(".detalls > div:nth-child(3) > div:nth-child(2) div:nth-child(1)").children("img").css("display","block");
+                $(".detalls > div:nth-child(3) > div:nth-child(2) div:nth-child(1)").css("border","solid 1px #D30775");
+            }else{
+                clinum2 = true;
+                $(".detalls > div:nth-child(3) > div:nth-child(2) div:nth-child(1)").children("img").css("display","none");
+                $(".detalls > div:nth-child(3) > div:nth-child(2) div:nth-child(1)").css("border","solid 1px #cccccc");
+            }
+
+        })
+    }])
+</script>
+<script src="gonyong.js"></script>
+</html>

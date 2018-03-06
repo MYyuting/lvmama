@@ -1,0 +1,124 @@
+body {
+  background: #6438c6; }
+
+.tttj {
+  padding-bottom: 10%; }
+  .tttj h3 {
+    font-size: 0.23rem;
+    color: #fff;
+    margin-bottom: 0.07rem; }
+  .tttj .tou {
+    height: 0.45rem;
+    line-height: 0.45rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #fff; }
+    .tttj .tou h1 {
+      margin: 0 auto;
+      font-size: 20px;
+      width: 78%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 300;
+      color: #666; }
+    .tttj .tou span {
+      width: 10%;
+      font-size: 0.22rem;
+      color: #C93B83; }
+    .tttj .tou div {
+      width: 12%; }
+      .tttj .tou div span {
+        font-size: 0.3rem; }
+  .tttj .tj_1 {
+    position: relative; }
+    .tttj .tj_1 img {
+      width: 100%; }
+    .tttj .tj_1 .rul {
+      position: absolute;
+      right: 0;
+      top: 0.6rem;
+      width: 0.24rem;
+      min-height: 0.64rem;
+      line-height: 1;
+      padding: 9px 4px;
+      color: #fff;
+      background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/rule.png") no-repeat;
+      background-size: 100% 100%; }
+  .tttj .xsms .til {
+    padding: 0 0.3rem 0.1rem;
+    margin-top: 0.13rem;
+    margin-bottom: 0.08rem;
+    text-align: center;
+    background: url("//pics.lvjs.com.cn/mobile/zt/templates/template4/img/title1.png") center center no-repeat;
+    background-size: 83% 0.2rem; }
+    .tttj .xsms .til span {
+      color: #fff;
+      border: 1px solid #fff; }
+  .tttj .xsms .xsms_con {
+    padding: 0  0.11rem 0; }
+    .tttj .xsms .xsms_con .list {
+      position: relative;
+      margin-top: 0.13rem; }
+      .tttj .xsms .xsms_con .list .list_img {
+        background: url(http://pic.lvmama.com//uploads/pc/place2/2017-05-31/db0a76b3-1b0f-4462-ad79-12cf702e72e0_480_320.jpg);
+        height: 1.9rem;
+        background-size: 100% 100%; }
+    .tttj .xsms .xsms_con a {
+      display: block; }
+      .tttj .xsms .xsms_con a .list_til {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        max-width: 90%;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 0.1rem;
+        padding: 0 0.1rem;
+        border-radius: 10px;
+        margin-top: 0.1rem; }
+    .tttj .xsms .xsms_con .list_text {
+      background: #fff;
+      padding: 5px 10px 10px; }
+      .tttj .xsms .xsms_con .list_text p {
+        font-size: 0.1rem;
+        line-height: 1.6;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #666; }
+      .tttj .xsms .xsms_con .list_text .price {
+        font-size: 0.15rem;
+        color: #de2500;
+        padding-top: 3px;
+        line-height: 0.2rem; }
+        .tttj .xsms .xsms_con .list_text .price button {
+          float: right;
+          background: #de2500;
+          color: #fff;
+          padding: 3px 10px;
+          border: none;
+          border-radius: 6px; }
+  .tttj .tab_1 {
+    display: none; }
+  .tttj .yizhou > ul {
+    display: flex;
+    background: #bc80ff; }
+    .tttj .yizhou > ul li {
+      width: 25%;
+      line-height: 0.48rem;
+      text-align: center;
+      color: #fff;
+      font-size: 0.16rem; }
+    .tttj .yizhou > ul .tab_active {
+      background: #321c63; }
+  .tttj .img-footer {
+    background: url(//pics.lvjs.com.cn/mobile/zt/img/footer2017/footer-white.png) no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 46%; }
+
+/*# sourceMappingURL=tttj.css.map */
